@@ -6,7 +6,16 @@
     <description>Recent content in Posts on SNOOPY</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 12 Jun 2023 16:19:32 +0800</lastBuildDate><atom:link href="https://www.wuennan.cn/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Nov 2023 11:33:16 +0800</lastBuildDate><atom:link href="https://www.wuennan.cn/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RabbitMQ监控</title>
+      <link>https://www.wuennan.cn/posts/prometheus%E7%9B%91%E6%8E%A7/rabbitmq%E7%9B%91%E6%8E%A7/</link>
+      <pubDate>Tue, 14 Nov 2023 11:33:16 +0800</pubDate>
+      
+      <guid>https://www.wuennan.cn/posts/prometheus%E7%9B%91%E6%8E%A7/rabbitmq%E7%9B%91%E6%8E%A7/</guid>
+      <description>RabbitMQ安装rabbitmq_prometheus插件后，可支持Prometheus监控。 可参考官方文档。 推荐直接使用官方方案，以下方案为三方方案。 背景</description>
+    </item>
+    
     <item>
       <title>定时任务</title>
       <link>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/14.-%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</link>
@@ -94,7 +103,7 @@
       <pubDate>Sun, 21 May 2023 20:13:41 +0800</pubDate>
       
       <guid>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/4.linux%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/</guid>
-      <description>本章节，我们将认识 Linux 系统中常用的文件操作相关命令。 路径切换 文件路径是指用来标识文件中数据位置的字符串，路径包文件所在的位置以文件名称，比如: /etc/hostn</description>
+      <description>本章节，我们将认识 Linux 系统中常用的文件操作相关命令。 路径切换 我们可以通过cd 命令切换目录。 cd命令常用的参数如下: 命令 解释 cd ~ 切换回当前用户的家目录，注意：roo</description>
     </item>
     
     <item>

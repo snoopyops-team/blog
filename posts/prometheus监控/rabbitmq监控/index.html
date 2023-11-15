@@ -2,11 +2,11 @@
 <html lang="zh-CN"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="description" content="定时任务 - https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/14.-%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/">
+    <meta name="description" content="RabbitMQ监控 - https://www.wuennan.cn/posts/prometheus%E7%9B%91%E6%8E%A7/rabbitmq%E7%9B%91%E6%8E%A7/">
     <meta name="author" content="snoopy - https://www.wuennan.cn/">
     
     <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
-    <title>定时任务</title>
+    <title>RabbitMQ监控</title>
     <link rel="icon" type="image/png" href="/favicon.ico">
     
     <link rel="stylesheet" href="https://www.wuennan.cn/style.min.ab1affb864595dc8034de89700f09bcace7cadcc73a0e800a66ae137a366f17d.css">
@@ -27,7 +27,7 @@
 </div>
     <h1 class="title">
         
-            定时任务
+            RabbitMQ监控
             
         
     </h1>
@@ -78,17 +78,17 @@
         <span>
             
             <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7409" width="12" height="12"><path d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z" p-id="7410" fill="#adb5bd"></path></svg>
-            2023-06-12&nbsp;
+            2023-11-14&nbsp;
         </span>
         <span>
             
             <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="23838" width="11" height="11"><path d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z" p-id="23839" fill="#adb5bd"></path></svg>
-            2023-06-12&nbsp;&nbsp;&nbsp;
+            2023-11-14&nbsp;&nbsp;&nbsp;
         </span>
         <span>
             
             <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
-            723 字</span>&nbsp;
+            669 字</span>&nbsp;
         <span>
             
             <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
@@ -98,8 +98,6 @@
 		
 		<div class="ctg">
 			
-			
-			<a href="/categories/linux%E5%9F%BA%E7%A1%80">Linux基础</a>
 			
 		</div>
 		<div class="tag">
@@ -116,108 +114,146 @@
         
         <div class="page-operation">
             <div><a href="#"><img src="/imgs/icons/arrow-up-circle.svg" alt=""></a></div>
-            <div><a href="https://www.wuennan.cn/posts/prometheus%E7%9B%91%E6%8E%A7/rabbitmq%E7%9B%91%E6%8E%A7/"><img src="/imgs/icons/arrow-left-circle.svg" alt=""></a></div>
-            <div><a href="https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/12.-%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/"><img src="/imgs/icons/arrow-right-circle.svg" alt=""></a></div>
+            <div></div>
+            <div><a href="https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/14.-%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"><img src="/imgs/icons/arrow-right-circle.svg" alt=""></a></div>
         </div>
         
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#crond计划任务">crond计划任务</a></li>
-    <li><a href="#计划任务编写与实践">计划任务编写与实践</a></li>
-    <li><a href="#定时任务编写规范">定时任务编写规范</a></li>
-    <li><a href="#定时任务备份">定时任务备份</a></li>
+    <li><a href="#背景">背景</a></li>
+    <li><a href="#rabbitmq_exporter部署">rabbitmq_exporter部署</a></li>
+    <li><a href="#prometheus配置">Prometheus配置</a></li>
   </ul>
 </nav>
     </div>
 
     <div class='content  content '>
-        <h2 id="crond计划任务">crond计划任务</h2>
-<p><code>Crontab</code>配置文件记录了时间周期的含义</p>
-<pre tabindex="0"><code>[root@ennan ~]# cat /etc/crontab 
-SHELL=/bin/bash                             # 执行的命令解释器
-PATH=/sbin:/bin:/usr/sbin:/usr/bin          # 环境变量
-MAILTO=root                                 # 邮件发送给谁
-    
-# For details see man 4 crontabs
+        <p><strong>RabbitMQ安装rabbitmq_prometheus插件后，可支持Prometheus监控。</strong></p>
+<p><strong>可参考<a href="https://www.rabbitmq.com/prometheus.html">官方</a>文档。</strong></p>
+<p><strong>推荐直接使用官方方案，以下方案为三方方案。</strong></p>
+<h2 id="背景">背景</h2>
+<p>部署<code>RabbitMQ Exporter</code>实现对<code>RabbitMQ</code>的监控，需要准备<code>RabbitMQ</code>的登录信息。<a href="https://github.com/kbudde/rabbitmq_exporter">点击</a>跳转到项目地址。</p>
+<h2 id="rabbitmq_exporter部署">rabbitmq_exporter部署</h2>
+<p>在合适的节点部署<code>rabbitmq_exporter</code>，此节点需要与<code>RabbitMQ</code>和<code>Prometheus</code>均可通信。</p>
+<pre><code>cd /usr/local/src/
+wget https://github.com/kbudde/rabbitmq_exporter/releases/download/v1.0.0-RC19/rabbitmq_exporter_1.0.0-RC19_linux_amd64.tar.gz
+mkdir /opt/rabbitmq_exporter
+tar xf rabbitmq_exporter_1.0.0-RC19_linux_amd64.tar.gz -C /opt/rabbitmq_exporter
+</code></pre>
+<p>编辑配置文件，可参考<a href="https://github.com/kbudde/rabbitmq_exporter/blob/main/config.example.json">官方链接</a>。</p>
+<pre><code>cat /opt/rabbitmq_exporter/config.josn
+{
+    &quot;rabbit_url&quot;: &quot;http://10.66.3.247:15672&quot;,
+    &quot;rabbit_user&quot;: &quot;admin&quot;,
+    &quot;rabbit_pass&quot;: &quot;H23@20X4y8JD&quot;,
+    &quot;publish_port&quot;: &quot;9419&quot;
+}
+</code></pre>
+<p>通过 <code>systemd</code> 对服务进行管理</p>
+<pre><code>cat &gt; /etc/systemd/system/rabbitmq_exporter.service &lt;&lt; EOF
+[Unit]
+Description=RabbitMQ Exporter
+Requires=network-online.target
+After=network.target
 
-# Example of job definition:
-# .---------------- minute (0 - 59)                          # 分
-# |  .------------- hour (0 - 23)                            #时
-# |  |  .---------- day of month (1 - 31)                    #日
-# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...    #月
-# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7)      #星期
-# |  |  |  |  |
-# *  *  *  *  * user-name  command to be executed
-</code></pre><p><code>crontab</code>常用参数及选项。</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">参数</th>
-<th>解释</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">-e</td>
-<td>编辑定时任务</td>
-</tr>
-<tr>
-<td style="text-align:center">-l</td>
-<td>查看定时任务</td>
-</tr>
-<tr>
-<td style="text-align:center">-r</td>
-<td>删除定时任务</td>
-</tr>
-<tr>
-<td style="text-align:center">-u</td>
-<td>指定其他用户</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>使用-r会删除目前所有的定时任务，慎用</p>
-</blockquote>
-<h2 id="计划任务编写与实践">计划任务编写与实践</h2>
-<p>每5分钟执行一次时间同步</p>
-<pre tabindex="0"><code># 测试命令
-[root@ennan ~]# ntpdate ntp1.aliyun.com
-26 Aug 14:57:48 ntpdate[8147]: step time server 120.25.115.20 offset -2.430188 sec
-编写定时任务
-[root@ennan ~]# crontab -e
-# 查看定时任务
-[root@ennan ~]# crontab -l
-# 每5分钟执行一次时间同步
-*/5 * * * * /usr/sbin/ntpdate ntp1.aliyun.com &amp;&gt; /dev/null
-</code></pre><p>每天的下午3,5点，每隔半小时执行一次<code>sync</code>命令</p>
-<pre tabindex="0"><code>[root@ennan ~]# crontab -l
-# 每天的下午3,5点，每隔半小时执行一次sync命令
-*/30 15,17 * * * sync &amp;&gt; /dev/null
-</code></pre><p>每天凌晨3点做一次备份？备份<code>/etc/</code>目录到<code>/backup</code>下面
-(1) 将备份命令写入一个脚本中
-(2) 每天备份文件名要求格式: 2019-05-01_hostname_etc.tar.gz
-(3) 在执行计划任务时，不要输出任务信息
-(4) 存放备份内容的目录要求只保留三天的数据</p>
-<pre tabindex="0"><code># 根据要求编写脚本
-[root@ennan ~]# cat back.sh 
-mkdir -p /backup
-tar czf /backup/$(date +%F)_$(hostname)_etc.tar.gz /etc/
-find /backup/ -name &#34;etc.tar.gz&#34; -mtime +3 | xargs rm -f
-# 编写定时任务
-[root@ennan ~]# crontab -l
-# 每天三点备份/etc目录
-00 03 * * * bash /root/back.sh &amp;&gt; /dev/null
-</code></pre><h2 id="定时任务编写规范">定时任务编写规范</h2>
-<ol>
-<li>给定时任务注释。</li>
-<li>将需要定期执行的任务写入<code>Shell</code>脚本中，避免直接使用命令无法执行的情况<code>tar date</code>。</li>
-<li>定时任务的结尾一定要有<code>&amp;&gt;/dev/null</code>或者将结果追加重定向<code>&gt;&gt;/tmp/date.log</code>文件。</li>
-<li>注意有些命令是无法成功执行的<code>echo &quot;123&quot; &gt;&gt;/tmp/test.log &amp;&gt;/dev/null</code></li>
-<li>如果一定要是用命令，命令必须使用绝对路径。</li>
-</ol>
-<h2 id="定时任务备份">定时任务备份</h2>
-<p>定时的备份/var/spool/cron/{usernmae}</p>
+[Service]
+User=ops
+Group=ops
+Restart=on-failure
+ExecStart=/opt/rabbitmq_exporter/rabbitmq_exporter -config-file=/opt/rabbitmq_exporter/config.josn
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+TimeoutStopSec=5
 
+[Install]
+WantedBy=multi-user.target
+EOF
+</code></pre>
+<p>创建<code>ops</code>用户，用于运行<code>exporter</code>，并配置目录权限。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>useradd -M ops
+</span></span><span style="display:flex;"><span>chmod -R ops. rabbitmq_exporter/
+</span></span></code></pre></div><p>启动服务并加入开机自启。</p>
+<pre><code>systemctl daemon-reload
+systemctl enable rabbitmq_exporter.service
+systemctl start rabbitmq_exporter.service
+</code></pre>
+<p>验证服务</p>
+<pre><code>netstat -lnpt | grep rabbitmq
+tcp6       0      0 :::9419                 :::*                    LISTEN      697874/rabbitmq_exp
+</code></pre>
+<h2 id="prometheus配置">Prometheus配置</h2>
+<p><strong>Prometehus配置</strong></p>
+<p>在 <code>Prometheus</code> 的配置文件中添加如下内容。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="color:#000080">job_name</span>:<span style="color:#bbb"> </span>rabbitmq_exporter<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">honor_timestamps</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">true</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">scrape_interval</span>:<span style="color:#bbb"> </span>10s<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">scrape_timeout</span>:<span style="color:#bbb"> </span>10s<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">metrics_path</span>:<span style="color:#bbb"> </span>/metrics<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">scheme</span>:<span style="color:#bbb"> </span>http<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">follow_redirects</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">true</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">enable_http2</span>:<span style="color:#bbb"> </span><span style="color:#000;font-weight:bold">true</span><span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span><span style="color:#000080">static_configs</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">  </span>- <span style="color:#000080">targets</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb">    </span>- <span style="color:#099">10.66.3.128</span>:<span style="color:#099">9419</span><span style="color:#bbb">
+</span></span></span></code></pre></div><p>重新加载配置文件。</p>
+<pre><code>curl -XPOST http://localhost:9090/-/reload
+</code></pre>
+<p><strong>报警规则配置</strong></p>
+<p>添加告警规则</p>
+<pre tabindex="0"><code>  - alert: RabbitmqDown
+    expr: rabbitmq_up{service=&#34;{{ template &#34;rabbitmq.fullname&#34; . }}&#34;} == 0
+    for: 5m
+    labels:
+      severity: error
+    annotations:
+      summary: Rabbitmq down (instance {{ &#34;{{ $labels.instance }}&#34; }})
+      description: RabbitMQ node down
+  - alert: ClusterDown
+    expr: |
+      sum(rabbitmq_running{service=&#34;{{ template &#34;rabbitmq.fullname&#34; . }}&#34;})
+      &lt; {{ .Values.replicaCount }}
+    for: 5m
+    labels:
+      severity: error
+    annotations:
+      summary: Cluster down (instance {{ &#34;{{ $labels.instance }}&#34; }})
+      description: |
+          Less than {{ .Values.replicaCount }} nodes running in RabbitMQ cluster
+          VALUE = {{ &#34;{{ $value }}&#34; }}
+  - alert: ClusterPartition
+    expr: rabbitmq_partitions{service=&#34;{{ template &#34;rabbitmq.fullname&#34; . }}&#34;} &gt; 0
+    for: 5m
+    labels:
+      severity: error
+    annotations:
+      summary: Cluster partition (instance {{ &#34;{{ $labels.instance }}&#34; }})
+      description: |
+          Cluster partition
+          VALUE = {{ &#34;{{ $value }}&#34; }}
+  - alert: OutOfMemory
+    expr: |
+      rabbitmq_node_mem_used{service=&#34;{{ template &#34;rabbitmq.fullname&#34; . }}&#34;}
+      / rabbitmq_node_mem_limit{service=&#34;{{ template &#34;rabbitmq.fullname&#34; . }}&#34;}
+      * 100 &gt; 90
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: Out of memory (instance {{ &#34;{{ $labels.instance }}&#34; }})
+      description: |
+          Memory available for RabbmitMQ is low (&lt; 10%)\n  VALUE = {{ &#34;{{ $value }}&#34; }}
+          LABELS: {{ &#34;{{ $labels }}&#34; }}
+  - alert: TooManyConnections
+    expr: rabbitmq_connectionsTotal{service=&#34;{{ template &#34;rabbitmq.fullname&#34; . }}&#34;} &gt; 1000
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: Too many connections (instance {{ &#34;{{ $labels.instance }}&#34; }})
+      description: |
+          RabbitMQ instance has too many connections (&gt; 1000)
+          VALUE = {{ &#34;{{ $value }}&#34; }}\n  LABELS: {{ &#34;{{ $labels }}&#34; }}
+</code></pre>
     </div>
 
     

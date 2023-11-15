@@ -88,7 +88,7 @@
         <span>
             
             <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
-            6420 字</span>&nbsp;
+            6491 字</span>&nbsp;
         <span>
             
             <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
@@ -135,6 +135,8 @@
     <li><a href="#查看与过滤">查看与过滤</a>
       <ul>
         <li><a href="#cat命令">cat命令</a></li>
+        <li><a href="#less命令">less命令</a></li>
+        <li><a href="#more命令">more命令</a></li>
         <li><a href="#head命令">head命令</a></li>
         <li><a href="#tail命令">tail命令</a></li>
         <li><a href="#grep命令">grep命令</a></li>
@@ -184,12 +186,7 @@
     <div class='content  content '>
         <p>本章节，我们将认识 <code>Linux</code> 系统中常用的文件操作相关命令。</p>
 <h2 id="路径切换">路径切换</h2>
-<p>文件路径是指用来标识文件中数据位置的字符串，路径包文件所在的位置以文件名称，比如: <code>/etc/hostname</code>。我们可以通过路径对文件进行定位。</p>
-<p><strong>绝对路径</strong>：只要是以<code>/</code>开始的命令都算绝对路径。例如：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ls /etc/sysconfig/network-scripts/ifcfg-ens32</span>
-</span></span></code></pre></div><p><strong>相对路径</strong>：相对于当前目录的路径。例如：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost sysconfig<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cat network-scripts/ifcfg-ens32 </span>
-</span></span></code></pre></div><p>我们可以通过<code>cd</code> 命令切换目录。</p>
+<p>我们可以通过<code>cd</code> 命令切换目录。</p>
 <p><code>cd</code>命令常用的参数如下:</p>
 <table>
 <thead>
@@ -229,6 +226,11 @@
 </span></span><span style="display:flex;"><span>/etc/sysconfig/network-scripts
 </span></span></code></pre></div><p>回到上级目录。</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cd ..</span>
+</span></span></code></pre></div><p>文件路径是指用来标识文件中数据位置的字符串，路径包文件所在的位置以文件名称，比如: <code>/etc/hostname</code>。</p>
+<p><strong>绝对路径</strong>：只要是以<code>/</code>开始的命令都算绝对路径。例如：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ls /etc/sysconfig/network-scripts/ifcfg-ens32</span>
+</span></span></code></pre></div><p><strong>相对路径</strong>：相对于当前目录的路径。例如：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost sysconfig<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cat network-scripts/ifcfg-ens32 </span>
 </span></span></code></pre></div><h2 id="文件操作">文件操作</h2>
 <p>文件操作主要包括文件的创建、复制、移动、删除等。</p>
 <h3 id="mkdir命令">mkdir命令</h3>
@@ -388,34 +390,34 @@
 <tbody>
 <tr>
 <td style="text-align:center">-n</td>
-<td>查看文件时，显示行号</td>
+<td>查看文件时，显示行号。</td>
 </tr>
 <tr>
 <td style="text-align:center">-A</td>
-<td>查看文件时，显示特殊字符</td>
+<td>查看文件时，显示特殊字符。</td>
 </tr>
 </tbody>
 </table>
-<p>查看<code>pass</code>文件内容</p>
+<p>查看<code>pass</code>文件内容。</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cat pass </span>
 </span></span><span style="display:flex;"><span>root:x:0:0:root:/root:/bin/bash
 </span></span><span style="display:flex;"><span>bin:x:1:1:bin:/bin:/sbin/nologin
 </span></span><span style="display:flex;"><span>daemon:x:2:2:daemon:/sbin:/sbin/nologin
 </span></span><span style="display:flex;"><span>test17:x:1016:1016::/home/test17:/bin/bash
-</span></span></code></pre></div><p>查看<code>pass</code>文件内容并显示行号</p>
+</span></span></code></pre></div><p>查看<code>pass</code>文件内容并显示行号。</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cat -n pass </span>
 </span></span><span style="display:flex;"><span>1	root:x:0:0:root:/root:/bin/bash
 </span></span><span style="display:flex;"><span>2	bin:x:1:1:bin:/bin:/sbin/nologin
 </span></span><span style="display:flex;"><span>3	daemon:x:2:2:daemon:/sbin:/sbin/nologin
 </span></span><span style="display:flex;"><span>4	test17:x:1016:1016::/home/test17:/bin/bash
-</span></span></code></pre></div><p>查看<code>pass</code>文件内容并显示特殊字符</p>
+</span></span></code></pre></div><p>查看<code>pass</code>文件内容并显示特殊字符。</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cat -A pass</span>
 </span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 行尾$表示换行</span>
 </span></span><span style="display:flex;"><span>root:x:0:0:root:/root:/bin/bash$
 </span></span><span style="display:flex;"><span>bin:x:1:1:bin:/bin:/sbin/nologin$
 </span></span><span style="display:flex;"><span>daemon:x:2:2:daemon:/sbin:/sbin/nologin$
 </span></span><span style="display:flex;"><span>test17:x:1016:1016::/home/test17:/bin/bash$
-</span></span></code></pre></div><p>用<code>cat</code>创建一个文件，并写入内容</p>
+</span></span></code></pre></div><p>用<code>cat</code>创建一个文件，并写入内容。</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cat &gt;&gt; test.txt &lt;&lt;EOF</span>
 </span></span><span style="display:flex;"><span>&gt; TEST1
 </span></span><span style="display:flex;"><span>&gt; TEST2
@@ -425,6 +427,12 @@
 </span></span><span style="display:flex;"><span>TEST1
 </span></span><span style="display:flex;"><span>TEST2
 </span></span><span style="display:flex;"><span>TEST3
+</span></span></code></pre></div><h3 id="less命令">less命令</h3>
+<p>翻页查看文件内容，可通过方向/空格/回车键翻页。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># less /etc/services</span>
+</span></span></code></pre></div><h3 id="more命令">more命令</h3>
+<p>翻页查看文件内容，可通过空格/回车键翻页，并显示百分比。</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># more /etc/services</span>
 </span></span></code></pre></div><h3 id="head命令">head命令</h3>
 <p><code>head</code>命令用于打印前<code>n</code>行，常用的选项如下表：</p>
 <table>
@@ -442,7 +450,7 @@
 </tbody>
 </table>
 <p>使用<code>head</code>命令，不加任何参数，默认只打印前十行的内容。</p>
-<p>打印pass前3行内容，等同于<code>head -n 3 pass</code></p>
+<p>打印<code>pass</code>前3行内容，等同于<code>head -n 3 pass</code>。</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># head -3 pass </span>
 </span></span><span style="display:flex;"><span>root:x:0:0:root:/root:/bin/bash
 </span></span><span style="display:flex;"><span>bin:x:1:1:bin:/bin:/sbin/nologin
@@ -467,12 +475,12 @@
 </tr>
 </tbody>
 </table>
-<p><code>tail</code>默认打印文本的末尾10行，若需指定打印行数，可以通过<code>-n</code>实现，如打印文件的后3行内容</p>
+<p><code>tail</code>默认打印文本的末尾10行，若需指定打印行数，可以通过<code>-n</code>实现，如打印文件的后<code>3</code>行内容。</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># tail -3 pass </span>
 </span></span><span style="display:flex;"><span>test99:x:1098:1098::/home/test99:/bin/bash
 </span></span><span style="display:flex;"><span>test100:x:1099:1099::/home/test100:/bin/bash
 </span></span><span style="display:flex;"><span>apache:x:48:48:Apache:/usr/share/httpd:/sbin/nologin
-</span></span></code></pre></div><p>使用<code>tail -f</code>可以查看文件尾部的变化</p>
+</span></span></code></pre></div><p>使用<code>tail -f</code>可以查看文件尾部的变化。</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># tail -f /var/log/secure</span>
 </span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 等同于 tailf /var/log/secure</span>
 </span></span><span style="display:flex;"><span>Jul <span style="color:#099">29</span> 14:05:54 localhost sshd<span style="color:#000;font-weight:bold">[</span>8613<span style="color:#000;font-weight:bold">]</span>: error: Received disconnect from 10.0.0.1 port 61962:0:
@@ -576,14 +584,14 @@
 </span></span><span style="display:flex;"><span>sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
 </span></span><span style="display:flex;"><span>postfix:x:89:89::/var/spool/postfix:/sbin/nologin
 </span></span><span style="display:flex;"><span>xiaoyu:x:1000:1000:xiaoyuw:/home/xiaoyuw:/bin/bash
-</span></span></code></pre></div><p>不区分大小写过滤出含<code>ftp</code>的行</p>
+</span></span></code></pre></div><p>不区分大小写过滤出含<code>ftp</code>的行。</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># grep -i &#34;ftp&#34; /etc/passwd</span>
 </span></span><span style="display:flex;"><span>ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
-</span></span></code></pre></div><p>不区分大小写的打印出以<code>sync</code>结尾或者包含<code>ftp</code>的行</p>
+</span></span></code></pre></div><p>不区分大小写的打印出以<code>sync</code>结尾或者包含<code>ftp</code>的行。</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># grep -Ei &#34;sync$|ftp&#34; /etc/passwd</span>
 </span></span><span style="display:flex;"><span>sync:x:5:0:sync:/sbin:/bin/sync
 </span></span><span style="display:flex;"><span>ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
-</span></span></code></pre></div><p>过滤文件常用的符号</p>
+</span></span></code></pre></div><p>过滤文件常用的符号。</p>
 <table>
 <thead>
 <tr>

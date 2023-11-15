@@ -1,126 +1,126 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linux基础 on SNOOPY</title>
-    <link>https://www.wuennan.cn/categories/linux%E5%9F%BA%E7%A1%80/</link>
-    <description>Recent content in Linux基础 on SNOOPY</description>
+    <title>Linux基础 on SnoopyOPS</title>
+    <link>https://www.snoopyops.top/categories/linux%E5%9F%BA%E7%A1%80/</link>
+    <description>Recent content in Linux基础 on SnoopyOPS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 12 Jun 2023 16:19:32 +0800</lastBuildDate><atom:link href="https://www.wuennan.cn/categories/linux%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Jun 2023 16:19:32 +0800</lastBuildDate><atom:link href="https://www.snoopyops.top/categories/linux%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>定时任务</title>
-      <link>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/14.-%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</link>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/14.-%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</link>
       <pubDate>Mon, 12 Jun 2023 16:19:32 +0800</pubDate>
       
-      <guid>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/14.-%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</guid>
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/14.-%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</guid>
       <description>crond计划任务 Crontab配置文件记录了时间周期的含义 [root@ennan ~]# cat /etc/crontab SHELL=/bin/bash # 执行的命令解释器 PATH=/sbin:/bin:/usr/sbin:/usr/bin # 环境变量 MAILTO=root # 邮件发送给谁 # For details see man 4 crontabs # Example of job definition: # .---------------- minute (0 - 59) # 分 # |</description>
     </item>
     
     <item>
       <title>磁盘管理</title>
-      <link>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/12.-%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</link>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/12.-%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</link>
       <pubDate>Sat, 03 Jun 2023 13:55:19 +0800</pubDate>
       
-      <guid>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/12.-%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</guid>
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/12.-%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</guid>
       <description>本章节主要解释磁盘分区，磁盘阵列等磁盘相关知识。 磁盘分区 添加磁盘 在虚拟机中添加一个1T和4T的磁盘。 可以通过查看/dev下面的设备或者lsblk命令确认磁盘是否</description>
     </item>
     
     <item>
       <title>Linux软件安装</title>
-      <link>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/11.-linux%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</link>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/11.-linux%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</link>
       <pubDate>Thu, 01 Jun 2023 12:15:27 +0800</pubDate>
       
-      <guid>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/11.-linux%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</guid>
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/11.-linux%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</guid>
       <description>RPM RPM全称 Redhat Package Manager 缩写，由红帽开发用于软件包的安装升级卸载与查询。 rpm常用选项及说明如下表： 选项 说明 i 安装在rpm的软件包 v 显示安装的详细信息 h 显示安装的进度</description>
     </item>
     
     <item>
       <title>压缩与解压</title>
-      <link>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/10.-%E5%8E%8B%E7%BC%A9%E4%B8%8E%E8%A7%A3%E5%8E%8B/</link>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/10.-%E5%8E%8B%E7%BC%A9%E4%B8%8E%E8%A7%A3%E5%8E%8B/</link>
       <pubDate>Wed, 31 May 2023 17:09:34 +0800</pubDate>
       
-      <guid>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/10.-%E5%8E%8B%E7%BC%A9%E4%B8%8E%E8%A7%A3%E5%8E%8B/</guid>
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/10.-%E5%8E%8B%E7%BC%A9%E4%B8%8E%E8%A7%A3%E5%8E%8B/</guid>
       <description>在Linux常用的压缩格式如下表： 格式 压缩工具 .zip zip压缩工具（*） .gz gzip压缩工具，只能压缩文件，会删除原文件(通常配合tar使用) .bz2 bzip2压缩工具，只</description>
     </item>
     
     <item>
       <title>文件查找</title>
-      <link>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/9.-%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE/</link>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/9.-%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE/</link>
       <pubDate>Wed, 31 May 2023 11:55:28 +0800</pubDate>
       
-      <guid>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/9.-%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE/</guid>
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/9.-%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE/</guid>
       <description>文件查找 find命令可以根据不同的条件来进行查找文件，可根据文件名称、文件大小、文件修改时间、属主属组、权限、等方式查找相应的文件。 find基本用法 find命令</description>
     </item>
     
     <item>
       <title>Linux输入与输出</title>
-      <link>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/8.linux%E8%BE%93%E5%85%A5%E4%B8%8E%E8%BE%93%E5%87%BA/</link>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/8.linux%E8%BE%93%E5%85%A5%E4%B8%8E%E8%BE%93%E5%87%BA/</link>
       <pubDate>Tue, 30 May 2023 18:49:29 +0800</pubDate>
       
-      <guid>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/8.linux%E8%BE%93%E5%85%A5%E4%B8%8E%E8%BE%93%E5%87%BA/</guid>
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/8.linux%E8%BE%93%E5%85%A5%E4%B8%8E%E8%BE%93%E5%87%BA/</guid>
       <description>输入与输出 当运行一个程序时通常会自动打开三个标准文件，分别是标准输入、标准输出、错误输出。 在/dev下有些关于输入与输出的文件 [root@localhost ~]# ll /dev/std* # 将错误通过2输出 lrwxrwxrwx. 1 root root</description>
     </item>
     
     <item>
       <title>Linxu基础权限</title>
-      <link>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/7.linux%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/</link>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/7.linux%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/</link>
       <pubDate>Sat, 27 May 2023 19:13:18 +0800</pubDate>
       
-      <guid>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/7.linux%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/</guid>
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/7.linux%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/</guid>
       <description>基础权限 用户权限 在Linux系统中，针对文件定义了三种身份，分别是属主(owner)、属组(group)、其他人(others)，每一种身份又对应三种权限，分别</description>
     </item>
     
     <item>
       <title>用户与组</title>
-      <link>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/6.%E7%94%A8%E6%88%B7%E4%B8%8E%E7%BB%84/</link>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/6.%E7%94%A8%E6%88%B7%E4%B8%8E%E7%BB%84/</link>
       <pubDate>Wed, 24 May 2023 14:57:18 +0800</pubDate>
       
-      <guid>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/6.%E7%94%A8%E6%88%B7%E4%B8%8E%E7%BB%84/</guid>
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/6.%E7%94%A8%E6%88%B7%E4%B8%8E%E7%BB%84/</guid>
       <description>用户相关概念 Linux下我们为什么要创建用户？ 系统上的每一个进程(运行的程序)，都需要一个特定的用户运行。 通常在公司是使用普通用户管理服务器，因为root权限过</description>
     </item>
     
     <item>
       <title>Vim编辑器</title>
-      <link>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/5.vim%E7%BC%96%E8%BE%91%E5%99%A8/</link>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/5.vim%E7%BC%96%E8%BE%91%E5%99%A8/</link>
       <pubDate>Mon, 22 May 2023 12:14:38 +0800</pubDate>
       
-      <guid>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/5.vim%E7%BC%96%E8%BE%91%E5%99%A8/</guid>
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/5.vim%E7%BC%96%E8%BE%91%E5%99%A8/</guid>
       <description>vim常用的三种模式 在Linux系统中，我们常用vim对文本进行编辑。 vim有 命令模式，输入模式和底线命令模式，接下来我们将学习vim的常用用法。 vim命令模式</description>
     </item>
     
     <item>
       <title>Linux文件操作</title>
-      <link>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/4.linux%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/</link>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/4.linux%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Sun, 21 May 2023 20:13:41 +0800</pubDate>
       
-      <guid>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/4.linux%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/</guid>
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/4.linux%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/</guid>
       <description>本章节，我们将认识 Linux 系统中常用的文件操作相关命令。 路径切换 我们可以通过cd 命令切换目录。 cd命令常用的参数如下: 命令 解释 cd ~ 切换回当前用户的家目录，注意：roo</description>
     </item>
     
     <item>
       <title>Linux目录结构</title>
-      <link>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/3.linux%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/</link>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/3.linux%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/</link>
       <pubDate>Sat, 20 May 2023 18:04:31 +0800</pubDate>
       
-      <guid>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/3.linux%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/</guid>
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/3.linux%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/</guid>
       <description>目录简介 在Linux中一切皆文件，这些文件按照一定的规则存放在不同的目录当中。为了能够快速找到文件及以后的操作的规范性，我们必须记清楚Linux的目录结构。 Wi</description>
     </item>
     
     <item>
       <title>认识Bash Shell</title>
-      <link>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/2.%E8%AE%A4%E8%AF%86bash-shell/</link>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/2.%E8%AE%A4%E8%AF%86bash-shell/</link>
       <pubDate>Thu, 11 May 2023 17:43:31 +0800</pubDate>
       
-      <guid>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/2.%E8%AE%A4%E8%AF%86bash-shell/</guid>
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/2.%E8%AE%A4%E8%AF%86bash-shell/</guid>
       <description>初识Shell Shell就是终端程序的统称，它充当了人与内核（硬件）之间的翻译官，将用户输入的命令翻译给内核，内核处理完成之后，将结果返回。现在许多主流Linu</description>
     </item>
     
     <item>
       <title>虚拟机安装CentOS7</title>
-      <link>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/1.%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85centos7/</link>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/1.%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85centos7/</link>
       <pubDate>Thu, 11 May 2023 14:43:31 +0800</pubDate>
       
-      <guid>https://www.wuennan.cn/posts/linux%E5%9F%BA%E7%A1%80/1.%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85centos7/</guid>
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/1.%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85centos7/</guid>
       <description>本章节我们将学习如何安装创建一个Linux学习环境。 在初学Linux阶段，我们通常会使用虚拟机运行一个Linux的操作系统以供练习。 在windows上常用的虚拟</description>
     </item>
     

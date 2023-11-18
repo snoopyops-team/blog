@@ -89,6 +89,15 @@
     </item>
     
     <item>
+      <title>Linux常用命令</title>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/4.linux%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Sun, 21 May 2023 20:13:41 +0800</pubDate>
+      
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/4.linux%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/</guid>
+      <description>本章节，我们将认识 Linux 系统中常用的命令。 路径切换 比如: /etc/hostname，整个文件中包含文件名称以及文件所在的位置，我们将这个叫做路径，也就是说我们是通过</description>
+    </item>
+    
+    <item>
       <title>Linux文件操作</title>
       <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/4.linux%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Sun, 21 May 2023 20:13:41 +0800</pubDate>

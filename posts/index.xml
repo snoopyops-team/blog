@@ -45,46 +45,46 @@
     
     <item>
       <title>定时任务</title>
-      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/14.-%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</link>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/14.%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</link>
       <pubDate>Mon, 12 Jun 2023 16:19:32 +0800</pubDate>
       
-      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/14.-%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</guid>
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/14.%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</guid>
       <description>crond计划任务 Crontab配置文件记录了时间周期的含义 [root@ennan ~]# cat /etc/crontab SHELL=/bin/bash # 执行的命令解释器 PATH=/sbin:/bin:/usr/sbin:/usr/bin # 环境变量 MAILTO=root # 邮件发送给谁 # For details see man 4 crontabs # Example of job definition: # .---------------- minute (0 - 59) # 分 # |</description>
     </item>
     
     <item>
       <title>磁盘管理</title>
-      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/12.-%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</link>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/12.%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</link>
       <pubDate>Sat, 03 Jun 2023 13:55:19 +0800</pubDate>
       
-      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/12.-%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</guid>
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/12.%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</guid>
       <description>本章节主要解释磁盘分区，磁盘阵列等磁盘相关知识。 磁盘分区 添加磁盘 在虚拟机中添加一个1T和4T的磁盘。 可以通过查看/dev下面的设备或者lsblk命令确认磁盘是否</description>
     </item>
     
     <item>
       <title>Linux软件安装</title>
-      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/11.-linux%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</link>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/11.linux%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</link>
       <pubDate>Thu, 01 Jun 2023 12:15:27 +0800</pubDate>
       
-      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/11.-linux%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</guid>
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/11.linux%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</guid>
       <description>RPM RPM全称 Redhat Package Manager 缩写，由红帽开发用于软件包的安装升级卸载与查询。 rpm常用选项及说明如下表： 选项 说明 i 安装在rpm的软件包 v 显示安装的详细信息 h 显示安装的进度</description>
     </item>
     
     <item>
       <title>压缩与解压</title>
-      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/10.-%E5%8E%8B%E7%BC%A9%E4%B8%8E%E8%A7%A3%E5%8E%8B/</link>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/10.%E5%8E%8B%E7%BC%A9%E4%B8%8E%E8%A7%A3%E5%8E%8B/</link>
       <pubDate>Wed, 31 May 2023 17:09:34 +0800</pubDate>
       
-      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/10.-%E5%8E%8B%E7%BC%A9%E4%B8%8E%E8%A7%A3%E5%8E%8B/</guid>
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/10.%E5%8E%8B%E7%BC%A9%E4%B8%8E%E8%A7%A3%E5%8E%8B/</guid>
       <description>在Linux常用的压缩格式如下表： 格式 压缩工具 .zip zip压缩工具（*） .gz gzip压缩工具，只能压缩文件，会删除原文件(通常配合tar使用) .bz2 bzip2压缩工具，只</description>
     </item>
     
     <item>
       <title>文件查找</title>
-      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/9.-%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE/</link>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/9.%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE/</link>
       <pubDate>Wed, 31 May 2023 11:55:28 +0800</pubDate>
       
-      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/9.-%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE/</guid>
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/9.%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE/</guid>
       <description>文件查找 find命令可以根据不同的条件来进行查找文件，可根据文件名称、文件大小、文件修改时间、属主属组、权限、等方式查找相应的文件。 find基本用法 find命令</description>
     </item>
     
@@ -122,15 +122,6 @@
       
       <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/5.vim%E7%BC%96%E8%BE%91%E5%99%A8/</guid>
       <description>vim常用的三种模式 在Linux系统中，我们常用vim对文本进行编辑。 vim有 命令模式，输入模式和底线命令模式，接下来我们将学习vim的常用用法。 vim命令模式</description>
-    </item>
-    
-    <item>
-      <title>Linux常用命令</title>
-      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/4.linux%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/</link>
-      <pubDate>Sun, 21 May 2023 20:13:41 +0800</pubDate>
-      
-      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/4.linux%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/</guid>
-      <description>本章节，我们将认识 Linux 系统中常用的命令。 路径切换 比如: /etc/hostname，整个文件中包含文件名称以及文件所在的位置，我们将这个叫做路径，也就是说我们是通过</description>
     </item>
     
     <item>

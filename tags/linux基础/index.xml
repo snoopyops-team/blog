@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 03 Jun 2023 13:55:19 +0800</lastBuildDate><atom:link href="https://www.snoopyops.top/tags/linux%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>磁盘管理</title>
-      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/12.-%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</link>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/12.%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</link>
       <pubDate>Sat, 03 Jun 2023 13:55:19 +0800</pubDate>
       
-      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/12.-%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</guid>
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/12.%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</guid>
       <description>本章节主要解释磁盘分区，磁盘阵列等磁盘相关知识。 磁盘分区 添加磁盘 在虚拟机中添加一个1T和4T的磁盘。 可以通过查看/dev下面的设备或者lsblk命令确认磁盘是否</description>
     </item>
     

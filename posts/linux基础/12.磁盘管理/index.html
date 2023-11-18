@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="磁盘管理 - https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/12.%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/">
+    <meta name="author" content="snoopy - https://www.snoopyops.top/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>磁盘管理</title>
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-webfont/1.7.0/style.min.css" />
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" />
+    
+    <link rel="stylesheet" href="https://www.snoopyops.top/style.min.6bbccf0916939df698171c34d30f896276712c30bd56be0d7fd8023e1b00c3d9.css">
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+</head>
+<body class="active-animate cool">
+        <div class="cool-before" style="background: url('/imgs/bg/foxgirl.jpg') center center/cover no-repeat fixed;"></div>
+        <div id="header" class=""><div class="container-header">
+    
+    
+    <div class="right">
+        
+        <h1 class="title">磁盘管理</h1>
+    
+        
+            
+            <div id="toc">📜</div>
+        
+    </div>
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+<div class="container-main container-page ">
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7409" width="12" height="12"><path d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z" p-id="7410" fill="#adb5bd"></path></svg>
+            2023-06-03&nbsp;&nbsp;&nbsp;
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="23838" width="11" height="11"><path d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z" p-id="23839" fill="#adb5bd"></path></svg>
+            2023-06-03&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
+            2342 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
+            5 分钟</span>
+            <div class="container-ctgtag">
+	<div class="taxonomy">
+		<div class="tag">
+			
+			
+			<a href="/tags/linux%E5%9F%BA%E7%A1%80">Linux基础</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+    
+    <div class="toc">
+        <div class="container-page-operation">
+	<div class="page-operation">
+		<div><a href="/"><img src="/imgs/icons/home-2.svg" alt=""></a></div>
+		<div><a href="/nav"><img src="/imgs/icons/iov-navigate-1.svg" alt=""></a></div>
+		<div><a href="/tags"><img src="/imgs/icons/treetags.svg" alt=""></a></div>
+		<div id="light-dark"><a><img src="/imgs/icons/moon2.svg" alt=""></a></div>
+		<div><a href="#"><img src="/imgs/icons/up2.svg" alt=""></a></div>
+	</div>
+</div>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#磁盘分区">磁盘分区</a>
+      <ul>
+        <li><a href="#fdisk工具">fdisk工具</a></li>
+        <li><a href="#gdisk工具">gdisk工具</a></li>
+      </ul>
+    </li>
+    <li><a href="#mount挂载">mount挂载</a></li>
+    <li><a href="#swap交换分区">swap交换分区</a></li>
+    <li><a href="#磁盘阵列">磁盘阵列</a></li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  '>
+        <p>本章节主要解释磁盘分区，磁盘阵列等磁盘相关知识。</p>
+<h2 id="磁盘分区">磁盘分区</h2>
+<p><strong>添加磁盘</strong>
+在虚拟机中添加一个1T和4T的磁盘。
+<img src="https://images.wuennan.cn/8505400-81279eee3198bcf1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="添加磁盘"></p>
+<p>可以通过查看<code>/dev</code>下面的设备或者<code>lsblk</code>命令确认磁盘是否添加成功。</p>
+<pre tabindex="0"><code>[root@localhost ~]# ll /dev/sd*
+brw-rw----. 1 root disk 8,  0 Aug 19 19:32 /dev/sda
+brw-rw----. 1 root disk 8,  1 Aug 19 19:32 /dev/sda1
+brw-rw----. 1 root disk 8,  2 Aug 19 19:32 /dev/sda2
+brw-rw----. 1 root disk 8,  3 Aug 19 19:32 /dev/sda3
+# /dev/sdb /dev/sdc为新添加的磁盘
+brw-rw----. 1 root disk 8, 16 Aug 19 19:32 /dev/sdb
+brw-rw----. 1 root disk 8, 32 Aug 19 19:32 /dev/sdc
+
+[root@localhost ~]# lsblk 
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda      8:0    0   20G  0 disk 
+├─sda1   8:1    0    1G  0 part /boot
+├─sda2   8:2    0  800M  0 part [SWAP]
+└─sda3   8:3    0 18.2G  0 part /
+# /dev/sdb /dev/sdc为新添加的磁盘
+sdb      8:16   0    1T  0 disk 
+sdc      8:32   0    4T  0 disk 
+sr0     11:0    1  4.3G  0 rom  
+</code></pre><h3 id="fdisk工具">fdisk工具</h3>
+<p><code>fdisk</code>仅可针对<code>2T</code>以下的磁盘进行分区操作。</p>
+<p><strong>创建分区</strong></p>
+<p>通过<code>fdisk</code>创建主分区。</p>
+<pre tabindex="0"><code>[root@localhost ~]# fdisk /dev/sdb 
+Welcome to fdisk (util-linux 2.23.2).
+
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
+
+Device does not contain a recognized partition table
+Building a new DOS disklabel with disk identifier 0xaa8a2dfe.
+
+Command (m for help): n
+Partition type:
+   p   primary (0 primary, 0 extended, 4 free)     # p为主分区
+   e   extended   # e为扩展分区
+Select (default p):  # 默认为p
+Using default response p
+Partition number (1-4, default 1): 
+First sector (2048-2147483647, default 2048): 
+Using default value 2048
+Last sector, +sectors or +size{K,M,G} (2048-2147483647, default 2147483647): +10G  #选择创建的分区大小
+Partition 1 of type Linux and of size 10 GiB is set
+
+Command (m for help): p
+
+Disk /dev/sdb: 1099.5 GB, 1099511627776 bytes, 2147483648 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk label type: dos
+Disk identifier: 0xaa8a2dfe
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdb1            2048    20973567    10485760   83  Linux
+</code></pre><p>创建扩展分区</p>
+<pre tabindex="0"><code>Command (m for help): n       
+Partition type:
+   p   primary (1 primary, 0 extended, 3 free)
+   e   extended
+Select (default p): e
+Partition number (2-4, default 2): 
+First sector (20973568-2147483647, default 20973568): 
+Using default value 20973568
+Last sector, +sectors or +size{K,M,G} (20973568-2147483647, default 2147483647): 
+Using default value 2147483647
+Partition 2 of type Extended and of size 1014 GiB is set
+
+Command (m for help): p
+
+Disk /dev/sdb: 1099.5 GB, 1099511627776 bytes, 2147483648 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk label type: dos
+Disk identifier: 0xaa8a2dfe
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdb1            2048    20973567    10485760   83  Linux
+/dev/sdb2        20973568  2147483647  1063255040    5  Extended
+</code></pre><p>创建逻辑分区</p>
+<pre tabindex="0"><code>Command (m for help): n
+Partition type:
+   p   primary (1 primary, 1 extended, 2 free)
+   l   logical (numbered from 5)
+Select (default p): l
+Adding logical partition 5
+First sector (20975616-2147483647, default 20975616): 
+Using default value 20975616
+Last sector, +sectors or +size{K,M,G} (20975616-2147483647, default 2147483647): +20G
+Partition 5 of type Linux and of size 20 GiB is set
+
+Command (m for help): p
+
+Disk /dev/sdb: 1099.5 GB, 1099511627776 bytes, 2147483648 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk label type: dos
+Disk identifier: 0xaa8a2dfe
+
+   Device Boot      Start         End      Blocks   Id  System
+/dev/sdb1            2048    20973567    10485760   83  Linux
+/dev/sdb2        20973568  2147483647  1063255040    5  Extended
+/dev/sdb5        20975616    62918655    20971520   83  Linux
+</code></pre><p>保存分区信息</p>
+<pre tabindex="0"><code>Command (m for help): w
+The partition table has been altered!
+
+Calling ioctl() to re-read partition table.
+Syncing disks.
+</code></pre><p>查看分区信息</p>
+<pre tabindex="0"><code>[root@localhost ~]# lsblk 
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda      8:0    0   20G  0 disk 
+├─sda1   8:1    0    1G  0 part /boot
+├─sda2   8:2    0  800M  0 part [SWAP]
+└─sda3   8:3    0 18.2G  0 part /
+sdb      8:16   0    1T  0 disk 
+├─sdb1   8:17   0   10G  0 part 
+├─sdb2   8:18   0    1K  0 part 
+└─sdb5   8:21   0   20G  0 part 
+sdc      8:32   0    4T  0 disk 
+sr0     11:0    1  4.3G  0 rom 
+</code></pre><p>格式化磁盘</p>
+<pre tabindex="0"><code>[root@localhost ~]# mkfs.xfs /dev/sdb1
+# 将/dev/sdb1格式化为xfs格式
+meta-data=/dev/sdb1              isize=512    agcount=4, agsize=655360 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=0, sparse=0
+data     =                       bsize=4096   blocks=2621440, imaxpct=25
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
+log      =internal log           bsize=4096   blocks=2560, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+[root@localhost ~]# mkfs.xfs /dev/sdb5
+# 将/dev/sdb5格式化为xfs格式
+meta-data=/dev/sdb5              isize=512    agcount=4, agsize=1310720 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=0, sparse=0
+data     =                       bsize=4096   blocks=5242880, imaxpct=25
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
+log      =internal log           bsize=4096   blocks=2560, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+</code></pre><p>挂载</p>
+<pre tabindex="0"><code>[root@localhost ~]# mkdir /sdb1
+[root@localhost ~]# mkdir /sdb5
+[root@localhost ~]# mount /dev/sdb1 /sdb1
+[root@localhost ~]# mount /dev/sdb5 /sdb5
+</code></pre><p>查看挂在后的空间</p>
+<pre tabindex="0"><code>[root@localhost ~]# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda3        19G   19G   33M 100% /
+devtmpfs        476M     0  476M   0% /dev
+tmpfs           487M     0  487M   0% /dev/shm
+tmpfs           487M  7.7M  479M   2% /run
+tmpfs           487M     0  487M   0% /sys/fs/cgroup
+/dev/sda1      1014M  127M  888M  13% /boot
+tmpfs            98M     0   98M   0% /run/user/0
+/dev/sdb1        10G   33M   10G   1% /sdb1
+/dev/sdb5        20G   33M   20G   1% /sdb5
+</code></pre><h3 id="gdisk工具">gdisk工具</h3>
+<p>大于<code>2T</code>的磁盘，需要使用<code>gdisk</code>进行分区。</p>
+<p>安装<code>gdisk</code>。</p>
+<pre tabindex="0"><code>[root@localhost ~]# yum install gdisk
+</code></pre><p>通过<code>gdisk</code>对磁盘进行分区。</p>
+<pre tabindex="0"><code>[root@localhost ~]# gdisk /dev/sdc
+Command (? for help): n      # 新建分区
+Partition number (1-128, default 1): 
+First sector (2048-8589934558, default = 2048) or {+-}size{KMGTP}: 
+Last sector (2048-8589934558, default = 8589934558) or {+-}size{KMGTP}: +2T      #创建2T的分区
+Current type is &#39;Linux filesystem&#39;
+Hex code or GUID (L to show codes, Enter = 8300): 
+Changed type of partition to &#39;Linux filesystem&#39;
+
+Command (? for help): n    # 新建分区
+Partition number (2-128, default 2): 
+First sector (4294969344-8589934558, default = 4294969344) or {+-}size{KMGTP}: 
+Last sector (4294969344-8589934558, default = 8589934558) or {+-}size{KMGTP}: 
+Current type is &#39;Linux filesystem&#39;
+Hex code or GUID (L to show codes, Enter = 8300): 
+Changed type of partition to &#39;Linux filesystem&#39;
+
+Command (? for help): w
+# 保存分区信息
+Final checks complete. About to write GPT data. THIS WILL OVERWRITE EXISTING
+PARTITIONS!!
+
+Do you want to proceed? (Y/N): Y
+OK; writing new GUID partition table (GPT) to /dev/sdc.
+The operation has completed successfully.
+</code></pre><p>查看分区信息。</p>
+<pre tabindex="0"><code>[root@localhost ~]# lsblk 
+sdc      8:32   0    4T  0 disk 
+├─sdc1   8:33   0    2T  0 part 
+└─sdc2   8:34   0    2T  0 part  
+</code></pre><p>格式化分区。</p>
+<pre tabindex="0"><code>[root@localhost ~]# mkfs.xfs /dev/sdc1
+meta-data=/dev/sdc1              isize=512    agcount=4, agsize=134217728 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=0, sparse=0
+data     =                       bsize=4096   blocks=536870912, imaxpct=5
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
+log      =internal log           bsize=4096   blocks=262144, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+[root@localhost ~]# mkfs.xfs /dev/sdc2
+meta-data=/dev/sdc2              isize=512    agcount=4, agsize=134217663 blks
+         =                       sectsz=512   attr=2, projid32bit=1
+         =                       crc=1        finobt=0, sparse=0
+data     =                       bsize=4096   blocks=536870651, imaxpct=5
+         =                       sunit=0      swidth=0 blks
+naming   =version 2              bsize=4096   ascii-ci=0 ftype=1
+log      =internal log           bsize=4096   blocks=262143, version=2
+         =                       sectsz=512   sunit=0 blks, lazy-count=1
+realtime =none                   extsz=4096   blocks=0, rtextents=0
+</code></pre><p>创建挂载点，并将分区挂载到指定的目录。</p>
+<pre tabindex="0"><code>[root@localhost ~]# mkdir -p /data/sdc1 /data/sdc2
+[root@localhost ~]# mount /dev/sdc1 /data/sdc1
+[root@localhost ~]# mount /dev/sdc2 /data/sdc2
+</code></pre><p>检查挂载详情。</p>
+<pre tabindex="0"><code>[root@localhost ~]# df -h
+/dev/sdc1       2.0T   33M  2.0T   1% /data/sdc1
+/dev/sdc2       2.0T   33M  2.0T   1% /data/sdc2
+</code></pre><h2 id="mount挂载">mount挂载</h2>
+<p>通过设备名称或者<code>UUID</code>挂载设备。</p>
+<pre tabindex="0"><code># 通过设备名称挂载
+[root@localhost ~]# mount /dev/sdc1 /data/sdc1
+# 通过UUID称挂载
+[root@localhost ~]# blkid /dev/sdc2
+/dev/sdc2: UUID=&#34;a78ece78-4570-4555-bbd5-7f3c723a5f56&#34; TYPE=&#34;xfs&#34; PARTLABEL=&#34;Linux filesystem&#34; PARTUUID=&#34;569cd012-bb0a-4a87-8471-e056ced2d214&#34;
+[root@localhost ~]# mount UUID=&#34;a78ece78-4570-4555-bbd5-7f3c723a5f56&#34; /data/sdc2
+[root@localhost ~]# df -h
+/dev/sdc1       2.0T   33M  2.0T   1% /data/sdc1
+/dev/sdc2       2.0T   33M  2.0T   1% /data/sdc2
+</code></pre><p>卸载设备。</p>
+<pre tabindex="0"><code>[root@localhost ~]# umount /dev/sdc1
+[root@localhost ~]# umount /data/sdc2
+</code></pre><p>设置开机自动挂载。
+查看设备的<code>UUID</code>。</p>
+<pre tabindex="0"><code>[root@localhost ~]# blkid /dev/sdc1
+/dev/sdc1: UUID=&#34;fb268812-69fc-4b4f-b4e6-1dd60351059e&#34; TYPE=&#34;xfs&#34; PARTLABEL=&#34;Linux filesystem&#34; PARTUUID=&#34;e176d454-9b18-49d9-873b-477ab33943e5&#34;
+[root@localhost ~]# blkid /dev/sdc2
+/dev/sdc2: UUID=&#34;a78ece78-4570-4555-bbd5-7f3c723a5f56&#34; TYPE=&#34;xfs&#34; PARTLABEL=&#34;Linux filesystem&#34; PARTUUID=&#34;569cd012-bb0a-4a87-8471-e056ced2d214&#34; 
+</code></pre><p>编辑<code>/etc/fstab</code>文件，添加要挂载的设备信息。</p>
+<pre tabindex="0"><code>[root@localhost ~]# tail -2 /etc/fstab
+UUID=fb268812-69fc-4b4f-b4e6-1dd60351059e /data/sdc1 xfs defaults 0 0
+UUID=a78ece78-4570-4555-bbd5-7f3c723a5f56 /data/sdc2 xfs defaults 0 0
+</code></pre><p>加载<code>/etc/fstab</code>文件，并同时检验语法是否存在错误。</p>
+<pre tabindex="0"><code>[root@localhost ~]# mount -a
+</code></pre><p>重启服务器，验证结果。</p>
+<pre tabindex="0"><code>[root@localhost ~]# reboot
+[root@localhost ~]# df -h
+/dev/sdc1       2.0T   33M  2.0T   1% /data/sdc1
+/dev/sdc2       2.0T   33M  2.0T   1% /data/sdc2
+</code></pre><p><code>/etc/fstab</code>文件含义。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">要挂载的设备</th>
+<th style="text-align:center">挂载点</th>
+<th style="text-align:center">文件系统</th>
+<th style="text-align:center">挂载参数</th>
+<th style="text-align:center">是否备份</th>
+<th style="text-align:center">是否检查</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">UUID=</td>
+<td style="text-align:center">/data/sdc2</td>
+<td style="text-align:center">xfs</td>
+<td style="text-align:center">defaults</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center">0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="swap交换分区">swap交换分区</h2>
+<p>当内存不够时，<code>swap</code>分区会充当内存，防止系统出现<code>oom</code> <code>(out of memroy)</code>故障。 但是如果使用了<code>swap</code>分区，系统会变的特别卡。</p>
+<p>对<code>swap</code>分区进行操作
+创建分区，并格式化为<code>swap</code>格式。</p>
+<pre tabindex="0"><code>[root@localhost ~]# fdisk /dev/sdb
+[root@localhost ~]# lsblk /dev/sdb 
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sdb      8:16   0  300G  0 disk 
+└─sdb1   8:17   0    1G  0 part
+
+[root@localhost ~]# mkswap /dev/sdb1
+mkswap: /dev/sdb1: warning: wiping old xfs signature.
+Setting up swapspace version 1, size = 1048572 KiB
+no label, UUID=ff384ce5-9132-4f52-8af8-be2c8724057a
+</code></pre><p>扩展<code>swap</code>分区。</p>
+<pre tabindex="0"><code>[root@localhost ~]# free -m
+              total        used        free      shared  buff/cache   available
+Mem:            972          95         739           7         137         718
+Swap:           799           0         799
+
+[root@localhost ~]# swapon /dev/sdb1
+[root@localhost ~]# free -m
+              total        used        free      shared  buff/cache   available
+Mem:            972          95         738           7         137         717
+Swap:          1823           0        1823
+</code></pre><p>缩小<code>swap</code>分区。</p>
+<pre tabindex="0"><code>[root@localhost ~]# free -m
+              total        used        free      shared  buff/cache   available
+Mem:            972         103         691           7         177         688
+Swap:          1823           0        1823
+[root@localhost ~]# swapoff /dev/sdb1
+[root@localhost ~]# free -m
+              total        used        free      shared  buff/cache   available
+Mem:            972         102         692           7         177         689
+Swap:           799           0         799
+</code></pre><p>关闭所有的<code>swap</code>。</p>
+<pre tabindex="0"><code>[root@localhost ~]# swapoff -a
+[root@localhost ~]# free -m
+              total        used        free      shared  buff/cache   available
+Mem:            972         103         691           7         177         688
+Swap:             0           0           0
+</code></pre><p>检查当前<code>swap</code>分区有哪些设备。</p>
+<pre tabindex="0"><code>[root@localhost ~]# swapon /dev/sdb1
+[root@localhost ~]# swapon -s
+Filename				Type		Size	Used	Priority
+/dev/sda2                              	partition	819196	0	-2
+/dev/sdb1                              	partition	1048572	0	-3
+</code></pre><h2 id="磁盘阵列">磁盘阵列</h2>
+<p>RAID0：条带卷，最少需要两块硬盘，读写性能好，但是没有容错机制。
+<img src="https://images.wuennan.cn/8505400-2146265ada453234.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="RAID0"></p>
+<p>RAID1：镜像卷，读写性能一般，有容错机制，磁盘利用率为50%。
+<img src="https://images.wuennan.cn/8505400-17d1a2e190ba480b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="RAID1"></p>
+<p>RAID5：校验卷，至少3块硬盘，仅允许坏一块硬盘，硬盘的利用率为(n-1)/n，读写较快。
+<img src="https://images.wuennan.cn/8505400-4377fd38e15ccf01.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="RAID5"></p>
+<p>RAID10：RAID0和RAID1的组合，具有RAID0的读写速度和RAID1的容错机制，但是磁盘利用率为50%。
+<img src="https://images.wuennan.cn/8505400-991c0e41414b2115.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="RAID10"></p>
+
+    </div>
+    
+    
+
+    
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+    
+
+    <div class="beian">
+        
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=">
+            
+
+        </a>
+
+        <a href="" target="_blank">
+            
+            京ICP备19043544号-3
+            
+        </a>
+    </div>
+
+    <div class="info">
+        <a href="https://github.com/loveminimal/hugo-theme-virgo">Copyright</a> © 2016 - <span id="info-date"></span>
+    </div>
+
+</div></div>
+        <div class="cool-after" style="background-color: rgba(255, 255, 255, 0.81);"></div>
+    </body>
+</html>

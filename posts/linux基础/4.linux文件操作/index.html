@@ -57,7 +57,7 @@
         <span>
             
             <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
-            7028 字</span>&nbsp;
+            7432 字</span>&nbsp;
         <span>
             
             <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
@@ -977,7 +977,7 @@
 </span></span><span style="display:flex;"><span>nobody:x:99:99:Nobody:/:/sbin/nologin
 </span></span><span style="display:flex;"><span>systemd-network:x:192:192:systemd Network Management:/:/sbin/nologin
 </span></span><span style="display:flex;"><span>dbus:x:81:81:System message bus:/:/sbin/nologin
-</span></span><span style="display:flex;"><span>polkitd:x:999:998:User <span style="color:#000;font-weight:bold">for</span> polkitd:/:/sbin/nologin
+</span></span><span style="display:flex;"><span>polkitd:x:999:998:User forf polkitd:/:/sbin/nologin
 </span></span><span style="display:flex;"><span>sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
 </span></span><span style="display:flex;"><span>postfix:x:89:89::/var/spool/postfix:/sbin/nologin
 </span></span></code></pre></td></tr></table>
@@ -1306,31 +1306,36 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="软链接和硬链接">软链接和硬链接</h2>
-<p>在<code>Linux</code>的文件系统中，保存在磁盘分区中的文件，不管是什么类型，系统都会给它分配一个编号，这个编号被称为索引节点编号（Inode Index），它是该文件或者目录在<code>Linux</code>文件系统中的唯一标识。有了这个编号值，就可以查到该文件的详细内容。</p>
-<p>同时，<code>Linux</code>系统还规定，可以允许多个文件名同时指向同一个索引节点（Inode），这就是<strong>硬链接</strong>。这样设计有一个好处就是，只要文件的索引节点还存在一个以上的链接，删除其中一个链接并不影响索引节点本身和其他的链接（也就是说该文件的实体并未删除），而只有当最后一个链接被删除后，且此时有新数据要存储到磁盘上，那么被删除的文件的数据块及目录的链接才会被释放，存储空间才会被新数据所覆盖。因此，该机制可以有效的防止误删操作。</p>
-<p><strong>硬链接</strong>只能在同一类型的文件系统中进行链接，不能跨文件系统。同时它只能对文件进行链接，不能链接目录。</p>
-<p><strong>软链接</strong>（也叫符号链接），类似于windows系统中的快捷方式，与硬链接不同，软链接就是一个普通文件，只是数据块内容有点特殊，文件用户数据块中存放的内容是另一文件的路径名的指向，通过这个方式可以快速定位到软连接所指向的源文件实体。</p>
+<p>在<code>Linux</code>系统中，我们可以把一个文件看做文件名、文件内容和描述信息三个部分组成。</p>
+<p><strong>文件名</strong>：从用户角度来描述一个文件。
+<strong>文件内容</strong>：文件中存储的数据，系统会从硬盘上划分一块区域，用来存放文件本身的内容(数据)，这块区域按照一个最小单位块(<code>block</code>)来进行划分。
+<strong>描述信息</strong>：文件的类型、所有者、创建时间等等，也称之为元信息。每一个文件的描述信息，都用一个名为索引节点(<code>inode</code>)的数据结构来表示。</p>
+<p>一个文件的索引节点(<code>inode</code>)中，除了记录了这个文件的所有描述信息，包括：文件类型、所有者、创建时间等，当然也记录了文件内容存储在硬盘的哪些块(<code>block</code>)中。</p>
+<p>当我们打开文件时候，操作系统首先根据传入的文件路径，找到这个文件的<code>inode</code>，然后进行一系列的权限检查操作，最后从<code>inode</code>中获得这个文件的内容存储在哪些块(<code>block</code>)中，从而可以对文件的内容进行读取、写入操作。
+当我们创建一个新文件的时候，就同时创建了这个文件对应的<code>inode</code>节点。
+当我们删除一个文件的时候，就同时删除了这个文件对应的<code>inode</code>节点。文件本身内容所在的那个块中，数据并不会被抹除掉，因此有些数据恢复软件就是利用这个特点来进行数据找回。</p>
 <h3 id="硬链接">硬链接</h3>
-<p>相当于给同一个文件，取了多个别名。</p>
+<p>多个文件名同时指向同一个索引节点（<code>Inode</code>），就是<strong>硬链接</strong>。<code>inode</code>通过<code>links</code>字段表示指<code>inode</code>的硬链接数量，当<code>links</code>为<code>0</code>时，操纵系统就会把这个 <code>inode</code> 删除了，于是这个文件就彻底不存在了。</p>
+<p><img src="https://images.snoopyops.top/hard_link.jpg" alt="硬链接"></p>
 <p>我们可以通过<code>ln</code>命令创建连接。</p>
-<p>准备一个测试文件。</p>
+<p>准备一个测试文件，此时<code>links</code>为<code>1</code>。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cat test.txt</span>
-</span></span><span style="display:flex;"><span>wuennan
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cat a.txt</span>
+</span></span><span style="display:flex;"><span>snoopyops.top
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>创建硬链接。</p>
+</div><p>创建硬链接，此时<code>links</code>为<code>2</code>。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ln test.txt  test_hard.txt</span>
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ln test.txt a_hard_link.txt</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>查看文件，这两个文件就如同一个文件一样，<code>inode</code> 值相同，都指向同一个区块。</p>
@@ -1342,8 +1347,8 @@
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ll -i</span>
-</span></span><span style="display:flex;"><span><span style="color:#099">100682319</span> -rw-r--r--. <span style="color:#099">2</span> root    root          <span style="color:#099">8</span> 5月  <span style="color:#099">23</span> 14:59 test_hard.txt
-</span></span><span style="display:flex;"><span><span style="color:#099">100682319</span> -rw-r--r--. <span style="color:#099">2</span> root    root          <span style="color:#099">8</span> 5月  <span style="color:#099">23</span> 14:59 test.txt
+</span></span><span style="display:flex;"><span><span style="color:#099">100682319</span> -rw-r--r--. <span style="color:#099">2</span> root    root          <span style="color:#099">8</span> 5月  <span style="color:#099">23</span> 14:59 a_hard_link.txt
+</span></span><span style="display:flex;"><span><span style="color:#099">100682319</span> -rw-r--r--. <span style="color:#099">2</span> root    root          <span style="color:#099">8</span> 5月  <span style="color:#099">23</span> 14:59 a
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>修改文件内容，两个文件均发生变化。</p>
@@ -1355,13 +1360,13 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># echo &#34;New line&#34; &gt;&gt; test_hard.txt</span>
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># echo &#34;New line&#34; &gt;&gt; a_hard_link.txt</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cat test.txt</span>
-</span></span><span style="display:flex;"><span>wuennan
+</span></span><span style="display:flex;"><span>snoopyops.top
 </span></span><span style="display:flex;"><span>New line
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>删除源文件后，硬链接依然生效。</p>
+</div><p>删除源文件后，此时<code>links</code>变为<code>1</code>，通过硬链接的文件名依然可以找到数据。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -1370,14 +1375,28 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># rm test.txt</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cat test_hard.txt</span>
-</span></span><span style="display:flex;"><span>wuennan
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># rm a.txt</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cat a_hard_link.txt</span>
+</span></span><span style="display:flex;"><span>snoopyops.top
 </span></span><span style="display:flex;"><span>New line
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="软链接">软链接</h3>
+</div><p><strong>硬链接作用</strong></p>
+<p>该机制可以有效的防止误删操作。</p>
+<p><strong>硬链接的限制</strong></p>
+<ul>
+<li>
+<p>不允许用户给目录创建硬链接，但操作系统可以(比如<code>.</code>和<code>..</code>)。</p>
+</li>
+<li>
+<p>只有在同一个文件系统中的文件，才能创建硬链接，也就是说：不能跨文件系统。</p>
+</li>
+</ul>
+<h3 id="软链接">软链接</h3>
 <p>相当于<code>Windows</code>中的快捷方式。通过<code>ln</code>命令和<code>-s</code>选项，可实现软链接的创建。</p>
+<p>软链接文件的内容是一个文本字符串，存储的是目标文件(即：链接到的文件)的路径名。这个路径名可以指向任意一个文件系统的任意文件或者目录，甚至可以指向一个不存在的文件。</p>
+<p>与创建硬链接不同的是：当我们创建了一个软链接之后，操作系统会创建一个新的<code>inode</code>来表示这个软链接文件。</p>
+<p><img src="https://images.snoopyops.top/soft_link.jpg" alt="软链接"></p>
 <p>准备一个测试文件。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -1385,8 +1404,8 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cat test.txt</span>
-</span></span><span style="display:flex;"><span>wuennan
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cat a.txt</span>
+</span></span><span style="display:flex;"><span>snoopyops.top
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>创建软链接。</p>
@@ -1395,17 +1414,17 @@
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ln -s test.txt test_soft.txt</span>
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ln -s a.txt a_soft_link.txt</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>查看文件，<code>inode</code> 值不同，指向不同的区块。</p>
 <pre tabindex="0"><code class="language-shll" data-lang="shll">[root@localhost ~]# ll -i
-100682318 lrwxrwxrwx. 1 root    root          8 5月  23 15:11 test_soft.txt -&gt; test.txt
-100682319 -rw-r--r--. 1 root    root          8 5月  23 15:09 test.txt
-</code></pre><p>修改文件内容，两个文件均发生变化。</p>
-<pre tabindex="0"><code class="language-shll" data-lang="shll">[root@localhost ~]# echo &#34;New line&#34; &gt;&gt; test_soft.txt
-[root@localhost ~]# cat test.txt
-wuennan
+100682318 lrwxrwxrwx. 1 root    root          8 5月  23 15:11 ta_soft_link.txt -&gt; a.txt
+100682319 -rw-r--r--. 1 root    root          8 5月  23 15:09 a.txt
+</code></pre><p>修改软链接文件时，操作系统就根据其中的路径信息，找到 <code>a.txt</code> 的 <code>inode</code> 节点，从而对最终的目标文件进行操作。</p>
+<pre tabindex="0"><code class="language-shll" data-lang="shll">[root@localhost ~]# echo &#34;New line&#34; &gt;&gt; a_soft_link.txt
+[root@localhost ~]# cat a.txt
+snoopyops.top
 New line
 </code></pre><p>删除源文件后，软链接失效。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
@@ -1415,8 +1434,8 @@ New line
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># rm test.txt</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cat test_soft.txt</span>
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># rm a.txt</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cat a_soft_link.txt.txt</span>
 </span></span><span style="display:flex;"><span>cat: test_soft.txt: No such file or directory
 </span></span></code></pre></td></tr></table>
 </div>
@@ -1424,7 +1443,7 @@ New line
 <ol>
 <li>
 <p>软件升级与回退。</p>
-<p>下载并解压<code>node_exporter</code></p>
+<p>下载并解压<code>node_exporter</code>。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -1435,7 +1454,7 @@ New line
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># tar xf node_exporter-1.4.0.linux-amd64.tar.gz</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>创建软链接</p>
+</div><p>创建软链接。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -1448,7 +1467,7 @@ New line
 </span></span><span style="display:flex;"><span>lrwxrwxrwx. <span style="color:#099">1</span> root root      <span style="color:#099">50</span> 5月  <span style="color:#099">23</span> 15:32 node_exporter -&gt; /opt/node_exporter-1.4.0.linux-amd64/node_exporter
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>查看版本信息</p>
+</div><p>查看版本信息。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -1467,8 +1486,8 @@ New line
 </span></span><span style="display:flex;"><span>  platform:         linux/amd64
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>升级<code>node_exporter</code></p>
-<p>下载并解压新版本<code>node_exporter</code></p>
+</div><p>升级<code>node_exporter</code>。</p>
+<p>下载并解压新版本<code>node_exporter</code>。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -1479,7 +1498,7 @@ New line
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># tar xf node_exporter-1.5.0.linux-amd64.tar.gz</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>删除原软链接，并新建软链接，指向新版本的<code>node_exporter</code></p>
+</div><p>删除原软链接，并新建软链接，指向新版本的<code>node_exporter</code>。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -1488,7 +1507,7 @@ New line
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># rm -f /usr/local/bin/node_exporter &amp;&amp; ln -s /opt/node_exporter-1.5.0.linux-amd64/node_exporter /usr/local/bin/node_exporter</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>查看版本信息</p>
+</div><p>查看版本信息。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -1507,7 +1526,7 @@ New line
 </span></span><span style="display:flex;"><span>  platform:         linux/amd64
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>版本回退</p>
+</div><p>版本回退。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -1529,6 +1548,9 @@ New line
 </span></span></code></pre></td></tr></table>
 </div>
 </div></li>
+<li>
+<p>代码上线与回退。</p>
+</li>
 <li>
 <p>移动文件而不改变路径，常用于磁盘容量不足，且大文件路径无法更改的情况。</p>
 </li>

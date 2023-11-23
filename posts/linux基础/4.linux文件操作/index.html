@@ -57,7 +57,7 @@
         <span>
             
             <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
-            7432 字</span>&nbsp;
+            7407 字</span>&nbsp;
         <span>
             
             <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
@@ -120,7 +120,7 @@
         <li><a href="#file命令">file命令</a></li>
       </ul>
     </li>
-    <li><a href="#软链接和硬链接">软链接和硬链接</a>
+    <li><a href="#硬链接和软链接">硬链接和软链接</a>
       <ul>
         <li><a href="#硬链接">硬链接</a></li>
         <li><a href="#软链接">软链接</a></li>
@@ -140,8 +140,8 @@
         <li><a href="#sort命令">sort命令</a></li>
         <li><a href="#uniq命令">uniq命令</a></li>
         <li><a href="#cut命令">cut命令</a></li>
-        <li><a href="#wc命令">wc命令</a></li>
         <li><a href="#awk命令">awk命令</a></li>
+        <li><a href="#wc命令">wc命令</a></li>
       </ul>
     </li>
   </ul>
@@ -1305,11 +1305,11 @@
 </span></span><span style="display:flex;"><span>process_exporter_install.sh: Bourne-Again shell script, UTF-8 Unicode text executable
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="软链接和硬链接">软链接和硬链接</h2>
+</div><h2 id="硬链接和软链接">硬链接和软链接</h2>
 <p>在<code>Linux</code>系统中，我们可以把一个文件看做文件名、文件内容和描述信息三个部分组成。</p>
-<p><strong>文件名</strong>：从用户角度来描述一个文件。
-<strong>文件内容</strong>：文件中存储的数据，系统会从硬盘上划分一块区域，用来存放文件本身的内容(数据)，这块区域按照一个最小单位块(<code>block</code>)来进行划分。
-<strong>描述信息</strong>：文件的类型、所有者、创建时间等等，也称之为元信息。每一个文件的描述信息，都用一个名为索引节点(<code>inode</code>)的数据结构来表示。</p>
+<p><strong>文件名</strong>：从用户角度来描述一个文件。</p>
+<p><strong>文件内容</strong>：文件中存储的数据，系统会从硬盘上划分一块区域，用来存放文件本身的内容(数据)，这块区域按照一个最小单位块(<code>block</code>)来进行划分。</p>
+<p><strong>描述信息</strong>：文件的类型、所有者、创建时间等等，也称之为元信息。每一个文件的描述信息，都用一个名为索引节点(<code>inode</code>)的数据结构来表示。</p>
 <p>一个文件的索引节点(<code>inode</code>)中，除了记录了这个文件的所有描述信息，包括：文件类型、所有者、创建时间等，当然也记录了文件内容存储在硬盘的哪些块(<code>block</code>)中。</p>
 <p>当我们打开文件时候，操作系统首先根据传入的文件路径，找到这个文件的<code>inode</code>，然后进行一系列的权限检查操作，最后从<code>inode</code>中获得这个文件的内容存储在哪些块(<code>block</code>)中，从而可以对文件的内容进行读取、写入操作。
 当我们创建一个新文件的时候，就同时创建了这个文件对应的<code>inode</code>节点。
@@ -1435,23 +1435,23 @@ New line
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># rm a.txt</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cat a_soft_link.txt.txt</span>
-</span></span><span style="display:flex;"><span>cat: test_soft.txt: No such file or directory
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cat a_soft_link.txt</span>
+</span></span><span style="display:flex;"><span>cat: a_soft_link.txt: No such file or directory
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="软链接应用场景">软链接应用场景</h3>
 <ol>
 <li>
 <p>软件升级与回退。</p>
-<p>下载并解压<code>node_exporter</code>。</p>
+<p>下载并解压<code>openjdk</code>。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># wget https://github.com/prometheus/node_exporter/releases/download/v1.4.0/node_exporter-1.4.0.linux-amd64.tar.gz</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># tar xf node_exporter-1.4.0.linux-amd64.tar.gz</span>
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># wget https://repo.huaweicloud.com/openjdk/18/openjdk-18_linux-x64_bin.tar.gz</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># tar xf openjdk-18_linux-x64_bin.tar.gz</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>创建软链接。</p>
@@ -1462,9 +1462,9 @@ New line
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ln -s /opt/node_exporter-1.4.0.linux-amd64/node_exporter /usr/local/bin/node_exporter</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ll /usr/local/bin/</span>
-</span></span><span style="display:flex;"><span>lrwxrwxrwx. <span style="color:#099">1</span> root root      <span style="color:#099">50</span> 5月  <span style="color:#099">23</span> 15:32 node_exporter -&gt; /opt/node_exporter-1.4.0.linux-amd64/node_exporter
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ln -s /opt/jdk-18/bin/java /usr/local/bin/java</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ll /usr/local/bin/java</span>
+</span></span><span style="display:flex;"><span>lrwxrwxrwx. <span style="color:#099">1</span> root root <span style="color:#099">20</span> Nov  <span style="color:#099">7</span> 04:08 /usr/local/bin/java -&gt; /opt/jdk-18/bin/java
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>查看版本信息。</p>
@@ -1474,37 +1474,33 @@ New line
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># node_exporter --version</span>
-</span></span><span style="display:flex;"><span>node_exporter, version 1.4.0 <span style="color:#000;font-weight:bold">(</span>branch: HEAD, revision: 7da1321761b3b8dfc9e496e1a60e6a476fec6018<span style="color:#000;font-weight:bold">)</span>
-</span></span><span style="display:flex;"><span>  build user:       root@83d90983e89c
-</span></span><span style="display:flex;"><span>  build date:       20220926-12:32:56
-</span></span><span style="display:flex;"><span>  go version:       go1.19.1
-</span></span><span style="display:flex;"><span>  platform:         linux/amd64
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># java -version</span>
+</span></span><span style="display:flex;"><span>openjdk version <span style="color:#d14">&#34;18&#34;</span> 2022-03-22
+</span></span><span style="display:flex;"><span>OpenJDK Runtime Environment <span style="color:#000;font-weight:bold">(</span>build 18+36-2087<span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>OpenJDK 64-Bit Server VM <span style="color:#000;font-weight:bold">(</span>build 18+36-2087, mixed mode, sharing<span style="color:#000;font-weight:bold">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>升级<code>node_exporter</code>。</p>
-<p>下载并解压新版本<code>node_exporter</code>。</p>
+</div><p>升级<code>openjdk</code>。</p>
+<p>下载并解压新版本<code>openjdk</code>。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># wget https://github.com/prometheus/node_exporter/releases/download/v1.5.0/node_exporter-1.5.0.linux-amd64.tar.gz</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># tar xf node_exporter-1.5.0.linux-amd64.tar.gz</span>
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># wget https://repo.huaweicloud.com/openjdk/19/openjdk-19_linux-x64_bin.tar.gz</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># tar xf openjdk-19_linux-x64_bin.tar.gz</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>删除原软链接，并新建软链接，指向新版本的<code>node_exporter</code>。</p>
+</div><p>删除原软链接，并新建软链接，指向新版本的<code>openjdk</code>。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># rm -f /usr/local/bin/node_exporter &amp;&amp; ln -s /opt/node_exporter-1.5.0.linux-amd64/node_exporter /usr/local/bin/node_exporter</span>
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># rm -f /usr/local/bin/java &amp;&amp; ln -s /opt/jdk-19/bin/java /usr/local/bin/java</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>查看版本信息。</p>
@@ -1514,16 +1510,12 @@ New line
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># node_exporter --version</span>
-</span></span><span style="display:flex;"><span>node_exporter, version 1.5.0 <span style="color:#000;font-weight:bold">(</span>branch: HEAD, revision: 1b48970ffcf5630534fb00bb0687d73c66d1c959<span style="color:#000;font-weight:bold">)</span>
-</span></span><span style="display:flex;"><span>  build user:       root@6e7732a7b81b
-</span></span><span style="display:flex;"><span>  build date:       20221129-18:59:09
-</span></span><span style="display:flex;"><span>  go version:       go1.19.3
-</span></span><span style="display:flex;"><span>  platform:         linux/amd64
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># java -version</span>
+</span></span><span style="display:flex;"><span>openjdk version <span style="color:#d14">&#34;19&#34;</span> 2022-09-20
+</span></span><span style="display:flex;"><span>OpenJDK Runtime Environment <span style="color:#000;font-weight:bold">(</span>build 19+36-2238<span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>OpenJDK 64-Bit Server VM <span style="color:#000;font-weight:bold">(</span>build 19+36-2238, mixed mode, sharing<span style="color:#000;font-weight:bold">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>版本回退。</p>
@@ -1534,17 +1526,13 @@ New line
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># rm -f /usr/local/bin/node_exporter &amp;&amp; ln -s /opt/node_exporter-1.4.0.linux-amd64/node_exporter /usr/local/bin/node_exporter</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># node_exporter --version</span>
-</span></span><span style="display:flex;"><span>node_exporter, version 1.4.0 <span style="color:#000;font-weight:bold">(</span>branch: HEAD, revision: 7da1321761b3b8dfc9e496e1a60e6a476fec6018<span style="color:#000;font-weight:bold">)</span>
-</span></span><span style="display:flex;"><span>  build user:       root@83d90983e89c
-</span></span><span style="display:flex;"><span>  build date:       20220926-12:32:56
-</span></span><span style="display:flex;"><span>  go version:       go1.19.1
-</span></span><span style="display:flex;"><span>  platform:         linux/amd64
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># rm -f /usr/local/bin/java &amp;&amp; ln -s /opt/jdk-18/bin/java /usr/local/bin/java</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># java -version</span>
+</span></span><span style="display:flex;"><span>openjdk version <span style="color:#d14">&#34;18&#34;</span> 2022-03-22
+</span></span><span style="display:flex;"><span>OpenJDK Runtime Environment <span style="color:#000;font-weight:bold">(</span>build 18+36-2087<span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>OpenJDK 64-Bit Server VM <span style="color:#000;font-weight:bold">(</span>build 18+36-2087, mixed mode, sharing<span style="color:#000;font-weight:bold">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div></li>
@@ -1561,30 +1549,57 @@ New line
 <li>目录不能创建硬链接，并且硬链接不可以跨越分区系统。</li>
 <li>目录软链接特别常用，并且软链接支持跨越分区系统。</li>
 <li>硬链接文件与源文件<code>inode</code>相同，软链接文件与源文件<code>inode</code>不同。</li>
-<li>删除软连接文件，对源文件及硬链接文件无任何影响。</li>
-<li>删除文件的硬链接文件，对源文件无任何影响。</li>
-<li>删除链接文件的源文件，对硬链接无影响，会导致软链接失效。</li>
-<li>删除源文件及起硬链接文件，整个文件会被真正的删除。</li>
+<li>删除硬链接的源文件，对硬链接无任何影响。</li>
+<li>删除软链接的源文件，会导致软链接失效。</li>
 </ol>
 <h2 id="文件或命令查找">文件或命令查找</h2>
 <h3 id="which命令">which命令</h3>
 <p><code>which</code>可用于查看命令文件的绝对路径及别名。</p>
-<pre tabindex="0"><code>[root@localhost ~]# which ls
-alias ls=&#39;ls --color=auto&#39;
-	/usr/bin/ls
-</code></pre><h3 id="whereis命令">whereis命令</h3>
-<p><code>whereis</code>可用于查看命令的文件的绝对路径及帮助文档路径</p>
-<pre tabindex="0"><code>[root@localhost ~]# whereis ls
-ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz
-</code></pre><h3 id="type命令">type命令</h3>
-<p><code>type</code>可用于查看命令的类型、文件位置、别名等信息</p>
-<pre tabindex="0"><code>[root@localhost ~]# type ls
-ls is aliased to `ls --color=auto&#39;
-[root@localhost ~]# type for
-for is a shell keyword
-[root@localhost ~]# type cd
-cd is a shell builtin
-</code></pre><h2 id="文件内容处理">文件内容处理</h2>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># which ls</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">alias</span> <span style="color:#008080">ls</span><span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;ls --color=auto&#39;</span>
+</span></span><span style="display:flex;"><span>	/usr/bin/ls
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="whereis命令">whereis命令</h3>
+<p><code>whereis</code>可用于查看命令的文件的绝对路径及帮助文档路径。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># whereis ls</span>
+</span></span><span style="display:flex;"><span>ls: /usr/bin/ls /usr/share/man/man1/ls.1.gz
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="type命令">type命令</h3>
+<p><code>type</code>可用于查看命令的类型、文件位置、别名等信息。对于<code>for</code>之类的内核相关命令，<code>which</code>和<code>whereis</code>都无法查询到，需要使用<code>type</code>。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># type ls</span>
+</span></span><span style="display:flex;"><span>ls is aliased to <span style="color:#d14">`</span>ls --color<span style="color:#000;font-weight:bold">=</span>auto<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># type for</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> is a shell keyword
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># type cd</span>
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">cd</span> is a shell <span style="color:#0086b3">builtin</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="文件内容处理">文件内容处理</h2>
 <h3 id="sort命令">sort命令</h3>
 <p><code>sort</code>常用于对文本截取、排序等。常用的选项及说明如下表：</p>
 <table>
@@ -1597,23 +1612,23 @@ cd is a shell builtin
 <tbody>
 <tr>
 <td style="text-align:center">-n</td>
-<td>依照数值大小进行排序</td>
+<td>依照数值大小进行排序。</td>
 </tr>
 <tr>
 <td style="text-align:center">-r</td>
-<td>以相反的顺序显示</td>
+<td>以倒序的方式显示。</td>
 </tr>
 <tr>
 <td style="text-align:center">-t</td>
-<td>指定分隔符</td>
+<td>指定分隔符。</td>
 </tr>
 <tr>
 <td style="text-align:center">-k</td>
-<td>指定要取的字符</td>
+<td>指定要取的字符。</td>
 </tr>
 </tbody>
 </table>
-<p>准备测试文件</p>
+<p>准备测试文件。</p>
 <pre tabindex="0"><code>[root@localhost ~]# cat file.txt 
 b:3
 c:2
@@ -1621,7 +1636,7 @@ a:4
 e:5
 d:1
 f:11
-</code></pre><p>将文件排序首列进行排序</p>
+</code></pre><p>将文件排序首列进行排序。</p>
 <pre tabindex="0"><code>[root@localhost ~]# sort file.txt 
 a:4
 b:3
@@ -1629,44 +1644,59 @@ c:2
 d:1
 e:5
 f:11
-</code></pre><p>将文本第二列数字按照大小进行排序</p>
-<pre tabindex="0"><code>[root@localhost ~]# sort -t &#34;:&#34; -n -k2 file.txt 
-# -t指定分隔符，-n以数字大小进行排序，-k指定要排序的列
-d:1
-c:2
-b:3
-a:4
-e:5
-f:11
-</code></pre><p>准备测试文件</p>
-<pre tabindex="0"><code>[root@localhost ~]# cat 1.txt 
+</code></pre><p>将文本第二列数字按照大小进行排序。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># sort -t &#34;:&#34; -n -k2 file.txt </span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># -t指定分隔符，-n以数字大小进行排序，-k指定要排序的列</span>
+</span></span><span style="display:flex;"><span>d:1
+</span></span><span style="display:flex;"><span>c:2
+</span></span><span style="display:flex;"><span>b:3
+</span></span><span style="display:flex;"><span>a:4
+</span></span><span style="display:flex;"><span>e:5
+</span></span><span style="display:flex;"><span>f:11
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>准备测试文件。</p>
+<pre tabindex="0"><code>[root@localhost ~]# cat sort-test.txt
 10.0.3.1 00:0F:AF:81:19:1F
 10.0.3.2 00:0F:AF:85:6C:25
-10.0.3.3 00:0F:AF:85:70:42
 10.0.2.20 00:0F:AF:85:55:DE
 10.0.2.21 00:0F:AF:85:6C:09
 10.0.2.22 00:0F:AF:85:5C:41
 10.0.0.151 00:0F:AF:85:6C:F6
 10.0.0.152 00:0F:AF:83:1F:65
-10.0.0.153 00:0F:AF:85:70:03
 10.0.1.10 00:30:15:A2:3B:B6
-10.0.1.11 00:30:15:A3:23:B7
 10.0.1.12 00:30:15:A2:3A:A1
 10.0.1.1 00:0F:AF:81:19:1F
 10.0.2.2 00:0F:AF:85:6C:25
 10.0.3.3 00:0F:AF:85:70:42
-10.0.2.20 00:0F:AF:85:55:DE
 10.0.1.21 00:0F:AF:85:6C:09
-10.0.2.22 00:0F:AF:85:5C:41
-10.0.0.151 00:0F:AF:85:6C:F6
 10.0.1.152 00:0F:AF:83:1F:65
 10.0.0.153 00:0F:AF:85:70:03
 10.0.3.10 00:30:15:A2:3B:B6
 10.0.1.11 00:30:15:A3:23:B7
 10.0.3.12 00:30:15:A2:3A:A1
-</code></pre><p>对该文件输出内容进行排序(提示：通过第三列的第一个字符，以及第4列的所有字符进行排序)</p>
-<pre tabindex="0"><code>[root@localhost ~]# sort -t &#34;.&#34; -n -k3.1,3.1 -k4.1,4.3 1.txt 
-</code></pre><h3 id="uniq命令">uniq命令</h3>
+</code></pre><p>对该文件输出内容进行排序(提示：通过第3列的第一个字符，以及第4列的所有字符进行排序。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># sort -t &#34;.&#34; -n -k3.1,3.1 -k4.1,4.3 sort-test.txt</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="uniq命令">uniq命令</h3>
 <p><code>uniq</code>用于统计文本，常用选项如下表：</p>
 <table>
 <thead>
@@ -1678,7 +1708,7 @@ f:11
 <tbody>
 <tr>
 <td style="text-align:center">-c</td>
-<td>计算重复的行</td>
+<td>计算重复的行。</td>
 </tr>
 </tbody>
 </table>
@@ -1690,14 +1720,12 @@ abc
 abc
 123
 </code></pre><p>用<code>uniq</code>去重，并显示重复次数</p>
-<pre tabindex="0"><code>[root@localhost ~]# sort file.txt | uniq -c
+<pre tabindex="0"><code>[root@localhost ~]# sort uniq-test.txt | uniq -c
       3 123
       2 abc
-</code></pre><blockquote>
-<p>要想用uniq去重，必须先用sort将重复的内容排列到一起。</p>
-</blockquote>
+</code></pre><p>要想用<code>uniq</code>去重，<strong>必须</strong>先用<code>sort</code>将重复的内容排列到一起。</p>
 <h3 id="cut命令">cut命令</h3>
-<p><code>cut</code>用于截取文本</p>
+<p><code>cut</code>用于截取文本。</p>
 <table>
 <thead>
 <tr>
@@ -1708,22 +1736,129 @@ abc
 <tbody>
 <tr>
 <td style="text-align:center">-d</td>
-<td>指定分隔符</td>
+<td>指定分隔符。</td>
 </tr>
 <tr>
 <td style="text-align:center">-f</td>
-<td>取第几列</td>
+<td>取第几列。</td>
 </tr>
 </tbody>
 </table>
-<p>取用户名及QQ号</p>
-<pre tabindex="0"><code>[root@localhost ~]# cat file.txt 
-I am Jack MY QQ is 793499077
-[root@localhost ~]# cut -d &#34; &#34; -f 3,7 file.txt  
-Jack 793499077
-</code></pre><blockquote>
-<p>cut几乎很少用到，通常都使用awk，因为awk功能更全。</p>
-</blockquote>
+<p>取用户名及QQ号。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cat cut-test.txt </span>
+</span></span><span style="display:flex;"><span>I am Snoopy, MY QQ is <span style="color:#099">793499077</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cut -d &#34; &#34; -f 3,7 cut-test.txt</span>
+</span></span><span style="display:flex;"><span>Snoopy, <span style="color:#099">793499077</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>我们发现使用<code>cut</code>很难将<code>Snoopy</code>后的逗号处理掉。可通过以下方式实现删除逗号。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cut -d &#34; &#34; -f 3,7 cut-test.txt | sed &#39;s#,##g&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># awk &#39;{print $3,$7}&#39; cut-test.txt | awk -F &#39;,&#39; &#39;{print $1,$2}&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cut -d &#34; &#34; -f 3,7 cut-test.txt | awk -F &#39;,&#39; &#39;{print $1,$2}&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>实际生产过程中，很少使用到<code>cut</code>，通常会使用<code>awk</code>处理列。</p>
+<h3 id="awk命令">awk命令</h3>
+<p><code>awk</code>用于截取文本。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-F</td>
+<td>指定分隔符。</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>
+<p>取出设备的ip地址。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ifconfig | grep broadcast | awk &#39;{print $2}&#39;</span>
+</span></span><span style="display:flex;"><span>10.0.0.201
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>取出访问日志服务器的top10的IP地址。</p>
+<p>获取源文件。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># wget tools.snoopyops.top/file/access.log</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>查看源文件格式。</p>
+<pre tabindex="0"><code>[root@localhost ~]# head access.log
+183.162.52.7 - - [10/Nov/2016:00:01:02 +0800] &#34;POST /api3/getadv HTTP/1.1&#34; 200 813 &#34;www.snoopyops.top&#34; &#34;-&#34; cid=0&amp;timestamp=1478707261865&amp;uid=2871142&amp;marking=androidbanner&amp;secrect=a6e8e14701ffe9f6063934780d9e2e6d&amp;token=f51e97d1cb1a9caac669ea8acc162b96 &#34;oldxu/5.0.0 (Android 5.1.1; Xiaomi Redmi 3 Build/LMY47V),Network 2G/3G&#34; &#34;-&#34; 10.100.134.244:80 200 0.027 0.027
+10.100.0.1 - - [10/Nov/2016:00:01:02 +0800] &#34;HEAD / HTTP/1.1&#34; 301 0 &#34;117.121.101.40&#34; &#34;-&#34; - &#34;curl/7.19.7 (x86_64-redhat-linux-gnu) libcurl/7.19.7 NSS/3.16.2.3 Basic ECC zlib/1.2.3 libidn/1.18 libssh2/1.4.2&#34; &#34;-&#34; - - - 0.000
+117.35.88.11 - - [10/Nov/2016:00:01:02 +0800] &#34;GET /article/ajaxcourserecommends?id=124 HTTP/1.1&#34; 200 2345 &#34;www.snoopyops.top&#34; &#34;http://www.snoopyops.top/code/1852&#34; - &#34;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36&#34; &#34;-&#34; 10.100.136.65:80 200 0.616 0.616
+182.106.215.93 - - [10/Nov/2016:00:01:02 +0800] &#34;POST /socket.io/1/ HTTP/1.1&#34; 200 94 &#34;chat.snoopyops.top&#34; &#34;-&#34; - &#34;android-websockets-2.0&#34; &#34;-&#34; 10.100.15.239:80 200 0.004 0.004
+10.100.0.1 - - [10/Nov/2016:00:01:02 +0800] &#34;HEAD / HTTP/1.1&#34; 301 0 &#34;117.121.101.40&#34; &#34;-&#34; - &#34;curl/7.19.7 (x86_64-redhat-linux-gnu) libcurl/7.19.7 NSS/3.16.2.3 Basic ECC zlib/1.2.3 libidn/1.18 libssh2/1.4.2&#34; &#34;-&#34; - - - 0.000
+183.162.52.7 - - [10/Nov/2016:00:01:02 +0800] &#34;POST /api3/userdynamic HTTP/1.1&#34; 200 19501 &#34;www.snoopyops.top&#34; &#34;-&#34; cid=0&amp;timestamp=1478707261847&amp;uid=2871142&amp;touid=2871142&amp;page=1&amp;secrect=a6e8e14701ffe9f6063934780d9e2e6d&amp;token=3837a5bf27ea718fe18bda6c53fbbc14 &#34;oldxu/5.0.0 (Android 5.1.1; Xiaomi Redmi 3 Build/LMY47V),Network 2G/3G&#34; &#34;-&#34; 10.100.136.65:80 200 0.195 0.195
+10.100.0.1 - - [10/Nov/2016:00:01:02 +0800] &#34;HEAD / HTTP/1.1&#34; 301 0 &#34;117.121.101.40&#34; &#34;-&#34; - &#34;curl/7.19.7 (x86_64-redhat-linux-gnu) libcurl/7.19.7 NSS/3.16.2.3 Basic ECC zlib/1.2.3 libidn/1.18 libssh2/1.4.2&#34; &#34;-&#34; - - - 0.000
+114.248.161.26 - - [10/Nov/2016:00:01:02 +0800] &#34;POST /api3/getcourseintro HTTP/1.1&#34; 200 2510 &#34;www.snoopyops.top&#34; &#34;-&#34; cid=283&amp;secrect=86b720f312c2b25da3b20e59e7c89780&amp;timestamp=1478707261951&amp;token=4c144b3f4314178b9527d1e91ecc0fac&amp;uid=3372975 &#34;oldxu/5.0.2 (iPhone; iOS 8.4.1; Scale/2.00)&#34; &#34;-&#34; 10.100.136.65:80 200 0.007 0.008
+120.52.94.105 - - [10/Nov/2016:00:01:02 +0800] &#34;POST /api3/getmediainfo_ver2 HTTP/1.1&#34; 200 633 &#34;www.snoopyops.top&#34; &#34;-&#34; cid=608&amp;secrect=e25994750eb2bbc7ade1a36708b999a5&amp;timestamp=1478707261945&amp;token=9bbdba949aec02735e59e0868b538e19&amp;uid=4203162 &#34;oldxu/5.0.2 (iPhone; iOS 10.0.1; Scale/3.00)&#34; &#34;-&#34; 10.100.136.65:80 200 0.049 0.049
+10.100.0.1 - - [10/Nov/2016:00:01:02 +0800] &#34;HEAD / HTTP/1.1&#34; 301 0 &#34;117.121.101.40&#34; &#34;-&#34; - &#34;curl/7.19.7 (x86_64-redhat-linux-gnu) libcurl/7.19.7 NSS/3.16.2.3 Basic ECC zlib/1.2.3 libidn/1.18 libssh2/1.4.2&#34; &#34;-&#34; - - - 0.000
+</code></pre><p>取出访问日志服务器的<code>top10</code>的<code>IP</code>地址。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># awk &#39;{print $1}&#39; access.log | sort | uniq -c | sort -nr | head -10</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 通过awk取出带有IP地址的列，排序后统计，将统计的结果以倒叙的方式显示，用head控制，显示前10行</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#099">4432</span> 139.226.173.42
+</span></span><span style="display:flex;"><span>    <span style="color:#099">483</span> 139.226.172.150
+</span></span><span style="display:flex;"><span>    <span style="color:#099">381</span> 139.226.172.192
+</span></span><span style="display:flex;"><span>    <span style="color:#099">193</span> 122.71.240.181
+</span></span><span style="display:flex;"><span>    <span style="color:#099">102</span> 223.167.152.124
+</span></span><span style="display:flex;"><span>    <span style="color:#099">100</span> 61.153.150.107
+</span></span><span style="display:flex;"><span>     <span style="color:#099">95</span> 47.97.98.158
+</span></span><span style="display:flex;"><span>     <span style="color:#099">83</span> 45.195.91.193
+</span></span><span style="display:flex;"><span>     <span style="color:#099">83</span> 125.71.215.239
+</span></span><span style="display:flex;"><span>     <span style="color:#099">79</span> 114.87.94.145
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
 <h3 id="wc命令">wc命令</h3>
 <p><code>wc</code>用于统计文本行数</p>
 <table>
@@ -1736,74 +1871,31 @@ Jack 793499077
 <tbody>
 <tr>
 <td style="text-align:center">-l</td>
-<td>显示文件的行数</td>
+<td>显示文件的行数。</td>
 </tr>
 </tbody>
 </table>
 <p>统计<code>/etc/services</code>文件的行数</p>
-<pre tabindex="0"><code>[root@localhost ~]# wc -l /etc/services 
-11176 /etc/services
-</code></pre><h3 id="awk命令">awk命令</h3>
-<p>用于截取文本</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">选项</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">-F</td>
-<td>指定分隔符</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>
-<p>取出设备的ip地址。</p>
-<pre tabindex="0"><code>[root@localhost ~]# ifconfig | grep broadcast | awk &#39;{print $2}&#39;
-10.0.0.201
-</code></pre></li>
-<li>
-<p>取出访问日志服务器的top10的IP地址。源文件部分内容如下：</p>
-<pre tabindex="0"><code>[root@localhost ~]# tail -20 fj.xuliangwei.com.log 
-122.71.240.181 - - [30/Jul/2019:11:21:12 +0800] &#34;GET /public/ip.txt HTTP/1.1&#34; 0.000 200 744 &#34;-&#34; &#34;Wget/1.14 (linux-gnu)&#34; &#34;-&#34; -&#34;14&#34;
-122.71.240.181 - - [30/Jul/2019:11:21:45 +0800] &#34;GET /public/ip.txt HTTP/1.1&#34; 0.000 200 744 &#34;-&#34; &#34;Wget/1.14 (linux-gnu)&#34; &#34;-&#34; -&#34;3&#34;
-122.71.240.181 - - [30/Jul/2019:11:22:10 +0800] &#34;GET /public/ip.txt HTTP/1.1&#34; 0.000 200 744 &#34;-&#34; &#34;Wget/1.14 (linux-gnu)&#34; &#34;-&#34; -&#34;2&#34;
-122.71.240.181 - - [30/Jul/2019:11:22:32 +0800] &#34;GET /public/ip.txt HTTP/1.1&#34; 0.000 200 744 &#34;-&#34; &#34;Wget/1.14 (linux-gnu)&#34; &#34;-&#34; -&#34;2&#34;
-122.71.240.181 - - [30/Jul/2019:11:22:39 +0800] &#34;GET /public/ip.txt HTTP/1.1&#34; 0.000 200 744 &#34;-&#34; &#34;Wget/1.14 (linux-gnu)&#34; &#34;-&#34; -&#34;2&#34;
-122.71.240.181 - - [30/Jul/2019:11:23:18 +0800] &#34;GET /public/ip.txt HTTP/1.1&#34; 0.000 200 744 &#34;-&#34; &#34;curl/7.29.0&#34; &#34;-&#34; -&#34;4&#34;
-122.71.240.181 - - [30/Jul/2019:11:23:20 +0800] &#34;GET /public/ip.txt HTTP/1.1&#34; 0.000 200 744 &#34;-&#34; &#34;Wget/1.14 (linux-gnu)&#34; &#34;-&#34; -&#34;3&#34;
-122.71.240.181 - - [30/Jul/2019:11:23:57 +0800] &#34;GET /public/ip.txt HTTP/1.1&#34; 0.000 200 744 &#34;-&#34; &#34;Wget/1.14 (linux-gnu)&#34; &#34;-&#34; -&#34;4&#34;
-122.71.240.181 - - [30/Jul/2019:11:23:59 +0800] &#34;GET /public/ip.txt HTTP/1.1&#34; 0.000 200 744 &#34;-&#34; &#34;Wget/1.14 (linux-gnu)&#34; &#34;-&#34; -&#34;4&#34;
-122.71.240.181 - - [30/Jul/2019:11:24:09 +0800] &#34;GET /public/ip.txt HTTP/1.1&#34; 0.000 200 744 &#34;-&#34; &#34;Wget/1.14 (linux-gnu)&#34; &#34;-&#34; -&#34;3&#34;
-122.71.240.181 - - [30/Jul/2019:11:24:16 +0800] &#34;GET /public/ip.txt HTTP/1.1&#34; 0.000 200 744 &#34;-&#34; &#34;Wget/1.14 (linux-gnu)&#34; &#34;-&#34; -&#34;4&#34;
-61.129.6.227 - - [30/Jul/2019:11:25:17 +0800] &#34;GET /public/ip.txt HTTP/1.1&#34; 0.000 200 744 &#34;-&#34; &#34;Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; rv:11.0) like Gecko&#34; &#34;-&#34; -&#34;9&#34;
-101.89.239.232 - - [30/Jul/2019:11:25:43 +0800] &#34;GET /public/ip.txt HTTP/1.1&#34; 0.000 200 744 &#34;-&#34; &#34;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36&#34; &#34;-&#34; -&#34;8&#34;
-58.247.204.63 - - [30/Jul/2019:11:25:43 +0800] &#34;GET /public/ip.txt HTTP/1.1&#34; 0.000 200 744 &#34;-&#34; &#34;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.104 Safari/537.36 Core/1.53.2141.400 QQBrowser/9.5.10219.400&#34; &#34;-&#34; -&#34;9&#34;
-101.91.60.108 - - [30/Jul/2019:11:25:44 +0800] &#34;GET /public/ip.txt HTTP/1.1&#34; 0.000 200 744 &#34;-&#34; &#34;Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36&#34; &#34;-&#34; -&#34;10&#34;
-122.71.240.181 - - [30/Jul/2019:11:25:47 +0800] &#34;GET /public/ip.txt HTTP/1.1&#34; 0.000 200 744 &#34;-&#34; &#34;Wget/1.14 (linux-gnu)&#34; &#34;-&#34; -&#34;11&#34;
-122.71.240.181 - - [30/Jul/2019:11:26:21 +0800] &#34;GET /public/ip.txt HTTP/1.1&#34; 0.000 200 744 &#34;-&#34; &#34;curl/7.29.0&#34; &#34;-&#34; -&#34;4&#34;
-122.71.240.181 - - [30/Jul/2019:11:28:37 +0800] &#34;GET /public/ip.txt HTTP/1.1&#34; 0.000 200 744 &#34;-&#34; &#34;Wget/1.14 (linux-gnu)&#34; &#34;-&#34; -&#34;6&#34;
-42.236.10.117 - - [30/Jul/2019:12:03:05 +0800] &#34;GET /public/weixin.py HTTP/1.1&#34; 0.000 200 1350 &#34;-&#34; &#34;Mozilla/5.0 (Linux; U; Android 8.1.0; zh-CN; EML-AL00 Build/HUAWEIEML-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 baidu.sogo.uc.UCBrowser/11.9.4.974 UWS/2.13.1.48 Mobile Safari/537.36 AliApp(DingTalk/4.5.11) com.alibaba.android.rimet/10487439 Channel/227200 language/zh-CN&#34; &#34;-&#34; -&#34;2&#34;
-42.236.10.106 - - [30/Jul/2019:12:03:11 +0800] &#34;GET /public/weixin.py HTTP/1.1&#34; 0.000 200 1350 &#34;http://www.baidu.com/&#34; &#34;Mozilla/5.0 (Linux; U; Android 8.1.0; zh-CN; EML-AL00 Build/HUAWEIEML-AL00) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.108 baidu.sogo.uc.UCBrowser/11.9.4.974 UWS/2.13.1.48 Mobile Safari/537.36 AliApp(DingTalk/4.5.11) com.alibaba.android.rimet/10487439 Channel/227200 language/zh-CN&#34; &#34;-&#34; -&#34;3&#34;
-</code></pre><p>取出访问日志服务器的top10的IP地址。</p>
-<pre tabindex="0"><code>[root@localhost ~]# awk &#39;{print $1}&#39; fj.xuliangwei.com.log | sort | uniq -c | sort -nr | head -10
-# 通过awk取出带有IP地址的列，排序后统计，将统计的结果以倒叙的方式显示，用head控制，显示前10行
-   4432 139.226.173.42
-    483 139.226.172.150
-    381 139.226.172.192
-    193 122.71.240.181
-    102 223.167.152.124
-    100 61.153.150.107
-     95 47.97.98.158
-     83 45.195.91.193
-     83 125.71.215.239
-     79 114.87.94.145
-</code></pre></li>
-</ol>
-<hr>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># wc -l /etc/services </span>
+</span></span><span style="display:flex;"><span><span style="color:#099">11176</span> /etc/services
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>统计<code>/etc/passwd</code>中以<code>nologin</code>结尾的有多少行。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># grep &#34;/sbin/nologin$&#34; /etc/passwd | wc -l</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
 <center><img src="https://images.snoopyops.top/wechat-snoopy.jpg" alt="image-20231028232834657" style="zoom:50%;" /></center>
     </div>
     

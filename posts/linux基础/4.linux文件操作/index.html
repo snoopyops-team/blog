@@ -1335,7 +1335,7 @@
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ln test.txt a_hard_link.txt</span>
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ln a.txt a_hard_link.txt</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>查看文件，这两个文件就如同一个文件一样，<code>inode</code> 值相同，都指向同一个区块。</p>
@@ -1348,7 +1348,7 @@
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ll -i</span>
 </span></span><span style="display:flex;"><span><span style="color:#099">100682319</span> -rw-r--r--. <span style="color:#099">2</span> root    root          <span style="color:#099">8</span> 5月  <span style="color:#099">23</span> 14:59 a_hard_link.txt
-</span></span><span style="display:flex;"><span><span style="color:#099">100682319</span> -rw-r--r--. <span style="color:#099">2</span> root    root          <span style="color:#099">8</span> 5月  <span style="color:#099">23</span> 14:59 a
+</span></span><span style="display:flex;"><span><span style="color:#099">100682319</span> -rw-r--r--. <span style="color:#099">2</span> root    root          <span style="color:#099">8</span> 5月  <span style="color:#099">23</span> 14:59 a.txt
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>修改文件内容，两个文件均发生变化。</p>
@@ -1361,7 +1361,7 @@
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># echo &#34;New line&#34; &gt;&gt; a_hard_link.txt</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cat test.txt</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cat a.txt</span>
 </span></span><span style="display:flex;"><span>snoopyops.top
 </span></span><span style="display:flex;"><span>New line
 </span></span></code></pre></td></tr></table>

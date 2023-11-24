@@ -85,7 +85,7 @@
       <pubDate>Mon, 22 May 2023 12:14:38 +0800</pubDate>
       
       <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/5.vim%E7%BC%96%E8%BE%91%E5%99%A8/</guid>
-      <description>vim常用的三种模式 在Linux系统中，我们常用vim对文本进行编辑。 vim有 命令模式，输入模式和底线命令模式，接下来我们将学习vim的常用用法。 vim命令模式</description>
+      <description>认识vim vi和vim vi和vim都是Linux系统中的编辑器。 vim是vi的升级版本，兼容vi的所有指令，并具有一些新的特性，如多级撤消、易用性、语法加亮、可</description>
     </item>
     
     <item>

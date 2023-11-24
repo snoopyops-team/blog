@@ -6,7 +6,16 @@
     <description>Recent content in Linux基础 on SnoopyOPS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 03 Jun 2023 13:55:19 +0800</lastBuildDate><atom:link href="https://www.snoopyops.top/tags/linux%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Jun 2023 16:19:32 +0800</lastBuildDate><atom:link href="https://www.snoopyops.top/tags/linux%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>定时任务</title>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/14.%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</link>
+      <pubDate>Mon, 12 Jun 2023 16:19:32 +0800</pubDate>
+      
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/14.%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</guid>
+      <description>crond计划任务 Crontab配置文件记录了时间周期的含义 [root@ennan ~]# cat /etc/crontab SHELL=/bin/bash # 执行的命令解释器 PATH=/sbin:/bin:/usr/sbin:/usr/bin # 环境变量 MAILTO=root # 邮件发送给谁 # For details see man 4 crontabs # Example of job definition: # .---------------- minute (0 - 59) # 分 # |</description>
+    </item>
+    
     <item>
       <title>磁盘管理</title>
       <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/12.%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</link>
@@ -14,6 +23,33 @@
       
       <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/12.%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</guid>
       <description>本章节主要解释磁盘分区，磁盘阵列等磁盘相关知识。 磁盘分区 添加磁盘 在虚拟机中添加一个1T和4T的磁盘。 可以通过查看/dev下面的设备或者lsblk命令确认磁盘是否</description>
+    </item>
+    
+    <item>
+      <title>文件查找</title>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/9.%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE/</link>
+      <pubDate>Wed, 31 May 2023 11:55:28 +0800</pubDate>
+      
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/9.%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE/</guid>
+      <description>文件查找 find命令可以根据不同的条件来进行查找文件，可根据文件名称、文件大小、文件修改时间、属主属组、权限、等方式查找相应的文件。 find基本用法 find命令</description>
+    </item>
+    
+    <item>
+      <title>用户与组</title>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/6.%E7%94%A8%E6%88%B7%E4%B8%8E%E7%BB%84/</link>
+      <pubDate>Wed, 24 May 2023 14:57:18 +0800</pubDate>
+      
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/6.%E7%94%A8%E6%88%B7%E4%B8%8E%E7%BB%84/</guid>
+      <description>用户相关概念 Linux下我们为什么要创建用户？ 系统上的每一个进程(运行的程序)，都需要一个特定的用户运行。 通常在公司是使用普通用户管理服务器，因为root权限过</description>
+    </item>
+    
+    <item>
+      <title>Vim编辑器</title>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/5.vim%E7%BC%96%E8%BE%91%E5%99%A8/</link>
+      <pubDate>Mon, 22 May 2023 12:14:38 +0800</pubDate>
+      
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/5.vim%E7%BC%96%E8%BE%91%E5%99%A8/</guid>
+      <description>认识vim vi和vim vi和vim都是Linux系统中的编辑器。 vim是vi的升级版本，兼容vi的所有指令，并具有一些新的特性，如多级撤消、易用性、语法加亮、可</description>
     </item>
     
     <item>

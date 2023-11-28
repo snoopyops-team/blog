@@ -57,11 +57,11 @@
         <span>
             
             <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
-            7407 字</span>&nbsp;
+            7606 字</span>&nbsp;
         <span>
             
             <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
-            15 分钟</span>
+            16 分钟</span>
             <div class="container-ctgtag">
 	<div class="taxonomy">
 		<div class="tag">
@@ -128,7 +128,7 @@
         <li><a href="#软链接和硬链接的区别">软链接和硬链接的区别</a></li>
       </ul>
     </li>
-    <li><a href="#文件或命令查找">文件或命令查找</a>
+    <li><a href="#命令查找">命令查找</a>
       <ul>
         <li><a href="#which命令">which命令</a></li>
         <li><a href="#whereis命令">whereis命令</a></li>
@@ -1552,7 +1552,21 @@ New line
 <li>删除硬链接的源文件，对硬链接无任何影响。</li>
 <li>删除软链接的源文件，会导致软链接失效。</li>
 </ol>
-<h2 id="文件或命令查找">文件或命令查找</h2>
+<h2 id="命令查找">命令查找</h2>
+<p><code>PATH</code>变量是一个环境变量，它告诉操作系统在哪里可以找到可执行文件。当您在命令行中输入命令时，操作系统会在<code>PATH</code>变量指定的目录中查找可执行文件。</p>
+<p><code>PATH</code>变量由一系列目录组成，每个目录之间用冒号（:）分隔。这些目录是系统默认的，也可以根据需要进行修改。</p>
+<p>在<code>Linux</code>中，我们可以通过以下命令查看<code>PATH</code>变量。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># echo $PATH</span>
+</span></span><span style="display:flex;"><span>/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>那么我们如何才能知道我们执行的命令在哪个目录里呢？</p>
 <h3 id="which命令">which命令</h3>
 <p><code>which</code>可用于查看命令文件的绝对路径及别名。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
@@ -1580,7 +1594,7 @@ New line
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="type命令">type命令</h3>
-<p><code>type</code>可用于查看命令的类型、文件位置、别名等信息。对于<code>for</code>之类的内核相关命令，<code>which</code>和<code>whereis</code>都无法查询到，需要使用<code>type</code>。</p>
+<p><code>type</code>命令是<code>Linux</code>系统的一种机制，用来显示指定命令的类型。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -1589,10 +1603,14 @@ New line
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># type ls</span>
 </span></span><span style="display:flex;"><span>ls is aliased to <span style="color:#d14">`</span>ls --color<span style="color:#000;font-weight:bold">=</span>auto<span style="color:#a61717;background-color:#e3d2d2">&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># type wget</span>
+</span></span><span style="display:flex;"><span>wget is /usr/bin/wget
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># type for</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">for</span> is a shell keyword
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># type cd</span>
@@ -1687,7 +1705,7 @@ f:11
 10.0.3.10 00:30:15:A2:3B:B6
 10.0.1.11 00:30:15:A3:23:B7
 10.0.3.12 00:30:15:A2:3A:A1
-</code></pre><p>对该文件输出内容进行排序(提示：通过第3列的第一个字符，以及第4列的所有字符进行排序。</p>
+</code></pre><p>对该文件输出内容进行排序，可通过第<code>3</code>列的第一个字符以及第<code>4</code>列的所有字符进行排序。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -1712,20 +1730,20 @@ f:11
 </tr>
 </tbody>
 </table>
-<p>源文件</p>
+<p>源文件。</p>
 <pre tabindex="0"><code>[root@localhost ~]# cat file.txt 
 123
 abc
 123
 abc
 123
-</code></pre><p>用<code>uniq</code>去重，并显示重复次数</p>
+</code></pre><p>用<code>uniq</code>去重，并显示重复次数。</p>
 <pre tabindex="0"><code>[root@localhost ~]# sort uniq-test.txt | uniq -c
       3 123
       2 abc
 </code></pre><p>要想用<code>uniq</code>去重，<strong>必须</strong>先用<code>sort</code>将重复的内容排列到一起。</p>
 <h3 id="cut命令">cut命令</h3>
-<p><code>cut</code>用于截取文本。</p>
+<p><code>cut</code>主要用于截取文本。</p>
 <table>
 <thead>
 <tr>
@@ -1768,13 +1786,13 @@ abc
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cut -d &#34; &#34; -f 3,7 cut-test.txt | sed &#39;s#,##g&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># awk &#39;{print $3,$7}&#39; cut-test.txt | awk -F &#39;,&#39; &#39;{print $1,$2}&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># cut -d &#34; &#34; -f 3,7 cut-test.txt | awk -F &#39;,&#39; &#39;{print $1,$2}&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># awk &#39;{print $3,$7}&#39; cut-test.txt | awk -F &#39;,&#39; &#39;{print $1,$2}&#39;</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>实际生产过程中，很少使用到<code>cut</code>，通常会使用<code>awk</code>处理列。</p>
 <h3 id="awk命令">awk命令</h3>
-<p><code>awk</code>用于截取文本。</p>
+<p><code>Awk</code>是一种强大的文本处理工具，它以行为单位读取文本文件，根据用户指定的规则进行处理和操作。主要用于截取文本。</p>
 <table>
 <thead>
 <tr>
@@ -1791,7 +1809,7 @@ abc
 </table>
 <ol>
 <li>
-<p>取出设备的ip地址。</p>
+<p>取出设备的<code>IP</code>地址。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -1804,7 +1822,7 @@ abc
 </div>
 </div></li>
 <li>
-<p>取出访问日志服务器的top10的IP地址。</p>
+<p>取出访问日志服务器的<code>top10</code>的<code>IP</code>地址。</p>
 <p>获取源文件。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -1845,16 +1863,16 @@ abc
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># awk &#39;{print $1}&#39; access.log | sort | uniq -c | sort -nr | head -10</span>
 </span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 通过awk取出带有IP地址的列，排序后统计，将统计的结果以倒叙的方式显示，用head控制，显示前10行</span>
-</span></span><span style="display:flex;"><span>   <span style="color:#099">4432</span> 139.226.173.42
-</span></span><span style="display:flex;"><span>    <span style="color:#099">483</span> 139.226.172.150
-</span></span><span style="display:flex;"><span>    <span style="color:#099">381</span> 139.226.172.192
-</span></span><span style="display:flex;"><span>    <span style="color:#099">193</span> 122.71.240.181
-</span></span><span style="display:flex;"><span>    <span style="color:#099">102</span> 223.167.152.124
-</span></span><span style="display:flex;"><span>    <span style="color:#099">100</span> 61.153.150.107
-</span></span><span style="display:flex;"><span>     <span style="color:#099">95</span> 47.97.98.158
-</span></span><span style="display:flex;"><span>     <span style="color:#099">83</span> 45.195.91.193
-</span></span><span style="display:flex;"><span>     <span style="color:#099">83</span> 125.71.215.239
-</span></span><span style="display:flex;"><span>     <span style="color:#099">79</span> 114.87.94.145
+</span></span><span style="display:flex;"><span>   <span style="color:#099">4714</span> 10.100.0.1
+</span></span><span style="display:flex;"><span>     <span style="color:#099">94</span> 122.234.145.54
+</span></span><span style="display:flex;"><span>     <span style="color:#099">56</span> 171.34.14.120
+</span></span><span style="display:flex;"><span>     <span style="color:#099">51</span> 115.34.187.133
+</span></span><span style="display:flex;"><span>     <span style="color:#099">50</span> 58.61.60.183
+</span></span><span style="display:flex;"><span>     <span style="color:#099">48</span> 27.38.56.2
+</span></span><span style="display:flex;"><span>     <span style="color:#099">44</span> 119.131.143.179
+</span></span><span style="display:flex;"><span>     <span style="color:#099">43</span> 58.217.137.221
+</span></span><span style="display:flex;"><span>     <span style="color:#099">39</span> 117.174.26.235
+</span></span><span style="display:flex;"><span>     <span style="color:#099">37</span> 223.73.113.60
 </span></span></code></pre></td></tr></table>
 </div>
 </div></li>

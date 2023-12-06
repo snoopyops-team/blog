@@ -169,7 +169,7 @@
 			
 		</div>
 	</div>
-</div><div class="summary">安装process-exporter 脚本地址，点击下载。 下载安装 1 2 3 4 cd /usr/local/src wget <a href="https://github.com/ncabatoff/process-exporter/releases/download/v0.7.10/process-exporter-0.7.10.linux-amd64.tar.gz">https://github.com/ncabatoff/process-exporter/releases/download/v0.7.10/process-exporter-0.7.10.linux-amd64.tar.gz</a> tar xf process-exporter-0.7.10.linux-amd64.tar.gz -C /usr/local/ ln -s /usr/local/process-exporter-0.7.10.linux-amd64/ /usr/local/process-exporter 配置 1 2 3 4 5 6 cat &gt; /usr/local/process-exporter/process-all.yaml &lt;&lt; \EOF process_names: - name: &quot;{{.Comm}}&quot; cmdline: - '.+' EOF 服务启动 system</div>
+</div><div class="summary">安装process-exporter 脚本地址，点击下载。 下载安装 1 2 3 4 cd /usr/local/src wget <a href="https://github.com/ncabatoff/process-exporter/releases/download/v0.7.10/process-exporter-0.7.10.linux-amd64.tar.gz">https://github.com/ncabatoff/process-exporter/releases/download/v0.7.10/process-exporter-0.7.10.linux-amd64.tar.gz</a> tar xf process-exporter-0.7.10.linux-amd64.tar.gz -C /usr/local/ ln -s /usr/local/process-exporter-0.7.10.linux-amd64/ /usr/local/process-exporter 配置 1 2 3 4 5 6 cat &gt; /usr/local/process-exporter/process-all.yaml &lt;&lt; \EOF process_names: - name: &quot;{{.Comm}}&quot; cmdline: - '.+' EOF 以ops用户启动，需</div>
 				
 				
 				<div class="read-more">

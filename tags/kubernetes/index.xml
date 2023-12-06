@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kubernetes on SnoopyOPS</title>
+    <link>https://www.snoopyops.top/tags/kubernetes/</link>
+    <description>Recent content in Kubernetes on SnoopyOPS</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 06 Dec 2023 07:44:38 +0800</lastBuildDate><atom:link href="https://www.snoopyops.top/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>通过kubeasz快速部署Kubernetes</title>
+      <link>https://www.snoopyops.top/posts/kubernetes/%E9%80%9A%E8%BF%87kubeasz%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2kubernetes/</link>
+      <pubDate>Wed, 06 Dec 2023 07:44:38 +0800</pubDate>
+      
+      <guid>https://www.snoopyops.top/posts/kubernetes/%E9%80%9A%E8%BF%87kubeasz%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2kubernetes/</guid>
+      <description>环境 节点列表： 节点 IP 组件 hw-sg-k8s-master-test-0001 192.168.1.56 etcd/master hw-sg-k8s-master-test-0002 192.168.1.45 etcd/master hw-sg-k8s-master-test-0003 192.168.1.117 etcd/master hw-sg-k8s-node-test-0001 192.168.1.72 node hw-sg-k8s-node-test-0002 192.168.1.7 node 操作系统：CentOS7.9 Kubeasz安装 使用kubeasz自动化部署程序安装。 以hw-sg-k8s-</description>
+    </item>
+    
+  </channel>
+</rss>

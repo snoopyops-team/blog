@@ -6,7 +6,16 @@
     <description>Recent content in Linux基础 on SnoopyOPS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 12 Jun 2023 16:19:32 +0800</lastBuildDate><atom:link href="https://www.snoopyops.top/categories/linux%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Dec 2023 07:52:49 +0800</lastBuildDate><atom:link href="https://www.snoopyops.top/categories/linux%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>创建基础镜像</title>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/%E5%88%9B%E5%BB%BA%E5%9F%BA%E7%A1%80%E9%95%9C%E5%83%8F/</link>
+      <pubDate>Wed, 06 Dec 2023 07:52:49 +0800</pubDate>
+      
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/%E5%88%9B%E5%BB%BA%E5%9F%BA%E7%A1%80%E9%95%9C%E5%83%8F/</guid>
+      <description>升级 [root@mx-glc-template ~]# yum update [root@mx-glc-template ~]# reboot 创建堡垒机管理用户，并配置密钥。 ec2-user:x:1000:1000::/home/ec2-user:/bin/bash 禁用 selinux 及 firewalld。 1 2 3 4 5 6 7 8 if [ -f /etc/selinux/config ]; then sed -i &amp;#39;s#SELINUX=enforcing#SELINUX=disabled#g&amp;#39; /etc/selinux/config setenforce 0 fi # systemctl stop firewalld # systemctl disable firewalld 添加主机到跳板机系统。</description>
+    </item>
+    
     <item>
       <title>定时任务</title>
       <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/14.%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</link>

@@ -57,7 +57,7 @@
         <span>
             
             <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
-            5217 字</span>&nbsp;
+            5468 字</span>&nbsp;
         <span>
             
             <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
@@ -132,13 +132,14 @@
 <p>在<code>Linux</code>系统中，用户和组是用于管理和控制系统资源访问权限的重要概念。</p>
 <p>用户（<code>User</code>）：是指系统中的账号。每个用户都有一个唯一的用户名和用户<code>ID</code>（<code>UID</code>）。用户可以拥有自己的个人文件和目录，并且可以在系统中执行特定的操作。</p>
 <p>组（<code>Group</code>）：是一组相关用户的集合。每个组都有一个唯一的组名和组<code>ID</code>（<code>GID</code>）。组可以用于简化权限管理，将一组用户归类，并将特定权限分配给整个组。</p>
-<p>用户应用场景：</p>
+<p>普通用户应用场景：</p>
 <ol>
-<li>使用普通用户管理服务器，避免因<code>root</code>权限过大，误操作导致故障。生产环境服务器通常会禁止使用<code>root</code>登录。</li>
-<li>使用普通用户运行程序，规避安全相关风险。</li>
+<li>针对研发、测试等岗位的同事，我们通常会分配普通用户给他们，避免因<code>root</code>权限过大，误操作导致故障。</li>
+<li>生产环境服务器通常会禁止使用<code>root</code>登录，管理人员需要使用普通用户登录系统后提权到<code>root</code>用户。</li>
+<li>使用普通用户运行程序，规避因程序存在漏洞，导致黑客入侵后获取到较高的权限。</li>
 </ol>
 <h3 id="配置文件">配置文件</h3>
-<p>创建用户时，系统会对<code>/etc/passwd</code>和<code>/etc/shadow</code>文件进行变更。接下来让我们来认识这两个配置文件。</p>
+<p>创建用户时，系统会对<code>/etc/passwd</code>和<code>/etc/shadow</code>文件进行变更，接下来让我们来认识这两个配置文件。</p>
 <p><code>Linux</code>系统会将用户信息存放在<code>/etc/passwd</code>中，<code>/etc/passwd</code>只记录用户信息，不记录密码。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -329,7 +330,7 @@
 </tbody>
 </table>
 <p>我们可以通过以下练习熟悉<code>useradd</code>的使用。</p>
-<p><strong>例1</strong>：创建<code>snoopy</code>用户，<code>UID5001</code>，基本组<code>ops</code>，附加组<code>dev</code>， 注释信息<code>testUser</code>，登陆<code>shell:/bin/bash</code></p>
+<p><strong>例1</strong>：创建<code>snoopy</code>用户，指定<code>UID</code>为<code>5001</code>，基本组<code>ops</code>，附加组<code>dev</code>， 注释信息<code>testUser</code>，登陆<code>shell</code>为<code>/bin/bash</code>。</p>
 <p>用<code>groupadd</code>添加相关的用户组。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -401,6 +402,9 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>请自己尝试创建一个<code>develop</code>用户，<code>uid</code>为<code>6666</code>，附加组为<code>ops</code>，用户家目录为<code>/tmp/develop</code>，登录<code>shell</code>为<code>/sbin/nologin</code>。</p>
+<blockquote>
+<p>修改用户家目录需要关闭selinux。</p>
+</blockquote>
 <h3 id="用户创建流程">用户创建流程</h3>
 <p><strong>配置文件解读</strong></p>
 <p>在用户创建的过程需要参考<code>/etc/login.defs</code>和<code>/etc/default/useradd</code>这两个文件。如果在创建用户时指定了参数，则会覆盖<code>/etc/login.defs</code>和<code>/etc/default/useradd</code>相关内容。</p>
@@ -427,8 +431,8 @@
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># egrep -v &#34;^$|#&#34; /etc/login.defs </span>
-</span></span><span style="display:flex;"><span>MAIL_DIR	/var/spool/mail      <span style="color:#998;font-style:italic"># 邮箱地址。</span>
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># egrep -v &#34;^$|#&#34; /etc/login.defs</span>
+</span></span><span style="display:flex;"><span>MAIL_DIR	/var/spool/mail      <span style="color:#998;font-style:italic"># 邮见存放目录。</span>
 </span></span><span style="display:flex;"><span>PASS_MAX_DAYS	<span style="color:#099">99999</span>            <span style="color:#998;font-style:italic"># 密码最长使用天数。</span>
 </span></span><span style="display:flex;"><span>PASS_MIN_DAYS	<span style="color:#099">0</span>                <span style="color:#998;font-style:italic"># 密码最短使用天数。</span>
 </span></span><span style="display:flex;"><span>PASS_MIN_LEN	<span style="color:#099">5</span>                <span style="color:#998;font-style:italic"># 密码的长度。</span>
@@ -441,10 +445,10 @@
 </span></span><span style="display:flex;"><span>GID_MAX                 <span style="color:#099">60000</span>    <span style="color:#998;font-style:italic"># GID最大到6w结束。</span>
 </span></span><span style="display:flex;"><span>SYS_GID_MIN               <span style="color:#099">201</span>    <span style="color:#998;font-style:italic"># 系统GID从201开始。</span>
 </span></span><span style="display:flex;"><span>SYS_GID_MAX               <span style="color:#099">999</span>    <span style="color:#998;font-style:italic"># 系统GID醉倒到999结束。</span>
-</span></span><span style="display:flex;"><span>CREATE_HOME	yes                  <span style="color:#998;font-style:italic"># 给用户创建家目录。</span>
-</span></span><span style="display:flex;"><span>UMASK           <span style="color:#099">077</span>
-</span></span><span style="display:flex;"><span>USERGROUPS_ENAB yes
-</span></span><span style="display:flex;"><span>ENCRYPT_METHOD SHA512 
+</span></span><span style="display:flex;"><span>CREATE_HOME	yes                  <span style="color:#998;font-style:italic"># 默认给用户创建家目录。</span>
+</span></span><span style="display:flex;"><span>UMASK           077				 <span style="color:#998;font-style:italic"># 建立的用户家目录的默认权限。</span>
+</span></span><span style="display:flex;"><span>USERGROUPS_ENAB yes				 <span style="color:#998;font-style:italic"># 创建同名用户组；使用userdel删除用户时，默认连组一起删除。</span>
+</span></span><span style="display:flex;"><span>ENCRYPT_METHOD SHA512 			 <span style="color:#998;font-style:italic"># 密码加密算法。</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>/etc/default/useradd</code>相关配置内容。</p>
@@ -463,11 +467,11 @@
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># egrep -v &#34;^$|#&#34; /etc/default/useradd</span>
 </span></span><span style="display:flex;"><span><span style="color:#008080">GROUP</span><span style="color:#000;font-weight:bold">=</span>100				 <span style="color:#998;font-style:italic"># 当创建用户时，不指定组，且/etc/login.defs中USERGROUPS_ENAB为no时，默认给用户分配到gid为100的组。</span>
 </span></span><span style="display:flex;"><span><span style="color:#008080">HOME</span><span style="color:#000;font-weight:bold">=</span>/home               <span style="color:#998;font-style:italic"># 用户默认的家目录。</span>
-</span></span><span style="display:flex;"><span><span style="color:#008080">INACTIVE</span><span style="color:#000;font-weight:bold">=</span>-1              <span style="color:#998;font-style:italic"># 用户不失效。</span>
-</span></span><span style="display:flex;"><span><span style="color:#008080">EXPIRE</span><span style="color:#000;font-weight:bold">=</span>                  <span style="color:#998;font-style:italic"># 过期时间。</span>
+</span></span><span style="display:flex;"><span><span style="color:#008080">INACTIVE</span><span style="color:#000;font-weight:bold">=</span>-1              <span style="color:#998;font-style:italic"># 密码过期后的宽限天数，也就是/etc/shadow文件的第七个字段。这里默认值是-1，所以所有新建立的用户密码都不会失效。</span>
+</span></span><span style="display:flex;"><span><span style="color:#008080">EXPIRE</span><span style="color:#000;font-weight:bold">=</span>                  <span style="color:#998;font-style:italic"># 密码失效时间，也就是/etc/shadow文件的第八个字段，不设置表示永久有效。</span>
 </span></span><span style="display:flex;"><span><span style="color:#008080">SHELL</span><span style="color:#000;font-weight:bold">=</span>/bin/bash          <span style="color:#998;font-style:italic"># 默认登陆shell。</span>
 </span></span><span style="display:flex;"><span><span style="color:#008080">SKEL</span><span style="color:#000;font-weight:bold">=</span>/etc/skel           <span style="color:#998;font-style:italic"># 默认用户拷贝的环境变量。</span>
-</span></span><span style="display:flex;"><span><span style="color:#008080">CREATE_MAIL_SPOOL</span><span style="color:#000;font-weight:bold">=</span>yes    <span style="color:#998;font-style:italic"># 创建邮箱。</span>
+</span></span><span style="display:flex;"><span><span style="color:#008080">CREATE_MAIL_SPOOL</span><span style="color:#000;font-weight:bold">=</span>yes    <span style="color:#998;font-style:italic"># 创建一个和用户同名的保存邮件信息的文件。</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>应用场景</strong></p>
@@ -509,7 +513,7 @@
 </tr>
 <tr>
 <td style="text-align:center">-m</td>
-<td>将家目录内容移至新位置 (仅于 -d 一起使用)。</td>
+<td>将家目录内容移至新位置 (仅与 -d 一起使用)。</td>
 </tr>
 <tr>
 <td style="text-align:center">-l</td>
@@ -599,7 +603,7 @@
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># usermod snoopyops -d /tmp/test</span>
-</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># su - wu</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># su - snoopyops</span>
 </span></span><span style="display:flex;"><span>Last login: Mon Aug  <span style="color:#099">5</span> 15:45:28 CST <span style="color:#099">2019</span> on pts/1
 </span></span><span style="display:flex;"><span>su: warning: cannot change directory to /tmp/test: No such file or directory
 </span></span></code></pre></td></tr></table>

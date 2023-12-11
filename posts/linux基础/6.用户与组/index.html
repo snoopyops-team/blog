@@ -67,11 +67,11 @@
         <span>
             
             <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
-            5456 字</span>&nbsp;
+            5991 字</span>&nbsp;
         <span>
             
             <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
-            11 分钟</span>
+            12 分钟</span>
             <div class="container-ctgtag">
 	<div class="taxonomy">
 		<div class="tag">
@@ -125,6 +125,12 @@
         <li><a href="#w命令">w命令</a></li>
       </ul>
     </li>
+    <li><a href="#用户组相关概念">用户组相关概念</a>
+      <ul>
+        <li><a href="#认识用户组">认识用户组</a></li>
+        <li><a href="#配置文件-1">配置文件</a></li>
+      </ul>
+    </li>
     <li><a href="#用户组管理">用户组管理</a>
       <ul>
         <li><a href="#创建用户组">创建用户组</a></li>
@@ -147,7 +153,6 @@
 <h3 id="认识用户">认识用户</h3>
 <p>在<code>Linux</code>系统中，用户和组是用于管理和控制系统资源访问权限的重要概念。</p>
 <p>用户（<code>User</code>）：是指系统中的账号。每个用户都有一个唯一的用户名和用户<code>ID</code>（<code>UID</code>）。用户可以拥有自己的个人文件和目录，并且可以在系统中执行特定的操作。</p>
-<p>组（<code>Group</code>）：是一组相关用户的集合。每个组都有一个唯一的组名和组<code>ID</code>（<code>GID</code>）。组可以用于简化权限管理，将一组用户归类，并将特定权限分配给整个组。</p>
 <p>普通用户应用场景：</p>
 <ol>
 <li>针对研发、测试等岗位的同事，我们通常会分配普通用户给他们，避免因<code>root</code>权限过大，误操作导致故障。</li>
@@ -167,7 +172,7 @@
 </span></span><span style="display:flex;"><span>root:x:0:0:root:/root:/bin/bash
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><code>/etc/passwd</code>以<code>:</code>为分隔符，共可分为7列。</p>
+</div><p><code>/etc/passwd</code>以<code>:</code>为分隔符，共可分为<code>7</code>列。</p>
 <table>
 <thead>
 <tr>
@@ -212,7 +217,7 @@
 </span></span><span style="display:flex;"><span>root:<span style="color:#008080">$xxx6</span>:19489:0:99999:7:2:66275:
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><code>/etc/shadow</code>以<code>:</code>为分隔符，共可分为9列。</p>
+</div><p><code>/etc/shadow</code>以<code>:</code>为分隔符，共可分为<code>9</code>列。</p>
 <table>
 <thead>
 <tr>
@@ -591,7 +596,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#008080">uid</span><span style="color:#000;font-weight:bold">=</span>9999<span style="color:#000;font-weight:bold">(</span>snoopy<span style="color:#000;font-weight:bold">)</span> <span style="color:#008080">gid</span><span style="color:#000;font-weight:bold">=</span>1000<span style="color:#000;font-weight:bold">(</span>ops<span style="color:#000;font-weight:bold">)</span> <span style="color:#008080">groups</span><span style="color:#000;font-weight:bold">=</span>1000<span style="color:#000;font-weight:bold">(</span>ops<span style="color:#000;font-weight:bold">)</span>,1001<span style="color:#000;font-weight:bold">(</span>dev<span style="color:#000;font-weight:bold">)</span>,1002<span style="color:#000;font-weight:bold">(</span>dba<span style="color:#000;font-weight:bold">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><strong>例2</strong>：将用户<code>snoopy</code>的用户名修改为<code>snoopyops</code>，家目录修改问<code>/tmp/snoopyops</code>。</p>
+</div><p><strong>例2</strong>：将用户<code>snoopy</code>的用户名修改为<code>snoopyops</code>，家目录修改为<code>/tmp/snoopyops</code>。</p>
 <p>更改用户家目录时应加上<code>-m</code>选项，会将用户家目录移动到<code>/tmp</code>目录。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -913,9 +918,101 @@
 </tr>
 </tbody>
 </table>
+<h2 id="用户组相关概念">用户组相关概念</h2>
+<h3 id="认识用户组">认识用户组</h3>
+<p>组（<code>Group</code>）：是一组相关用户的集合。每个组都有一个唯一的组名和组<code>ID</code>（<code>GID</code>）。组可以用于简化权限管理，将一组用户归类，并将特定权限分配给整个组。用户组分为基本组和附加组。</p>
+<p>基本组：用户只能有一个基本组，创建时可通过<code>-g</code>指定，如未指定则创建一个与用户同名的默认的组。</p>
+<p>附加组：用户除了基本组还可以属于多个附加组。</p>
+<h3 id="配置文件-1">配置文件</h3>
+<p>用户组信息保存在<code>/etc/group</code>和<code>/etc/gshadow</code>两个文件中。</p>
+<p><code>/etc/group</code>文件是用户组的配置文件，即用户组的所有信息都存放在此文件中。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># head -1 /etc/group</span>
+</span></span><span style="display:flex;"><span>root:x:0:
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>/etc/group</code>以<code>:</code>为分隔符，共可分为<code>4</code>列。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">第一列</th>
+<th style="text-align:center">第二列</th>
+<th style="text-align:center">第三列</th>
+<th style="text-align:center">第四列</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">root</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">0</td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">组名</td>
+<td style="text-align:center">组密码标志</td>
+<td style="text-align:center">组GID</td>
+<td style="text-align:center">组中附加用户，不显示基本成员</td>
+</tr>
+</tbody>
+</table>
+<p>用户组的密码信息存储在<code>/etc/gshadow</code>文件中。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># head -1 /etc/gshadow</span>
+</span></span><span style="display:flex;"><span>root:::
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>/etc/gshadow</code>以<code>:</code>为分隔符，共可分为<code>4</code>列。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">第一列</th>
+<th style="text-align:center">第二列</th>
+<th style="text-align:center">第三列</th>
+<th style="text-align:center">第四列</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">root</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center">组名</td>
+<td style="text-align:center">组密码，通常不设置密码</td>
+<td style="text-align:center">组管理员，通常不设置</td>
+<td style="text-align:center">组中附加用户，不显示基本成员</td>
+</tr>
+</tbody>
+</table>
 <h2 id="用户组管理">用户组管理</h2>
 <h3 id="创建用户组">创建用户组</h3>
-<p>创建<code>GID</code>为<code>666</code>的用户组<code>g1</code>。</p>
+<p>我们可以通过<code>groupadd</code>命令创建一个用户组。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># useradd group_test</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># grep &#34;group_test&#34; /etc/group</span>
+</span></span><span style="display:flex;"><span>group_test:x:5107:
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>创建<code>GID</code>为<code>666</code>的用户组<code>g1</code>。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -969,13 +1066,51 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="删除用户组">删除用户组</h3>
-<p>可通过<code>groupdel</code>命令删除用户组，若用户组里有用户的话，需要先删除组内的用户才可以删除该组。</p>
+<p>当我们删除用户时，系统默认会把用户的基本组删除。</p>
+<p>可通过<code>groupdel</code>命令删除用户的附加组，需要先删除附加组内的所有用户后才可以删除附加组。</p>
+<p>创建一个用户<code>u1</code>，属于附加组<code>gg</code>。</p>
 <div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># groupdel g1</span>
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># useradd u1 -G gg</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># id u1</span>
+</span></span><span style="display:flex;"><span><span style="color:#008080">uid</span><span style="color:#000;font-weight:bold">=</span>5108<span style="color:#000;font-weight:bold">(</span>u1<span style="color:#000;font-weight:bold">)</span> <span style="color:#008080">gid</span><span style="color:#000;font-weight:bold">=</span>5108<span style="color:#000;font-weight:bold">(</span>u1<span style="color:#000;font-weight:bold">)</span> <span style="color:#008080">groups</span><span style="color:#000;font-weight:bold">=</span>5108<span style="color:#000;font-weight:bold">(</span>u1<span style="color:#000;font-weight:bold">)</span>,777<span style="color:#000;font-weight:bold">(</span>gg<span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># grep &#34;u1&#34; /etc/group</span>
+</span></span><span style="display:flex;"><span>gg:x:777:u1
+</span></span><span style="display:flex;"><span>u1:x:5108:
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>删除用户<code>u1</code>后，用户基本组<code>u1</code>也默认被删除，但是<code>gg</code>组还在。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># userdel u1</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># grep &#34;u1&#34; /etc/group</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># grep &#34;gg&#34; /etc/group</span>
+</span></span><span style="display:flex;"><span>gg:x:777:
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>可通过<code>groupdel</code>命令删除<code>gg</code>用户组。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># groupdel gg</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># grep &#34;gg&#34; /etc/group</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="用户提权">用户提权</h2>

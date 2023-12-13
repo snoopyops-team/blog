@@ -6,7 +6,25 @@
     <description>Recent content in Prometheus on SnoopyOPS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 08 Dec 2023 16:10:51 +0800</lastBuildDate><atom:link href="https://www.snoopyops.top/tags/prometheus/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Dec 2023 15:48:51 +0800</lastBuildDate><atom:link href="https://www.snoopyops.top/tags/prometheus/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GPU监控</title>
+      <link>https://www.snoopyops.top/posts/prometheus%E7%9B%91%E6%8E%A7/gpu%E7%9B%91%E6%8E%A7/</link>
+      <pubDate>Wed, 13 Dec 2023 15:48:51 +0800</pubDate>
+      
+      <guid>https://www.snoopyops.top/posts/prometheus%E7%9B%91%E6%8E%A7/gpu%E7%9B%91%E6%8E%A7/</guid>
+      <description>公司内有一批GPU服务器，需要针对GPU使用的情况进行监控。 通过nvidia_gpu_exporter可实现对GPU的监控。 安装nvidia_gpu_expor</description>
+    </item>
+    
+    <item>
+      <title>MinIO监控</title>
+      <link>https://www.snoopyops.top/posts/prometheus%E7%9B%91%E6%8E%A7/minio%E7%9B%91%E6%8E%A7/</link>
+      <pubDate>Wed, 13 Dec 2023 15:46:59 +0800</pubDate>
+      
+      <guid>https://www.snoopyops.top/posts/prometheus%E7%9B%91%E6%8E%A7/minio%E7%9B%91%E6%8E%A7/</guid>
+      <description>MinIO配置 minio自身提供了Prometheus监控的指标数据，分为两种形式获取： 开放形式获取(不需要任何认证) 需要通过认证获取 通常我们会采用通过认证的方</description>
+    </item>
+    
     <item>
       <title>ES集群监控</title>
       <link>https://www.snoopyops.top/posts/prometheus%E7%9B%91%E6%8E%A7/es%E9%9B%86%E7%BE%A4%E7%9B%91%E6%8E%A7/</link>

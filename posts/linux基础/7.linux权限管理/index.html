@@ -2,11 +2,11 @@
 <html lang="zh-CN"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="description" content="Linxu基础权限 - https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/7.linux%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/">
+    <meta name="description" content="Linux权限控制 - https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/7.linux%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/">
     <meta name="author" content="snoopy - https://www.snoopyops.top/">
     
     <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
-    <title>Linxu基础权限</title>
+    <title>Linux权限控制</title>
     <link rel="icon" type="image/png" href="/favicon.ico">
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-webfont/1.7.0/style.min.css" />
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" />
@@ -33,7 +33,7 @@
     
     <div class="right">
         
-        <h1 class="title">Linxu基础权限</h1>
+        <h1 class="title">Linux权限控制</h1>
     
         
             
@@ -67,7 +67,7 @@
         <span>
             
             <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
-            3736 字</span>&nbsp;
+            3919 字</span>&nbsp;
         <span>
             
             <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
@@ -76,6 +76,8 @@
 	<div class="taxonomy">
 		<div class="tag">
 			
+			
+			<a href="/tags/linux%E5%9F%BA%E7%A1%80">Linux基础</a>
 			
 		</div>
 	</div>
@@ -95,10 +97,15 @@
 </div>
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#基础权限">基础权限</a>
+    <li><a href="#权限概述">权限概述</a>
       <ul>
-        <li><a href="#用户权限">用户权限</a></li>
-        <li><a href="#权限设置">权限设置</a></li>
+        <li><a href="#什么是linux权限">什么是Linux权限</a></li>
+        <li><a href="#为什么要有权限">为什么要有权限</a></li>
+        <li><a href="#权限与用户之间的关系">权限与用户之间的关系</a></li>
+      </ul>
+    </li>
+    <li><a href="#权限设置">权限设置</a>
+      <ul>
         <li><a href="#属主和属组">属主和属组</a></li>
       </ul>
     </li>
@@ -114,13 +121,26 @@
     </div>
 
     <div class='content  '>
-        <h2 id="基础权限">基础权限</h2>
-<h3 id="用户权限">用户权限</h3>
+        <h2 id="权限概述">权限概述</h2>
+<h3 id="什么是linux权限">什么是Linux权限</h3>
+<p>在<code>Linux</code>系统中，权限是控制用户对文件或目录进行访问的一种机制。这种权限定义了谁可以访问文件，以及他们可以做什么。</p>
+<h3 id="为什么要有权限">为什么要有权限</h3>
+<p>保护文件和目录：通过权限设置，可以保护系统的文件和目录不被未授权的用户访问或修改，从而确保系统安全。</p>
+<p>防止误操作：对于一些敏感的文件或目录，通过设置权限，可以防止误删除或误修改，从而避免意外情况的发生。</p>
+<h3 id="权限与用户之间的关系">权限与用户之间的关系</h3>
 <p>在<code>Linux</code>系统中，针对文件定义了三种身份，分别是属主(<code>owner</code>)、属组(<code>group</code>)、其他人(<code>others</code>)，每一种身份又对应三种权限，分别是可读(<code>readable</code>)、可写(<code>writable</code>)、可执行(<code>excutable</code>)。</p>
-<pre tabindex="0"><code>[root@localhost ~]# ll
-drwxrwxrwx. 2 root root       16 Aug  6 19:52 test
-</code></pre><p><img src="https://images.wuennan.cn/8505400-eb1ea1bde46379b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="详细权限">
-用户对文件资源，有三种角色<code>ugo</code>，当一个用户访问文件流程如下。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ll</span>
+</span></span><span style="display:flex;"><span>drwxrwxrwx. <span style="color:#099">2</span> root root       <span style="color:#099">16</span> Aug  <span style="color:#099">6</span> 19:52 <span style="color:#0086b3">test</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><img src="https://images.wuennan.cn/8505400-eb1ea1bde46379b5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="详细权限"></p>
+<p>用户对文件资源，有三种角色<code>ugo</code>，当一个用户访问文件流程如下。</p>
 <ol>
 <li>判断用户是否为文件所有者，如果是则按所有者的权限进行访问。</li>
 <li>判断用户是否为文件所有组成员，如果是则按组的权限进行访问。</li>
@@ -158,7 +178,7 @@ drwxrwxrwx. 2 root root       16 Aug  6 19:52 test
 </tr>
 </tbody>
 </table>
-<h3 id="权限设置">权限设置</h3>
+<h2 id="权限设置">权限设置</h2>
 <p>权限可以赋于某个用户或组能够以何种方式访问某个文件。
 在Linux中权限对文件和对目录的影响是有不同区别的。</p>
 <table>

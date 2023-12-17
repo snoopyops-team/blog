@@ -44,6 +44,15 @@
     </item>
     
     <item>
+      <title>Linux权限控制</title>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/7.linux%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Sat, 27 May 2023 19:13:18 +0800</pubDate>
+      
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/7.linux%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/</guid>
+      <description>权限概述 什么是Linux权限 在Linux系统中，权限是控制用户对文件或目录进行访问的一种机制。这种权限定义了谁可以访问文件，以及他们可以做什么。 为什么要有权限 保</description>
+    </item>
+    
+    <item>
       <title>用户与组</title>
       <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/6.%E7%94%A8%E6%88%B7%E4%B8%8E%E7%BB%84/</link>
       <pubDate>Wed, 24 May 2023 14:57:18 +0800</pubDate>

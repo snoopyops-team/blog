@@ -2,11 +2,11 @@
 <html lang="zh-CN"><head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="description" content="Linux权限控制 - https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/7.linux%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/">
+    <meta name="description" content="Linux权限管理 - https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/7.linux%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/">
     <meta name="author" content="snoopy - https://www.snoopyops.top/">
     
     <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
-    <title>Linux权限控制</title>
+    <title>Linux权限管理</title>
     <link rel="icon" type="image/png" href="/favicon.ico">
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-webfont/1.7.0/style.min.css" />
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" />
@@ -33,7 +33,7 @@
     
     <div class="right">
         
-        <h1 class="title">Linux权限控制</h1>
+        <h1 class="title">Linux权限管理</h1>
     
         
             
@@ -62,16 +62,16 @@
             <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7409" width="12" height="12"><path d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z" p-id="7410" fill="#adb5bd"></path></svg>
             2023-05-27&nbsp;&nbsp;&nbsp;
             <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="23838" width="11" height="11"><path d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z" p-id="23839" fill="#adb5bd"></path></svg>
-            2023-11-03&nbsp;&nbsp;&nbsp;
+            2023-12-18&nbsp;&nbsp;&nbsp;
         </span>
         <span>
             
             <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
-            3919 字</span>&nbsp;
+            4777 字</span>&nbsp;
         <span>
             
             <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
-            8 分钟</span>
+            10 分钟</span>
             <div class="container-ctgtag">
 	<div class="taxonomy">
 		<div class="tag">
@@ -106,7 +106,9 @@
     </li>
     <li><a href="#权限设置">权限设置</a>
       <ul>
-        <li><a href="#属主和属组">属主和属组</a></li>
+        <li><a href="#chmod命令">chmod命令</a></li>
+        <li><a href="#权限验证">权限验证</a></li>
+        <li><a href="#chown命令">chown命令</a></li>
       </ul>
     </li>
     <li><a href="#特殊权限">特殊权限</a>
@@ -179,8 +181,92 @@
 </tbody>
 </table>
 <h2 id="权限设置">权限设置</h2>
-<p>权限可以赋于某个用户或组能够以何种方式访问某个文件。
-在Linux中权限对文件和对目录的影响是有不同区别的。</p>
+<h3 id="chmod命令">chmod命令</h3>
+<p><code>chmod</code>命令用于改变文件或目录的权限，可以使用数字或符号模式来指定权限。</p>
+<p>数字模式：数字模式使用三位数字来表示所有者、组和其他用户的权限，每位数字的范围是<code>0</code>到<code>7</code>。通过数字模式对<code>file.txt</code>权限进行变更。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ll file.txt</span>
+</span></span><span style="display:flex;"><span>-rw-r--r-- <span style="color:#099">1</span> root root <span style="color:#099">0</span> Dec <span style="color:#099">18</span> 07:52 file.txt
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># chmod 640 file.txt</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ll file.txt</span>
+</span></span><span style="display:flex;"><span>-rw-r----- <span style="color:#099">1</span> root root <span style="color:#099">0</span> Dec <span style="color:#099">18</span> 07:52 file.txt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>符号模式：符号模式使用字母<code>r</code>、<code>w</code>和<code>x</code>来表示读、写和执行权限。通过符号模式，恢复<code>file.txt</code>的权限。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ll file.txt</span>
+</span></span><span style="display:flex;"><span>-rw-r----- <span style="color:#099">1</span> root root <span style="color:#099">0</span> Dec <span style="color:#099">18</span> 07:52 file.txt
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># chmod u=rw,g=r,o=r file.txt</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ll file.txt</span>
+</span></span><span style="display:flex;"><span>-rw-r--r-- <span style="color:#099">1</span> root root <span style="color:#099">0</span> Dec <span style="color:#099">18</span> 07:52 file.txt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>符号模式还可以使用<code>+</code>来添加权限，<code>-</code>来移除权限。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ll file.txt</span>
+</span></span><span style="display:flex;"><span>-rw-r--r-- <span style="color:#099">1</span> root root <span style="color:#099">0</span> Dec <span style="color:#099">18</span> 07:52 file.txt
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># chmod a+x file.txt</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ll file.txt</span>
+</span></span><span style="display:flex;"><span>-rwxr-xr-x <span style="color:#099">1</span> root root <span style="color:#099">0</span> Dec <span style="color:#099">18</span> 07:52 file.txt
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># chmod o-x file.txt</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ll file.txt</span>
+</span></span><span style="display:flex;"><span>-rwxr-xr-- <span style="color:#099">1</span> root root <span style="color:#099">0</span> Dec <span style="color:#099">18</span> 07:52 file.txt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>chmod</code>常用的选项有<code>-R</code>，表示递归地改变文件或目录的权限。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># mkdir -p testdir/dir1</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># touch testdir/file</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 递归修改文件权限</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># chmod -R 700 testdir/</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 验证权限</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ll testdir/</span>
+</span></span><span style="display:flex;"><span>total <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>drwx------ <span style="color:#099">2</span> root root <span style="color:#099">6</span> Dec <span style="color:#099">19</span> 23:09 dir1
+</span></span><span style="display:flex;"><span>-rwx------ <span style="color:#099">1</span> root root <span style="color:#099">0</span> Dec <span style="color:#099">19</span> 23:09 file
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="权限验证">权限验证</h3>
+<p>在<code>Linux</code>中权限对文件和对目录的影响是有不同区别的，取别如下表：</p>
 <table>
 <thead>
 <tr>
@@ -191,148 +277,386 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">读取权限(r)</td>
-<td>具有读取文件内容权限</td>
-<td>具有浏览目录及子目录的权限</td>
+<td style="text-align:center">r</td>
+<td>具有读取文件内容权限。</td>
+<td>具有浏览目录及子目录的权限。</td>
 </tr>
 <tr>
-<td style="text-align:center">写入权限(w)</td>
-<td>具有新增、修改文件内容的权限</td>
-<td>具有增加和删除目录内文件</td>
+<td style="text-align:center">w</td>
+<td>具有修改文件内容的权限。</td>
+<td>具有增加和删除目录内文件权限。</td>
 </tr>
 <tr>
-<td style="text-align:center">执行权限(x)</td>
-<td>具有执行文件的权限</td>
-<td>具有访问目录的内容(取决于目录中文件权限)</td>
+<td style="text-align:center">x</td>
+<td>具有执行文件的权限。</td>
+<td>具有进入目录的权限。</td>
 </tr>
 </tbody>
 </table>
 <p><strong>文件权限验证</strong></p>
-<p>准备一个普通用户和一个文件，具体配置如下：</p>
-<pre tabindex="0"><code>[root@localhost ~]# id ennan
-uid=3003(ennan) gid=3003(ennan) groups=3003(ennan)
-[root@localhost /]# ll filename 
--rw-r--r--. 1 root root 5 Aug  7 14:40 filename
-[root@localhost /]# cat filename 
-date
-</code></pre><p><code>r</code> 权限： 切换到普通用户，当用户对文件只有r的权限时，用户仅能查看文件，无法进行更多的操作。
-可用的命令有：<code>cat</code>、<code>more</code>、<code>less</code>、<code>head</code>、<code>tail</code></p>
-<pre tabindex="0"><code>[ennan@localhost  /]$  ll filename 
--rw-r--r--. 1 root root 5 Aug  7 14:40 filename
-[ennan@localhost  /]$ cat filename 
+<p>准备一个普通用户和一个文件。文件不要放到用户家目录中。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># id snoopy</span>
+</span></span><span style="display:flex;"><span><span style="color:#008080">uid</span><span style="color:#000;font-weight:bold">=</span>5106<span style="color:#000;font-weight:bold">(</span>snoopy<span style="color:#000;font-weight:bold">)</span> <span style="color:#008080">gid</span><span style="color:#000;font-weight:bold">=</span>5107<span style="color:#000;font-weight:bold">(</span>snoopy<span style="color:#000;font-weight:bold">)</span> <span style="color:#008080">groups</span><span style="color:#000;font-weight:bold">=</span>5107<span style="color:#000;font-weight:bold">(</span>snoopy<span style="color:#000;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># touch /opt/file.txt</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># echo &#34;date&#34; &gt; /opt/file.txt</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost ~<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ll /opt/file.txt</span>
+</span></span><span style="display:flex;"><span>-rw-r--r-- <span style="color:#099">1</span> root root <span style="color:#099">10</span> Dec <span style="color:#099">18</span> 08:08 /opt/file.txt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>r</code> 权限： 切换到普通用户，当用户对文件只有r的权限时，用户仅能查看文件，无法对文件进行修改、复制、删除等更多的操作。
+可用的命令有：<code>cat</code>、<code>more</code>、<code>less</code>、<code>head</code>、<code>tail</code>。</p>
+<pre tabindex="0"><code>[snoopy@localhost opt]$ ll file.txt
+-rw-r--r-- 1 root root 10 Dec 18 08:08 file.txt
+[snoopy@localhost opt]$ cat file.txt
 date
 </code></pre><p><code>w</code> 权限：可以对文件进行写入操作，但是不能查看或者进行其他操作。</p>
-<pre tabindex="0"><code>[ennan@localhost  /]$ ll filename 
--rw-r---w-. 1 root root 5 Aug  7 14:40 filename
-[ennan@localhost  /]$ echo &#34;date&#34; &gt; filename 
-[ennan@localhost  /]$ cat filename 
-cat: filename: Permission denied
-</code></pre><p><code>x</code> 权限：普通用户执行<code>x</code>权限时，同时需要具有<code>r</code>权限，否则不能执行成功。</p>
-<pre tabindex="0"><code>[ennan@localhost  /]$ ll filename 
--rw-r----x. 1 root root 5 Aug  7 15:04 filename
-[ennan@localhost  /]$ ./filename 
-bash: ./filename: Permission denied
-</code></pre><p><code>rw</code> 权限：可对文件进行读写，但是不能进行执行、复制、移动、删除等操作。</p>
-<pre tabindex="0"><code>[ennan@localhost  /]$ ll filename 
--rw-r--rw-. 1 root root 5 Aug  7 15:04 filename
-[ennan@localhost  /]$ vim filename 
-[ennan@localhost  /]$ cat filename 
-date
-date
-[ennan@localhost  /]$ ./filename
--bash: ./filename: Permission denied
-[ennan@localhost  /]$ cp filename filename.bak
-cp: cannot create regular file ‘filename.bak’: Permission denied
-</code></pre><p><code>rx</code> 权限：可进行查看和执行操作，但是不能编辑、移动、删除等。</p>
-<pre tabindex="0"><code>[ennan@localhost  /]$ ll filename 
--rw-r--r-x. 1 root root 10 Aug  7 15:17 filename
-[ennan@localhost  /]$ cat filename 
-date
-[ennan@localhost  /]$ ./filename 
-Wed Aug  7 15:33:07 CST 2019
-[ennan@localhost  /]$ echo &#34;hello&#34; &gt; filename 
--bash: filename: Permission denied
-[ennan@localhost  /]$ cp filename filename.bak
-cp: cannot create regular file ‘filename.bak’: Permission denied
-[ennan@localhost  /]$ rm -f filename 
-rm: cannot remove ‘filename’: Permission denied
-</code></pre><p><code>rwx</code> 权限：能查看、编辑、执行文件，但是不能对文件进行删除、移动、复制等操作。</p>
-<pre tabindex="0"><code>[ennan@localhost  /]$ cat filename 
-date
-[ennan@localhost  /]$ ./filename 
-Wed Aug  7 15:40:08 CST 2019
-[ennan@localhost  /]$ cp filename filename.bak
-cp: cannot create regular file ‘filename.bak’: Permission denied
-[ennan@localhost  /]$ rm -f filename 
-rm: cannot remove ‘filename’: Permission denied
-</code></pre><p><strong>目录权限验证</strong>
-<code>r</code> 权限：具有浏览目录的权限，无法进入目录。使用<code>ls</code> 查看目录下的文件会报错，但会显示文件名称，如果使用 <code>ls -l</code> 只能看到文件名称，其他的全部无法查看。</p>
-<pre tabindex="0"><code>[root@localhost /]# ll -d test/
-drwxr-xr--. 2 root root 18 Aug  7 15:54 test/
-[root@localhost /]# ll /test/file 
--rw-r--r--. 1 root root 5 Aug  7 15:54 /test/file
-
-[ennan@localhost  /]$ ls test/
-ls: cannot access test/file: Permission denied
-file
-[ennan@localhost  /]$ ls -l test/
-ls: cannot access test/file: Permission denied
-total 0
--????????? ? ? ? ?            ? file
-[ennan@localhost  /]$ cd /test/
--bash: cd: /test/: Permission denied
-[ennan@localhost  /]$ rm -rf /test/
-rm: cannot remove ‘/test/file’: Permission denied
-</code></pre><p><code>w</code> 权限：单独的w权限不能进行任何操作。</p>
-<pre tabindex="0"><code>[ennan@localhost  /]$ ll -d /test/
-drwxr-x-w-. 2 root root 18 Aug  7 15:54 /test/
-[ennan@localhost  /]$ cd test/
--bash: cd: test/: Permission denied
-[ennan@localhost  /]$ ls /test/
-ls: cannot open directory /test/: Permission denied
-</code></pre><p><code>x</code> 权限：可以进入目录，不能操作其他东西。</p>
-<pre tabindex="0"><code>[ennan@localhost  /]$ ll -d /test/
-drwxr-x--x. 2 root root 18 Aug  7 15:54 /test/
-[ennan@localhost  /]$ ll /test/
-ls: cannot open directory /test/: Permission denied
-[ennan@localhost  /]$ cd /test/
-[ennan@localhost  test]$ ls
-ls: cannot open directory .: Permission denied
-</code></pre><p><code>rx</code> 权限：能进入目录,能查看目录下的文件,至于操作文件,需要看文件本身的权限。不能进行新建文件、目录等操作。</p>
-<pre tabindex="0"><code>[ennan@localhost  test]$ ll -d /test/
-drwxr-xr-x. 2 root root 18 Aug  7 15:54 /test/
-[ennan@localhost  test]$ cd /test/
-[ennan@localhost  test]$ ll
-total 4
--rw-r--r--. 1 root root 5 Aug  7 15:54 file
-</code></pre><p><code>rw</code> 权限：好像有点鸡肋。</p>
-<pre tabindex="0"><code>[ennan@localhost  /]$ ll -d /test/
-drwxr-xrw-. 2 root root 18 Aug  7 15:54 /test/
-[ennan@localhost  /]$ cd test/
--bash: cd: test/: Permission denied
-[ennan@localhost  /]$ ll /test/
-ls: cannot access /test/file: Permission denied
-total 0
--????????? ? ? ? ?            ? file
-[ennan@localhost  /]$ mkfid /test/hello
--bash: mkfid: command not found
-[ennan@localhost  /]$ mkdir /test/hello
-mkdir: cannot create directory ‘/test/hello’: Permission denied
-</code></pre><p><code>rwx</code> 权限：如果目录赋予了w权限,则该目录下的文件可以复制、删除、移动、修改。</p>
-<pre tabindex="0"><code>[ennan@localhost  /]$ ll -d /test/
-drwxr-xrwx. 2 root root 18 Aug  7 15:54 /test/
-[ennan@localhost  /]$ cd test/
-[ennan@localhost  test]$ ls
-file
-[ennan@localhost  test]$ cp file file.bak
-[ennan@localhost  test]$ rm -f file.bak 
-</code></pre><blockquote>
-<p>文件最多使用的是rw权限和rx权限（文件的权限通常会设置为644）
-目录最多使用的是rx权限（目录的权限通常会设置为755）</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ ll file.txt
+</span></span><span style="display:flex;"><span>-rw-r---w- <span style="color:#099">1</span> root root <span style="color:#099">10</span> Dec <span style="color:#099">18</span> 08:08 file.txt
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 仅可做写入操作。</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ <span style="color:#0086b3">echo</span> <span style="color:#d14">&#34;date&#34;</span> &gt;&gt; file.txt
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ cat file.txt
+</span></span><span style="display:flex;"><span>cat: file.txt: Permission denied
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>x</code> 权限：普通用户执行<code>x</code>权限时，同时需要具有<code>r</code>权限，否则不能执行成功。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ ll file.txt
+</span></span><span style="display:flex;"><span>-rw-r----x <span style="color:#099">1</span> root root <span style="color:#099">5</span> Dec <span style="color:#099">18</span> 08:13 file.txt
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ ./file.txt
+</span></span><span style="display:flex;"><span>bash: ./file.txt: Permission denied
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>rw</code> 权限：可对文件进行读写，但是不能进行执行、复制、移动、删除等操作。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ ll file.txt
+</span></span><span style="display:flex;"><span>-rw-r--rw- <span style="color:#099">1</span> root root <span style="color:#099">5</span> Dec <span style="color:#099">18</span> 08:13 file.txt
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 可编辑查看文件。</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ vim file.txt
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ cat file.txt
+</span></span><span style="display:flex;"><span>date
+</span></span><span style="display:flex;"><span>date
+</span></span><span style="display:flex;"><span>date
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 不可执行文件或操作文件。</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ ./file.txt
+</span></span><span style="display:flex;"><span>-bash: ./file.txt: Permission denied
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ cp file.txt file.txt.bak
+</span></span><span style="display:flex;"><span>cp: cannot create regular file ‘file.txt.bak’: Permission denied
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>rx</code> 权限：可进行查看和执行操作，但是不能编辑、移动、删除等。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ ll file.txt
+</span></span><span style="display:flex;"><span>-rw-r--r-x <span style="color:#099">1</span> root root <span style="color:#099">15</span> Dec <span style="color:#099">18</span> 08:44 file.txt
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 可以查看或执行文件</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ cat file.txt
+</span></span><span style="display:flex;"><span>date
+</span></span><span style="display:flex;"><span>date
+</span></span><span style="display:flex;"><span>date
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ ./file.txt
+</span></span><span style="display:flex;"><span>Mon Dec <span style="color:#099">18</span> 08:47:51 CST <span style="color:#099">2023</span>
+</span></span><span style="display:flex;"><span>Mon Dec <span style="color:#099">18</span> 08:47:51 CST <span style="color:#099">2023</span>
+</span></span><span style="display:flex;"><span>Mon Dec <span style="color:#099">18</span> 08:47:51 CST <span style="color:#099">2023</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 不能编辑文件</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ <span style="color:#0086b3">echo</span> <span style="color:#d14">&#34;hello&#34;</span> &gt; file.txt
+</span></span><span style="display:flex;"><span>-bash: file.txt: Permission denied
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 不能操作文件</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ cp file.txt file.txt.bak
+</span></span><span style="display:flex;"><span>cp: cannot create regular file ‘file.txt.bak’: Permission denied
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ rm -f file.txt
+</span></span><span style="display:flex;"><span>rm: cannot remove ‘file.txt’: Permission denied
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>rwx</code> 权限：能查看、编辑、执行文件，但是不能对文件进行删除、移动、复制等操作。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ ll file.txt
+</span></span><span style="display:flex;"><span>-rw-r--rwx <span style="color:#099">1</span> root root <span style="color:#099">15</span> Dec <span style="color:#099">18</span> 08:44 file.txt
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 可以编辑或执行文件</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ vim file.txt
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ ./file.txt
+</span></span><span style="display:flex;"><span>Mon Dec <span style="color:#099">18</span> 08:59:24 CST <span style="color:#099">2023</span>
+</span></span><span style="display:flex;"><span>Mon Dec <span style="color:#099">18</span> 08:59:24 CST <span style="color:#099">2023</span>
+</span></span><span style="display:flex;"><span>Mon Dec <span style="color:#099">18</span> 08:59:24 CST <span style="color:#099">2023</span>
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 不能对文件删除复制等</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ cp file.txt file.txt.bak
+</span></span><span style="display:flex;"><span>cp: cannot create regular file ‘file.txt.bak’: Permission denied
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ rm -f file.txt
+</span></span><span style="display:flex;"><span>rm: cannot remove ‘file.txt’: Permission denied
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>目录权限验证</strong></p>
+<p><code>r</code> 权限：具有浏览目录的权限，无法进入目录。使用<code>ls</code> 查看目录下的文件会报错，但会显示文件名称，如果使用 <code>ls -l</code> 只能看到文件名称，其他的全部无法查看。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost /<span style="color:#000;font-weight:bold">]</span>$ ll -d /opt
+</span></span><span style="display:flex;"><span>drwxr-xr--. <span style="color:#099">2</span> root root <span style="color:#099">22</span> Dec <span style="color:#099">18</span> 08:07 /opt
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 可以查看目录内容。</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost /<span style="color:#000;font-weight:bold">]</span>$ ls /opt/
+</span></span><span style="display:flex;"><span>ls: cannot access /opt/file.txt: Permission denied
+</span></span><span style="display:flex;"><span>file.txt
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost /<span style="color:#000;font-weight:bold">]</span>$ ls -l /opt/
+</span></span><span style="display:flex;"><span>ls: cannot access /opt/file.txt: Permission denied
+</span></span><span style="display:flex;"><span>total <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>-????????? ? ? ? ?            ? file.txt
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 不能做其他操作。</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost /<span style="color:#000;font-weight:bold">]</span>$ <span style="color:#0086b3">cd</span> /opt/
+</span></span><span style="display:flex;"><span>-bash: cd: /opt/: Permission denied
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost /<span style="color:#000;font-weight:bold">]</span>$ rm -rf /opt/
+</span></span><span style="display:flex;"><span>rm: cannot remove ‘/opt/file.txt’: Permission denied
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>w</code> 权限：单独的<code>w</code>权限不能进行任何操作。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost /<span style="color:#000;font-weight:bold">]</span>$ ll -d /opt/
+</span></span><span style="display:flex;"><span>drwxr-x-w-. <span style="color:#099">2</span> root root <span style="color:#099">22</span> Dec <span style="color:#099">18</span> 08:07 /opt/
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 不能做任何操作。</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost /<span style="color:#000;font-weight:bold">]</span>$ <span style="color:#0086b3">cd</span> /opt/
+</span></span><span style="display:flex;"><span>-bash: cd: /opt/: Permission denied
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost /<span style="color:#000;font-weight:bold">]</span>$ ls /opt/
+</span></span><span style="display:flex;"><span>ls: cannot open directory /opt/: Permission denied
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost /<span style="color:#000;font-weight:bold">]</span>$ mv /opt/file.txt /opt/file.txt.bak
+</span></span><span style="display:flex;"><span>mv: failed to access ‘/opt/file.txt.bak’: Permission denied
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>x</code> 权限：可以进入目录，不能操作其他东西。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost /<span style="color:#000;font-weight:bold">]</span>$ ll -d /opt/
+</span></span><span style="display:flex;"><span>drwxr-x--x. <span style="color:#099">2</span> root root <span style="color:#099">22</span> Dec <span style="color:#099">18</span> 08:07 /opt/
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 可以进入目录。</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost /<span style="color:#000;font-weight:bold">]</span>$ <span style="color:#0086b3">cd</span> /opt/
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 不能查看目录内容或操作文件。</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ ls
+</span></span><span style="display:flex;"><span>ls: cannot open directory .: Permission denied
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ rm -f file.txt
+</span></span><span style="display:flex;"><span>rm: cannot remove ‘file.txt’: Permission denied
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>rx</code> 权限：能进入目录，能查看目录下的文件。至于操作文件，需要看文件本身的权限。不能进行新建文件、目录等操作。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost /<span style="color:#000;font-weight:bold">]</span>$ ll -d /opt/
+</span></span><span style="display:flex;"><span>drwxr-xr-x. <span style="color:#099">2</span> root root <span style="color:#099">22</span> Dec <span style="color:#099">18</span> 08:07 /opt/
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 可以进入目录并查看文件列表。</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost /<span style="color:#000;font-weight:bold">]</span>$ <span style="color:#0086b3">cd</span> /opt/
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ ll
+</span></span><span style="display:flex;"><span>total <span style="color:#099">4</span>
+</span></span><span style="display:flex;"><span>-rw-r--rwx <span style="color:#099">1</span> root root <span style="color:#099">10</span> Dec <span style="color:#099">18</span> 08:59 file.txt
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 不能新建文件或目录</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ touch file1.txt
+</span></span><span style="display:flex;"><span>touch: cannot touch ‘file1.txt’: Permission denied
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ mkdir <span style="color:#0086b3">test</span>
+</span></span><span style="display:flex;"><span>mkdir: cannot create directory ‘test’: Permission denied
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>rw</code> 权限：只能查看目录内文件列表。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost /<span style="color:#000;font-weight:bold">]</span>$ ll -d /opt/
+</span></span><span style="display:flex;"><span>drwxr-xrw-. <span style="color:#099">2</span> root root <span style="color:#099">22</span> Dec <span style="color:#099">18</span> 08:07 /opt/
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 可以查看目录内文件列表。</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost /<span style="color:#000;font-weight:bold">]</span>$ ll /opt/
+</span></span><span style="display:flex;"><span>ls: cannot access /opt/file.txt: Permission denied
+</span></span><span style="display:flex;"><span>total <span style="color:#099">0</span>
+</span></span><span style="display:flex;"><span>-????????? ? ? ? ?            ? file.txt
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 不能进入目录或操作文件。</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost /<span style="color:#000;font-weight:bold">]</span>$ <span style="color:#0086b3">cd</span> /opt/
+</span></span><span style="display:flex;"><span>-bash: cd: /opt/: Permission denied
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost /<span style="color:#000;font-weight:bold">]</span>$ touch /opt/file1.txt
+</span></span><span style="display:flex;"><span>touch: cannot touch ‘/opt/file1.txt’: Permission denied
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>rwx</code> 权限：如果目录赋予了<code>w</code>权限，则该目录下的文件可以复制、删除、移动、修改。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost /<span style="color:#000;font-weight:bold">]</span>$ ll -d /opt/
+</span></span><span style="display:flex;"><span>drwxr-xrwx. <span style="color:#099">2</span> root root <span style="color:#099">22</span> Dec <span style="color:#099">18</span> 08:07 /opt/
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost /<span style="color:#000;font-weight:bold">]</span>$ ll /opt/file.txt
+</span></span><span style="display:flex;"><span>-rw-r----- <span style="color:#099">1</span> root root <span style="color:#099">10</span> Dec <span style="color:#099">18</span> 08:59 /opt/file.txt
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 可以进入目录并修改文件。</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost /<span style="color:#000;font-weight:bold">]</span>$ <span style="color:#0086b3">cd</span> /opt/
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ <span style="color:#0086b3">echo</span> <span style="color:#d14">&#34;date&#34;</span> &gt; file.txt
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ cat file.txt
+</span></span><span style="display:flex;"><span>date
+</span></span><span style="display:flex;"><span><span style="color:#998;font-style:italic"># 可以复制或删除文件</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ cp file.txt file.txt.bak
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ rm file.txt
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>snoopy@localhost opt<span style="color:#000;font-weight:bold">]</span>$ ls
+</span></span><span style="display:flex;"><span>file.txt.bak
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>文件最多使用的是rw权限和rx权限（文件的权限通常会设置为644）。</p>
+<p>目录最多使用的是rx权限（目录的权限通常会设置为755）。</p>
 </blockquote>
-<h3 id="属主和属组">属主和属组</h3>
-<p><strong>chown命令</strong></p>
-<p><code>chown</code>可用于更改属主及属组。</p>
+<h3 id="chown命令">chown命令</h3>
+<p><code>chown</code>可用于更改文件或目录的属主及属组。</p>
 <table>
 <thead>
 <tr>
@@ -343,31 +667,60 @@ file
 <tbody>
 <tr>
 <td style="text-align:center">-R</td>
-<td>递归修改</td>
+<td>递归修改。</td>
 </tr>
 </tbody>
 </table>
-<p>修改<code>dir</code>的属主为<code>ennan</code></p>
-<pre tabindex="0"><code>[root@localhost ~]# ll
-total 0
-drwxr-xr-x. 3 root root 31 Aug  7 17:07 dir
-[root@localhost ~]# chown ennan dir/
-[root@localhost ~]# ll
-total 0
-drwxr-xr-x. 3 ennan root 31 Aug  7 17:07 dir
-</code></pre><p>修改<code>dir</code>的属组为<code>adm</code></p>
-<pre tabindex="0"><code>[root@localhost ~]# chown .adm dir/
-[root@localhost ~]# ll -d dir/
-drwxr-xr-x. 3 ennan adm 31 Aug  7 17:07 dir/
-</code></pre><p>递归修改目录及目录下所有文件的属主和属组为<code>ennan</code></p>
-<pre tabindex="0"><code>[root@localhost ~]# chown -R ennan.ennan dir/
-[root@localhost ~]# ll -d dir/
-drwxr-xr-x. 3 ennan ennan 31 Aug  7 17:07 dir/
-[root@localhost ~]# ll dir/
-total 0
--rw-r--r--. 1 ennan ennan 0 Aug  7 17:07 file
-drwxr-xr-x. 2 ennan ennan 6 Aug  7 17:07 test1
-</code></pre><h2 id="特殊权限">特殊权限</h2>
+<p>修改<code>file.txt</code>的属主为<code>snoopy</code>。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ll file.txt</span>
+</span></span><span style="display:flex;"><span>-rw-r--r-- <span style="color:#099">1</span> root root <span style="color:#099">0</span> Dec <span style="color:#099">19</span> 22:58 file.txt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># chown snoopy file.txt</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ll file.txt</span>
+</span></span><span style="display:flex;"><span>-rw-r--r-- <span style="color:#099">1</span> snoopy root <span style="color:#099">0</span> Dec <span style="color:#099">19</span> 22:58 file.txt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>修改<code>file.txt</code>的属组为<code>snoopy</code>。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># chown .snoopy file.txt</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># ll file.txt</span>
+</span></span><span style="display:flex;"><span>-rw-r--r-- <span style="color:#099">1</span> snoopy snoopy <span style="color:#099">0</span> Dec <span style="color:#099">19</span> 22:58 file.txt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>递归修改目录及目录下所有文件的属主和属组为<code>snoopy</code>。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># mkdir testdir</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># touch testdir/test1</span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># touch testdir/test2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">[</span>root@localhost opt<span style="color:#000;font-weight:bold">]</span><span style="color:#998;font-style:italic"># chown -R snoopy.snoopy testdir/</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="特殊权限">特殊权限</h2>
 <h3 id="特殊权限-1">特殊权限</h3>
 <p><strong>SUID</strong>（set uid）</p>
 <p>当我们为某个命令设定了<code>suid</code>，无论谁使用该命令都会使用该命令的 &ldquo;属主&rdquo; 运行该命令。</p>

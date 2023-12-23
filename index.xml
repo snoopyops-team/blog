@@ -44,12 +44,12 @@
     </item>
     
     <item>
-      <title>创建基础镜像</title>
-      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/%E5%88%9B%E5%BB%BA%E5%9F%BA%E7%A1%80%E9%95%9C%E5%83%8F/</link>
+      <title>系统初始化</title>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/%E7%B3%BB%E7%BB%9F%E5%88%9D%E5%A7%8B%E5%8C%96/</link>
       <pubDate>Wed, 06 Dec 2023 07:52:49 +0800</pubDate>
       
-      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/%E5%88%9B%E5%BB%BA%E5%9F%BA%E7%A1%80%E9%95%9C%E5%83%8F/</guid>
-      <description>升级 [root@mx-glc-template ~]# yum update [root@mx-glc-template ~]# reboot 创建堡垒机管理用户，并配置密钥。 ec2-user:x:1000:1000::/home/ec2-user:/bin/bash 禁用 selinux 及 firewalld。 1 2 3 4 5 6 7 8 if [ -f /etc/selinux/config ]; then sed -i &amp;#39;s#SELINUX=enforcing#SELINUX=disabled#g&amp;#39; /etc/selinux/config setenforce 0 fi # systemctl stop firewalld # systemctl disable firewalld 添加主机到跳板机系统。</description>
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/%E7%B3%BB%E7%BB%9F%E5%88%9D%E5%A7%8B%E5%8C%96/</guid>
+      <description>当我们安装完操作系统后，通常会做一些初始化的操作才会将服务器投入到生产环境中使用。 在使用云环境时，我们也可以将做完初始化的操作系统封装为镜像，后续通过自己封装的</description>
     </item>
     
     <item>
@@ -265,7 +265,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.snoopyops.top/nav/</guid>
-      <description>🌞 Linux基础 1. 虚拟机安装CentOS7 2. 认识Bash Shell 3. Linux目录结构 4. Linux文件操作 5. Vim编辑器 6. 用户与组 7. Linux基础权限 8. Linux输入与</description>
+      <description>🌞 Linux基础 1. 虚拟机安装CentOS7 2. 认识Bash Shell 3. Linux目录结构 4. Linux文件操作 5. Vim编辑器 6. 用户与组 7. Linux权限管理 8. Linux输入与</description>
     </item>
     
   </channel>

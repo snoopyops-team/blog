@@ -54,7 +54,7 @@
 	</div>
 </div><div class="list post-list">
              
-            <div class="count">文章列表： 27 篇</div>
+            <div class="count">文章列表： 28 篇</div>
             
             
             
@@ -281,6 +281,18 @@
                 <div class="item" >
                    
                     
+                    <a href="https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/%E6%90%AD%E5%BB%BAyum%E6%BA%90%E6%9C%8D%E5%8A%A1%E5%99%A8/">
+                        <span> <img src="/imgs/icons/post-3.svg" width="16" /> </span>
+                        <span> 搭建YUM源服务器 <sup></sup></span>
+                    </a>
+                </div>
+                
+            
+                
+                
+                <div class="item" >
+                   
+                    
                     <a href="https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/9.%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE/">
                         <span> <img src="/imgs/icons/post-3.svg" width="16" /> </span>
                         <span> 文件查找 <sup></sup></span>
@@ -388,6 +400,48 @@
         
         
         <div class="item" >
+            <div class="c-date">2023-12-28</div>
+
+            
+            <a href="https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/%E6%90%AD%E5%BB%BAyum%E6%BA%90%E6%9C%8D%E5%8A%A1%E5%99%A8/">
+                <span> <img src="/imgs/icons/post-3.svg" width="16" /> </span>
+                <span> 搭建YUM源服务器 <sup></sup></span>
+            </a>
+
+            
+            <div class="desc">
+                <span class="date">
+                    
+                    
+                    2023-12-28 ~ 2023-12-28
+                </span>
+            </div>
+            
+            
+            <div class="container-ctgtag">
+	<div class="taxonomy">
+		<div class="tag">
+			
+			
+			<a href="/tags/linux%E5%9F%BA%E7%A1%80">Linux基础</a>
+			
+		</div>
+	</div>
+</div><div class="summary">为了提高软件包的下载速度，减轻网络负担，提高系统的安全性，我们可自建yum源服务器。 本地yum服务器：自己准备软件安装包，通过ftp或http的方式共享给其他主</div>
+				
+				
+				<div class="read-more">
+				  <a href="/posts/linux%E5%9F%BA%E7%A1%80/%E6%90%AD%E5%BB%BAyum%E6%BA%90%E6%9C%8D%E5%8A%A1%E5%99%A8/">查看更多…</a>
+				</div>
+				
+            
+
+        </div>
+        
+    
+        
+        
+        <div class="item" >
             <div class="c-date">2023-12-18</div>
 
             
@@ -401,7 +455,7 @@
                 <span class="date">
                     
                     
-                    2023-12-18 ~ 2023-12-18
+                    2023-12-18 ~ 2023-12-26
                 </span>
             </div>
             
@@ -569,7 +623,7 @@
                 <span class="date">
                     
                     
-                    2023-12-06 ~ 2023-12-22
+                    2023-12-06 ~ 2023-12-26
                 </span>
             </div>
             
@@ -653,7 +707,7 @@
                 <span class="date">
                     
                     
-                    2023-11-24 ~ 2023-11-30
+                    2023-11-24 ~ 2023-12-28
                 </span>
             </div>
             
@@ -779,7 +833,7 @@
                 <span class="date">
                     
                     
-                    2023-11-16 ~ 2023-12-06
+                    2023-11-16 ~ 2023-12-28
                 </span>
             </div>
             
@@ -793,7 +847,7 @@
 			
 		</div>
 	</div>
-</div><div class="summary">安装process-exporter 脚本地址，点击下载。 下载安装 1 2 3 4 cd /usr/local/src wget <a href="https://github.com/ncabatoff/process-exporter/releases/download/v0.7.10/process-exporter-0.7.10.linux-amd64.tar.gz">https://github.com/ncabatoff/process-exporter/releases/download/v0.7.10/process-exporter-0.7.10.linux-amd64.tar.gz</a> tar xf process-exporter-0.7.10.linux-amd64.tar.gz -C /usr/local/ ln -s /usr/local/process-exporter-0.7.10.linux-amd64/ /usr/local/process-exporter 配置 1 2 3 4 5 6 cat &gt; /usr/local/process-exporter/process-all.yaml &lt;&lt; \EOF process_names: - name: &quot;{{.Comm}}&quot; cmdline: - '.+' EOF 以ops用户启动，需</div>
+</div><div class="summary">安装process-exporter 脚本地址，点击下载。 下载安装。 1 2 3 4 cd /usr/local/src wget <a href="https://github.com/ncabatoff/process-exporter/releases/download/v0.7.10/process-exporter-0.7.10.linux-amd64.tar.gz">https://github.com/ncabatoff/process-exporter/releases/download/v0.7.10/process-exporter-0.7.10.linux-amd64.tar.gz</a> tar xf process-exporter-0.7.10.linux-amd64.tar.gz -C /usr/local/ ln -s /usr/local/process-exporter-0.7.10.linux-amd64/ /usr/local/process-exporter 配置监控所有进程。 1 2 3 4 5 6 cat &gt; /usr/local/process-exporter/process-all.yaml &lt;&lt; EOF process_names: - name: &quot;{{.Comm}}&quot; cmdline: - '.+' EOF 若只</div>
 				
 				
 				<div class="read-more">
@@ -863,7 +917,7 @@
                 <span class="date">
                     
                     
-                    2023-11-14 ~ 2023-11-16
+                    2023-11-14 ~ 2023-12-23
                 </span>
             </div>
             
@@ -905,7 +959,7 @@
                 <span class="date">
                     
                     
-                    2023-06-12 ~ 2023-11-24
+                    2023-06-12 ~ 2023-12-29
                 </span>
             </div>
             
@@ -947,7 +1001,7 @@
                 <span class="date">
                     
                     
-                    2023-06-03 ~ 2023-11-18
+                    2023-06-03 ~ 2023-12-29
                 </span>
             </div>
             
@@ -989,7 +1043,7 @@
                 <span class="date">
                     
                     
-                    2023-06-01 ~ 2023-11-18
+                    2023-06-01 ~ 2023-12-29
                 </span>
             </div>
             
@@ -999,9 +1053,11 @@
 		<div class="tag">
 			
 			
+			<a href="/tags/linux%E5%9F%BA%E7%A1%80">Linux基础</a>
+			
 		</div>
 	</div>
-</div><div class="summary">RPM RPM全称 Redhat Package Manager 缩写，由红帽开发用于软件包的安装升级卸载与查询。 rpm常用选项及说明如下表： 选项 说明 i 安装在rpm的软件包 v 显示安装的详细信息 h 显示安装的进度</div>
+</div><div class="summary">当我们需要在CentOS系统上安装软件时，通常可以通过RPM、yum和源码安装的几种方式安装。 RPM RPM全称 Redhat Package Manager 缩写，由红帽开发用于软件包的安装升级卸载与查询。</div>
 				
 				
 				<div class="read-more">
@@ -1029,7 +1085,7 @@
                 <span class="date">
                     
                     
-                    2023-05-31 ~ 2023-11-18
+                    2023-05-31 ~ 2023-12-29
                 </span>
             </div>
             
@@ -1038,6 +1094,8 @@
 	<div class="taxonomy">
 		<div class="tag">
 			
+			
+			<a href="/tags/linux%E5%9F%BA%E7%A1%80">Linux基础</a>
 			
 		</div>
 	</div>
@@ -1069,7 +1127,7 @@
                 <span class="date">
                     
                     
-                    2023-05-31 ~ 2023-11-24
+                    2023-05-31 ~ 2023-12-29
                 </span>
             </div>
             
@@ -1083,7 +1141,7 @@
 			
 		</div>
 	</div>
-</div><div class="summary">文件查找 find命令可以根据不同的条件来进行查找文件，可根据文件名称、文件大小、文件修改时间、属主属组、权限、等方式查找相应的文件。 find基本用法 find命令</div>
+</div><div class="summary">find命令可以根据不同的条件来进行查找文件。我们可以根据文件名称、文件大小、文件修改时间、属主属组、权限、等方式查找相应的文件。 find基本用法 find命令的</div>
 				
 				
 				<div class="read-more">
@@ -1111,7 +1169,7 @@
                 <span class="date">
                     
                     
-                    2023-05-30 ~ 2023-12-22
+                    2023-05-30 ~ 2023-12-29
                 </span>
             </div>
             
@@ -1125,7 +1183,7 @@
 			
 		</div>
 	</div>
-</div><div class="summary">输入与输出 当运行一个程序时通常会自动打开三个标准文件，分别是标准输入、标准输出、错误输出。 在/dev下有些关于输入与输出的文件 [root@localhost ~]# ll /dev/std* # 将错误通过2输出 lrwxrwxrwx. 1 root root</div>
+</div><div class="summary">输入与输出 当运行一个程序时通常会自动打开三个标准文件，分别是标准输入、标准输出、错误输出。 在Linux中，一切皆文件。在/dev下有些关于输入与输出的文件。 1 2</div>
 				
 				
 				<div class="read-more">
@@ -1153,7 +1211,7 @@
                 <span class="date">
                     
                     
-                    2023-05-27 ~ 2023-12-23
+                    2023-05-27 ~ 2023-12-26
                 </span>
             </div>
             
@@ -1237,7 +1295,7 @@
                 <span class="date">
                     
                     
-                    2023-05-22 ~ 2023-12-03
+                    2023-05-22 ~ 2023-12-23
                 </span>
             </div>
             
@@ -1279,7 +1337,7 @@
                 <span class="date">
                     
                     
-                    2023-05-21 ~ 2023-11-30
+                    2023-05-21 ~ 2023-12-23
                 </span>
             </div>
             

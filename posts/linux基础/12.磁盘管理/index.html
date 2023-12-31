@@ -62,7 +62,7 @@
             <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7409" width="12" height="12"><path d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z" p-id="7410" fill="#adb5bd"></path></svg>
             2023-06-03&nbsp;&nbsp;&nbsp;
             <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="23838" width="11" height="11"><path d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z" p-id="23839" fill="#adb5bd"></path></svg>
-            2023-11-18&nbsp;&nbsp;&nbsp;
+            2023-12-29&nbsp;&nbsp;&nbsp;
         </span>
         <span>
             
@@ -113,9 +113,9 @@
     <div class='content  '>
         <p>本章节主要解释磁盘分区，磁盘阵列等磁盘相关知识。</p>
 <h2 id="磁盘分区">磁盘分区</h2>
-<p><strong>添加磁盘</strong>
-在虚拟机中添加一个1T和4T的磁盘。
-<img src="https://images.wuennan.cn/8505400-81279eee3198bcf1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="添加磁盘"></p>
+<p><strong>添加磁盘</strong></p>
+<p>在虚拟机中添加一个1T和4T的磁盘。
+<img src="https://images.snoopyops.top/8505400-81279eee3198bcf1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="添加磁盘"></p>
 <p>可以通过查看<code>/dev</code>下面的设备或者<code>lsblk</code>命令确认磁盘是否添加成功。</p>
 <pre tabindex="0"><code>[root@localhost ~]# ll /dev/sd*
 brw-rw----. 1 root disk 8,  0 Aug 19 19:32 /dev/sda
@@ -448,13 +448,15 @@ Filename				Type		Size	Used	Priority
 /dev/sdb1                              	partition	1048572	0	-3
 </code></pre><h2 id="磁盘阵列">磁盘阵列</h2>
 <p>RAID0：条带卷，最少需要两块硬盘，读写性能好，但是没有容错机制。
-<img src="https://images.wuennan.cn/8505400-2146265ada453234.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="RAID0"></p>
+<img src="https://images.snoopyops.top/8505400-2146265ada453234.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="RAID0"></p>
 <p>RAID1：镜像卷，读写性能一般，有容错机制，磁盘利用率为50%。
-<img src="https://images.wuennan.cn/8505400-17d1a2e190ba480b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="RAID1"></p>
+<img src="https://images.snoopyops.top/8505400-17d1a2e190ba480b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="RAID1"></p>
 <p>RAID5：校验卷，至少3块硬盘，仅允许坏一块硬盘，硬盘的利用率为(n-1)/n，读写较快。
-<img src="https://images.wuennan.cn/8505400-4377fd38e15ccf01.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="RAID5"></p>
+<img src="https://images.snoopyops.top/8505400-4377fd38e15ccf01.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="RAID5"></p>
 <p>RAID10：RAID0和RAID1的组合，具有RAID0的读写速度和RAID1的容错机制，但是磁盘利用率为50%。
-<img src="https://images.wuennan.cn/8505400-991c0e41414b2115.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="RAID10"></p>
+<img src="https://images.snoopyops.top/8505400-991c0e41414b2115.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="RAID10"></p>
+<hr>
+<center><img src="https://images.snoopyops.top/wechat-snoopy.jpg" alt="image-20231028232834657" style="zoom:40%;" /></center>
 
     </div>
     

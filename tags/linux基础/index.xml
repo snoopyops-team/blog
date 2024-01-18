@@ -6,7 +6,16 @@
     <description>Recent content in Linux基础 on SnoopyOPS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 28 Dec 2023 15:09:42 +0800</lastBuildDate><atom:link href="https://www.snoopyops.top/tags/linux%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Jan 2024 15:44:49 +0800</lastBuildDate><atom:link href="https://www.snoopyops.top/tags/linux%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux简介</title>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/0.linux%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Thu, 04 Jan 2024 15:44:49 +0800</pubDate>
+      
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/0.linux%E7%AE%80%E4%BB%8B/</guid>
+      <description>Linux是什么 Linux的诞生可以追溯到1991年。那年，一位名叫Linus Torvalds（林纳斯·托瓦兹）的大学生对于已有的操作系统并不满意。于是开始着手</description>
+    </item>
+    
     <item>
       <title>搭建YUM源服务器</title>
       <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/%E6%90%AD%E5%BB%BAyum%E6%BA%90%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
@@ -31,7 +40,16 @@
       <pubDate>Mon, 12 Jun 2023 16:19:32 +0800</pubDate>
       
       <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/14.%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/</guid>
-      <description>crond计划任务 Crontab配置文件记录了时间周期的含义 [root@ennan ~]# cat /etc/crontab SHELL=/bin/bash # 执行的命令解释器 PATH=/sbin:/bin:/usr/sbin:/usr/bin # 环境变量 MAILTO=root # 邮件发送给谁 # For details see man 4 crontabs # Example of job definition: # .---------------- minute (0 - 59) # 分 # |</description>
+      <description>crond计划任务 Crontab配置文件记录了时间周期的含义 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 [root@localhost ~]# cat /etc/crontab SHELL=/bin/bash # 执行的命令解释器 PATH=/sbin:/bin:/usr/sbin:/usr/bin # 环境变量 MAILTO=root # 邮件发送给谁 # For details see man 4 crontabs</description>
+    </item>
+    
+    <item>
+      <title>进程管理</title>
+      <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/13.%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Sun, 04 Jun 2023 12:11:39 +0800</pubDate>
+      
+      <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/13.%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/</guid>
+      <description>认识进程 进程 进程（Process）是指正在运行的程序的实例。当一个程序被执行时，操作系统会为该程序创建一个新的进程，并为其分配所需的资源，如内存空间、文件描述符</description>
     </item>
     
     <item>
@@ -40,7 +58,7 @@
       <pubDate>Sat, 03 Jun 2023 13:55:19 +0800</pubDate>
       
       <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/12.%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</guid>
-      <description>本章节主要解释磁盘分区，磁盘阵列等磁盘相关知识。 磁盘分区 添加磁盘 在虚拟机中添加一个1T和4T的磁盘。 可以通过查看/dev下面的设备或者lsblk命令确认磁盘是否</description>
+      <description>本章节主要解释磁盘分区，磁盘阵列等磁盘相关知识。 磁盘分区 为主机分别添加一个1T和4T的磁盘。 可以通过查看/dev下面的设备或者lsblk命令确认磁盘是否添加成功</description>
     </item>
     
     <item>
@@ -49,7 +67,7 @@
       <pubDate>Thu, 01 Jun 2023 12:15:27 +0800</pubDate>
       
       <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/11.linux%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</guid>
-      <description>当我们需要在CentOS系统上安装软件时，通常可以通过RPM、yum和源码安装的几种方式安装。 RPM RPM全称 Redhat Package Manager 缩写，由红帽开发用于软件包的安装升级卸载与查询。</description>
+      <description>当我们需要在CentOS系统上安装软件时，通常可以通过RPM、yum和源码安装的几种方式安装。 RPM RPM是 Redhat Package Manager 的缩写，由红帽开发用于软件包的安装升级卸载与查询的</description>
     </item>
     
     <item>
@@ -58,7 +76,7 @@
       <pubDate>Wed, 31 May 2023 17:09:34 +0800</pubDate>
       
       <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/10.%E5%8E%8B%E7%BC%A9%E4%B8%8E%E8%A7%A3%E5%8E%8B/</guid>
-      <description>在Linux常用的压缩格式如下表： 格式 压缩工具 .zip zip压缩工具（*） .gz gzip压缩工具，只能压缩文件，会删除原文件(通常配合tar使用) .bz2 bzip2压缩工具，只</description>
+      <description>在Linux常用的压缩格式如下表： 格式 压缩工具 .zip zip压缩工具。 .gz gzip压缩工具，只能压缩文件，会删除原文件，通常配合tar使用。 .bz2 bzip2压缩工具，只能压</description>
     </item>
     
     <item>
@@ -67,7 +85,7 @@
       <pubDate>Wed, 31 May 2023 11:55:28 +0800</pubDate>
       
       <guid>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/9.%E6%96%87%E4%BB%B6%E6%9F%A5%E6%89%BE/</guid>
-      <description>find命令可以根据不同的条件来进行查找文件。我们可以根据文件名称、文件大小、文件修改时间、属主属组、权限、等方式查找相应的文件。 find基本用法 find命令的</description>
+      <description>文件查找常用场景： 忘记文件所在的具体位置，根据文件名模糊查询。 查找N天前的日志并删除，释放磁盘空间。 find命令可以根据不同的条件来进行查找文件。我们可以根据文</description>
     </item>
     
     <item>

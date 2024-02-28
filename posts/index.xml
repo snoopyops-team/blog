@@ -6,7 +6,16 @@
     <description>Recent content in Posts on SnoopyOPS</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 04 Jan 2024 15:44:49 +0800</lastBuildDate><atom:link href="https://www.snoopyops.top/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Feb 2024 18:23:48 +0800</lastBuildDate><atom:link href="https://www.snoopyops.top/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blackbox网络监控</title>
+      <link>https://www.snoopyops.top/posts/prometheus%E7%9B%91%E6%8E%A7/blackbox%E7%BD%91%E7%BB%9C%E7%9B%91%E6%8E%A7/</link>
+      <pubDate>Mon, 19 Feb 2024 18:23:48 +0800</pubDate>
+      
+      <guid>https://www.snoopyops.top/posts/prometheus%E7%9B%91%E6%8E%A7/blackbox%E7%BD%91%E7%BB%9C%E7%9B%91%E6%8E%A7/</guid>
+      <description>背景 公司服务器ng-ec-pay-1到 三方VPN 多次中断，由于没有监控及告警，均没能再第一时间处理故障。为了及时发现问题并处理，因此需要通过 Prometheus 对 VPN 链路进行监控。</description>
+    </item>
+    
     <item>
       <title>Linux简介</title>
       <link>https://www.snoopyops.top/posts/linux%E5%9F%BA%E7%A1%80/0.linux%E7%AE%80%E4%BB%8B/</link>
